@@ -1,1 +1,1 @@
-{"version":1,"include":["/api/cd-*"],"exclude":[]}
+{"version":1,"include":["/api/*"],"exclude":[]}
