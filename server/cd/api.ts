@@ -59,9 +59,10 @@ export async function handleCDRequest(request: Request, env: CDEnv): Promise<Res
     if (mutation && request.method !== 'POST') return json({ error: 'method' }, 405, { Allow: 'POST' });
     if (!mutation && !['GET', 'HEAD'].includes(request.method)) return json({ error: 'method' }, 405, { Allow: 'GET, HEAD' });
     if (mutation && (request.headers.get('Origin') !== url.origin || request.headers.get('Sec-Fetch-Site') === 'cross-site')) return json({ error: 'origin' }, 403);
+    if (route === '/api/cd-catalog') return json(getCDCatalog());
     if (route === '/api/cd-logout') return json({ authenticated: false }, 200, { 'Set-Cookie': sessionCookie('', 0) });
-    if (!isConfigured(env)) return json({ error: 'unavailable' }, 503);
     if (route === '/api/cd-access') {
+      if (!isConfigured(env)) return json({ error: 'unavailable' }, 503);
       if (!allowed(request)) return json({ error: 'rate_limit' }, 429, { 'Retry-After': '60' });
       const code = await boundedCode(request);
       if (!code) return json({ error: 'invalid_request' }, 400);
@@ -69,13 +70,19 @@ export async function handleCDRequest(request: Request, env: CDEnv): Promise<Res
       if (!identity) return json({ error: 'invalid_code' }, 401);
       return json({ authenticated: true, edition: identity.edition }, 200, { 'Set-Cookie': sessionCookie(await createSession(identity, env)) });
     }
-    const identity = await readSession(request, env);
-    if (!identity) return json({ authenticated: false, error: 'session_expired' }, 401);
-    if (route === '/api/cd-session') return json({ authenticated: true, edition: identity.edition });
-    if (route === '/api/cd-catalog') return json(getCDCatalog());
+    if (route === '/api/cd-session') {
+      if (!isConfigured(env)) return json({ error: 'unavailable' }, 503);
+      const identity = await readSession(request, env);
+      return identity ? json({ authenticated: true, edition: identity.edition }) : json({ authenticated: false, error: 'session_expired' }, 401);
+    }
     const match = /^\/api\/cd-(stream|download|peaks)\/(track-\d{2}|album)$/u.exec(route);
     if (!match) return json({ error: 'not_found' }, 404);
     const [, kind, id] = match;
+    if (kind === 'download') {
+      if (!isConfigured(env)) return json({ error: 'unavailable' }, 503);
+      const identity = await readSession(request, env);
+      if (!identity) return json({ authenticated: false, error: 'session_expired' }, 401);
+    }
     if (kind === 'download' && !downloadsAreAvailable()) return json({ error: 'release_pending', availableAt: downloadsLockedUntil() }, 403);
     const file = id === 'album' ? (kind === 'download' ? cdAlbum : null) : cdFiles[id]?.[kind as 'stream' | 'download' | 'peaks'];
     if (!file) return json({ error: 'not_published' }, 404);

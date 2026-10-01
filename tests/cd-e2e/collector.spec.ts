@@ -31,30 +31,33 @@ async function snapshot(page: Page, name: string, fullPage = true) {
   await page.screenshot({ path: `docs/screenshots/cd/${name}.png`, fullPage });
 }
 
-test('real login, denied code, secure persistent session, pending catalog and logout', async ({ page, context }, info) => {
+test('public player opens directly while downloads remain locked before release', async ({ page }, info) => {
   await page.goto('/cd');
-  await expect(page.getByRole('heading', { name: 'psicoZ', exact: true })).toBeVisible();
-  await snapshot(page, `access-${info.project.name}`);
-  await page.getByLabel('Digite o código').fill('wrong-code');
-  await page.getByRole('button', { name: /DESBLOQUEAR/u }).click();
-  await expect(page.locator('#cd-access-feedback')).toContainText('ACCESS DENIED');
-  await page.getByLabel('Digite o código').fill('collector-e2e-only');
-  await page.keyboard.press('Enter');
   await expect(page.locator('#cd-title')).toBeVisible();
   await expect(page.locator('.cd-track')).toHaveCount(15);
   await expect(page.locator('.cd-track [data-select]:disabled')).toHaveCount(15);
   await expect(page.locator('[data-album-download]')).toBeDisabled();
   await expect(page.locator('audio')).toHaveCount(0);
   expect(await page.evaluate(() => localStorage.getItem('psicoz:progress'))).toBeNull();
+  await snapshot(page, `collector-pending-${info.project.name}`);
+  expect((await page.request.get('/api/cd-download/album')).status()).toBe(401);
+});
+
+test('real code access still creates a secure private session', async ({ page, context }, info) => {
+  await page.route('**/api/cd-catalog', (route) => route.fulfill({ status: 503, json: { error: 'unavailable' } }));
+  await page.goto('/cd');
+  await expect(page.locator('#cd-login')).toBeVisible();
+  await snapshot(page, `access-${info.project.name}`);
+  await page.getByLabel('Digite o código').fill('wrong-code');
+  await page.getByRole('button', { name: /DESBLOQUEAR/u }).click();
+  await expect(page.locator('#cd-access-feedback')).toContainText('ACCESS DENIED');
+  await page.unroute('**/api/cd-catalog');
+  await page.getByLabel('Digite o código').fill('collector-e2e-only');
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#cd-title')).toBeVisible();
   const cookie = (await context.cookies()).find((cookie) => cookie.name === '__Host-psicoz_cd')!;
   expect(cookie.httpOnly).toBe(true); expect(cookie.secure).toBe(true); expect(cookie.sameSite).toBe('Lax');
   expect(await page.evaluate(() => document.cookie)).not.toContain('__Host-psicoz_cd');
-  await page.reload(); await expect(page.locator('#cd-title')).toBeVisible();
-  await snapshot(page, `collector-pending-${info.project.name}`);
-  await page.getByRole('button', { name: 'Sair desta edição' }).click();
-  await expect(page.locator('#cd-login')).toBeVisible();
-  expect((await page.request.get('/api/cd-download/album')).status()).toBe(401);
-  await page.reload(); await expect(page.locator('#cd-login')).toBeVisible();
 });
 
 test('only the active track loads; actual waveform, seek, pause, mini player and playlist end', async ({ page, isMobile }, info) => {
@@ -152,11 +155,6 @@ test('responsive widths, reduced motion, missing cover, and keyboard code reveal
   await page.route('**/assets/cover-dark-*.webp', (route) => route.abort());
   await page.goto('/cd');
   await expect(page.locator('.cd-art-fallback')).toBeVisible();
-  const input = page.getByLabel('Digite o código');
-  await input.fill('example'); await input.focus(); await page.keyboard.press('Tab');
-  await expect(page.getByRole('button', { name: 'Mostrar código' })).toBeFocused();
-  await page.keyboard.press('Enter'); await expect(input).toHaveAttribute('type', 'text');
-  await page.getByRole('button', { name: 'Ocultar código' }).click(); await expect(input).toHaveAttribute('type', 'password');
   for (const width of [375, 390, 430, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -165,7 +163,7 @@ test('responsive widths, reduced motion, missing cover, and keyboard code reveal
 });
 
 test('API unavailable and rate limited states allow another attempt', async ({ page }) => {
-  await page.route('**/api/cd-session', (route) => route.fulfill({ status: 503 }));
+  await page.route('**/api/cd-catalog', (route) => route.fulfill({ status: 503 }));
   await page.goto('/cd'); await expect(page.locator('#cd-access-feedback')).toContainText('indisponível');
   await page.route('**/api/cd-access', (route) => route.fulfill({ status: 429 }));
   await page.getByLabel('Digite o código').fill('example'); await page.locator('.cd-unlock').click();

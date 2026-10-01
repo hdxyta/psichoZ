@@ -54,13 +54,20 @@ describe('collector session and access boundary', () => {
     for (let i = 0; i < 11; i++) statuses.push((await handleCDRequest(request('/api/cd-access', 'POST', '{"code":"wrong"}', { 'CF-Connecting-IP': 'rate-test' }), env)).status);
     expect(statuses.slice(0, 10)).toEqual(Array(10).fill(401)); expect(statuses[10]).toBe(429);
   });
-  it('protects GET and HEAD for every file route before consulting storage', async () => {
+  it('keeps the player public while protecting downloads before consulting storage', async () => {
     const head = vi.fn();
-    for (const method of ['GET', 'HEAD']) for (const path of ['/api/cd-catalog', '/api/cd-stream/track-01', '/api/cd-download/track-01', '/api/cd-download/album', '/api/cd-peaks/track-01']) expect((await handleCDRequest(request(path, method), { ...env, CD_BUCKET: { head, get: vi.fn() } })).status).toBe(401);
-    expect(head).not.toHaveBeenCalled();
+    const get = vi.fn();
+    const fileEnv = { ...env, CD_BUCKET: { head, get } };
+    for (const method of ['GET', 'HEAD']) {
+      expect((await handleCDRequest(request('/api/cd-catalog', method), fileEnv)).status).toBe(200);
+      for (const path of ['/api/cd-stream/track-01', '/api/cd-peaks/track-01']) expect((await handleCDRequest(request(path, method), fileEnv)).status).toBe(404);
+      for (const path of ['/api/cd-download/track-01', '/api/cd-download/album']) expect((await handleCDRequest(request(path, method), fileEnv)).status).toBe(401);
+    }
+    expect(head).toHaveBeenCalledTimes(4);
+    expect(get).not.toHaveBeenCalled();
   });
   it('exposes 14 supplied recordings and a pending 15th slot without disclosing object keys', async () => {
-    const response = await handleCDRequest(request('/api/cd-catalog', 'GET', undefined, { Cookie: await cookie() }), env);
+    const response = await handleCDRequest(request('/api/cd-catalog'), env);
     const catalog = await response.json();
     expect(catalog.tracks).toHaveLength(15); expect(catalog.tracks[14].title).toBeNull();
     for (const track of catalog.tracks.slice(0, 14)) {
