@@ -9,3 +9,5 @@ playwright-report/
 .env.local
 *.log
 .asset-base-check/
+REFS/
+refs/
