@@ -6,7 +6,6 @@ import { tracks, rewards, levels } from './data/catalog';
 import { getVendorGame } from './data/vendor-games';
 import { createProgressStore } from './state/progress';
 import { getAccess } from './state/access';
-import { mountSpectrum } from './ui/spectrum';
 import { createGameEntry } from './ui/game-entry';
 
 const $ = <T extends HTMLElement>(selector: string): T => {
@@ -370,5 +369,4 @@ document.querySelectorAll<HTMLImageElement>('main img').forEach((image) => {
 renderPresave();
 renderCollection();
 handleRoute();
-mountSpectrum($('[data-spectrum]'));
 

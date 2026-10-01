@@ -51,8 +51,6 @@ body::after {
 .site-header nav { gap: 30px; }
 .site-header nav a { color: #d3cec6; font-weight: 700; text-transform: uppercase; letter-spacing: 0; }
 .site-header nav a:hover { color: var(--paper); text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 7px; }
-.header-note { display: inline-flex; gap: 18px; align-items: center; min-height: 44px; padding: 0; background: transparent; color: #b9b7b4; font-size: .72rem; }
-.header-note:hover { color: var(--paper); }
 .hero { background: transparent; border: 0; grid-template-columns: 1fr 1fr; gap: 88px; min-height: 610px; padding: 64px 0 68px; position: relative; }
 .hero::before {
   content: '';
@@ -93,27 +91,6 @@ body::after {
 .album-tabs a { display: inline-flex; align-items: center; min-height: 52px; border-bottom: 3px solid transparent; margin-bottom: -1px; font-size: .78rem; color: var(--muted); font-weight: 800; text-transform: uppercase; }
 .album-tabs a:hover, .album-tabs a[aria-current='location'] { color: var(--paper); border-color: var(--red); }
 
-/* The visual experiment stays bounded and changes only through its controls. */
-.spectrum-section { background: #0c0c0c; border: 2px solid var(--paper); padding: 30px 32px 20px; position: relative; overflow: hidden; }
-.spectrum-section::before { content: ''; position: absolute; inset: 0; background: var(--slash); opacity: .4; pointer-events: none; }
-.spectrum-section > * { position: relative; }
-.spectrum-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.spectrum-heading .section-label { font-size: .69rem; margin-bottom: 10px; color: #a6a4a2; }
-.spectrum-heading h2 { font: 700 2.2rem/1.15 UnifrakturCook, Georgia, serif; margin: 0; }
-.visual-badge { display: inline-flex; align-items: center; gap: 9px; color: #aaa8a5; font-size: .68rem; }
-.visual-badge > span { width: 4px; height: 4px; background: #bcbab7; }
-.spectrum-stage { width: 100%; background: #090909; border-top: 1px solid #f20d1f; }
-#spectrum-art { display: block; width: 100%; height: 300px; overflow: hidden; }
-.spectrum-ridge { stroke-linejoin: round; }
-.spectrum-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 25px; border-top: 1px solid #303030; padding-top: 16px; }
-.spectrum-modes { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-.spectrum-control { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 1px solid #f1eee8; background: #050505; color: #f1eee8; padding: 10px 15px; min-height: 44px; border-radius: 0; font-size: .74rem; }
-.spectrum-control svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; }
-.spectrum-control:hover { color: #fff; border-color: #a6a4a2; }
-.spectrum-control[aria-pressed='true'] { background: var(--red); color: #fff; border-color: #fff; }
-.perspective-control { display: flex; align-items: center; gap: 14px; min-height: 44px; font-size: .72rem; color: #bcbab7; }
-.perspective-control input { width: 115px; min-height: 44px; accent-color: #bcbab7; cursor: pointer; }
-.spectrum-note { margin: 14px 0 0; max-width: none; font-size: .67rem; line-height: 1.6; color: #a6a4a2; }
 
 /* Sections share the page surface; borders separate content rather than frame it. */
 .section-heading { margin-bottom: 26px; }
@@ -169,7 +146,6 @@ dialog.game-dialog { position: fixed; inset: 0; width: 100vw; max-width: none; h
 @media (max-width: 1100px) {
   .wrap { width: calc(100% - 56px); }
   .site-header nav { gap: 24px; }
-  .header-note { display: none; }
   .hero { gap: 45px; min-height: 530px; }
   .hero h1 { font-size: 7rem; }
   .hero-art figcaption { display: block; }
@@ -202,20 +178,6 @@ dialog.game-dialog { position: fixed; inset: 0; width: 100vw; max-width: none; h
   .album-strip > div { padding: 18px 0; font-size: .65rem; gap: 14px 8px; }
   .album-tabs { gap: 0; justify-content: space-between; margin-block: 7px 18px; }
   .album-tabs a { font-size: .64rem; min-height: 48px; text-align: center; padding-inline: 3px; }
-  .spectrum-section { padding: 22px 16px 18px; }
-  .spectrum-heading { display: block; }
-  .spectrum-heading h2 { font-size: 2rem; }
-  .spectrum-heading .section-label { font-size: .66rem; }
-  .visual-badge { margin-top: 14px; font-size: .63rem; }
-  #spectrum-art { height: 235px; width: calc(100% + 20px); margin-inline: -10px; }
-  .spectrum-toolbar { flex-direction: column; align-items: stretch; gap: 12px; }
-  .spectrum-modes { justify-content: center; gap: 6px; flex-wrap: nowrap; }
-  .spectrum-control { padding: 10px 11px; font-size: .65rem; gap: 5px; }
-  .spectrum-control svg { width: 17px; height: 17px; }
-  .spectrum-control[data-spectrum-palette] span { max-width: 60px; }
-  .perspective-control { justify-content: space-between; padding-inline: 7px; }
-  .perspective-control input { width: 53%; }
-  .spectrum-note { font-size: .64rem; }
   .album-section { gap: 42px; }
   .album-section h2, .artist-section h2, .collection-section h2 { font-size: 2.8rem; }
   .artist-section { padding-inline: 0; gap: 24px; }
@@ -225,5 +187,4 @@ dialog.game-dialog { position: fixed; inset: 0; width: 100vw; max-width: none; h
 }
 @media (max-width: 360px) {
   .hero-actions { gap: 12px; }
-  .spectrum-control { padding-inline: 8px; }
 }
