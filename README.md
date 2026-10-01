@@ -70,3 +70,4 @@ O build produz `dist/`, compatível com hospedagem estática. Este trabalho não
 Resultados históricos e ensaios parciais não substituem a verificação final dos 15 jogos. A aprovação editorial e a publicação do álbum permanecem separadas da implementação: título da faixa 15, créditos, links e arquivos ainda dependem do conteúdo fornecido.
 # psichoZ
 # psichoZ
+# psichoZ
