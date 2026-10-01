@@ -3,38 +3,40 @@
   "scope": "Four copied upstream puzzle implementations adapted locally; upstream originals retained outside the build. No remote installer or repository script executed.",
   "games": [
     {
-      "slug": "memory", "trackId": "track-06", "repository": "https://github.com/makzan/HTML5-Games-Examples", "commit": "646cc1dbfdb5238b36798eec3791a868ede9de2b",
-      "upstreamPath": "css3-matching-game", "license": "MIT", "licenseEvidence": "readme.md#license: All game code here is under MIT license.",
+      "slug": "memory",
+      "trackId": "track-06",
+      "repository": "https://github.com/makzan/HTML5-Games-Examples",
+      "commit": "646cc1dbfdb5238b36798eec3791a868ede9de2b",
+      "upstreamPath": "css3-matching-game",
+      "license": "MIT",
+      "licenseEvidence": "readme.md#license: All game code here is under MIT license.",
       "attribution": "Thomas Seng Hin Mak / Makzan, copyright 2010 in original source header",
-      "originalDirectory": "docs/vendor-games/memory", "publicDirectory": "public/games/memory", "publicLicense": "LICENSE-source.md",
+      "originalDirectory": "docs/vendor-games/memory",
+      "publicDirectory": "public/games/memory",
+      "publicLicense": "LICENSE-source.md",
       "copiedRules": "html5games.matchgame.js: deck setup, card selection, comparison and matching logic. jquery-1.6.min.js is copied byte-for-byte with its original MIT/GPL alternative notice; MIT-LICENSE from jquery/jquery tag 1.6 is included.",
       "changes": "Native button cards, newly drawn typographic symbols, responsive grid, removal completion without WebKit-only events, 120-second deadline and shared victory/pause bridge. Original gameover/save/load storage bodies removed; originals retained in docs. No card sprite, external font, remote URL or extra storage copied into the running game.",
-      "controls": "Mouse click, touch, Tab and Enter on card buttons.", "victory": "All six actual card pairs matched and removed.",
+      "controls": "Mouse click, touch, Tab and Enter on card buttons.",
+      "victory": "All six actual card pairs matched and removed.",
       "assets": "No upstream image or font used; glyphs and CSS are local. jQuery 1.6 license text sourced from https://raw.githubusercontent.com/jquery/jquery/1.6/MIT-LICENSE.txt."
     },
     {
-      "slug": "minesweeper", "trackId": "track-11", "repository": "https://github.com/saiuttejr/GameBox", "commit": "8fd141127a7ad2c5fb718d5a9e4068c5f9af0d4b",
-      "upstreamPath": "minesweeper", "license": "MIT", "licenseEvidence": "LICENSE.md", "attribution": "Copyright (c) 2024 SAI-UTTEJ-R",
-      "originalDirectory": "docs/vendor-games/minesweeper", "publicDirectory": "public/games/minesweeper", "publicLicense": "LICENSE.md",
-      "copiedRules": "minesweeper/script.js copied as game.js: mine placement, safe first reveal, neighbor counts, recursive reveal, flagging and all-safe-cells victory.",
-      "changes": "Board set to 8x8 with eight mines; local CSS/HTML skin; touch flag toggle, accessible labels, focus restoration, shared report/pause hooks. Synthesized audio muted; Google Fonts and unrelated GameBox navigation/code-panel omitted.",
-      "controls": "Click/tap/Enter reveal; flag mode button or right click marks a suspect cell.", "victory": "All 56 non-mine cells revealed; marking flags alone does not win.", "assets": "No upstream image, sound or font used."
-    },
-    {
-      "slug": "sokoban", "trackId": "track-13", "repository": "https://github.com/taniarascia/sokoban", "commit": "23ee71c46566506d85445130c78dfae2b6347792",
-      "upstreamPath": ".", "license": "MIT", "licenseEvidence": "LICENSE", "attribution": "Copyright (c) 2021 Tania Rascia",
-      "originalDirectory": "docs/vendor-games/sokoban", "publicDirectory": "public/games/sokoban", "publicLicense": "LICENSE",
-      "copiedRules": "Sokoban.js and utils.js copied byte-for-byte; constants.js retains definitions and substitutes an introductory map. Upstream movement, pushing, target restoration and rendering traversal remain active.",
-      "changes": "New short three-box map, ink canvas drawing through paintCell override, keyboard/directional buttons/swipe, undo snapshots, and victory bridge from the actual count of boxes on goals. No external assets.",
-      "controls": "Arrows/WASD, touch direction buttons, or swipe; Undo recovers the previous legal move.", "victory": "Three boxes occupy the three target positions.", "assets": "Only Canvas primitives from the local adaptation."
-    },
-    {
-      "slug": "2048", "trackId": "track-15", "repository": "https://github.com/gabrielecirulli/2048", "commit": "478b6ec346e3787f589e4af751378d06ded4cbbc",
-      "upstreamPath": "js", "license": "MIT", "licenseEvidence": "LICENSE.txt", "attribution": "Copyright (c) 2014 Gabriele Cirulli",
-      "originalDirectory": "docs/vendor-games/2048", "publicDirectory": "public/games/2048", "publicLicense": "LICENSE.txt",
+      "slug": "2048",
+      "trackId": "track-15",
+      "repository": "https://github.com/gabrielecirulli/2048",
+      "commit": "478b6ec346e3787f589e4af751378d06ded4cbbc",
+      "upstreamPath": "js",
+      "license": "MIT",
+      "licenseEvidence": "LICENSE.txt",
+      "attribution": "Copyright (c) 2014 Gabriele Cirulli",
+      "originalDirectory": "docs/vendor-games/2048",
+      "publicDirectory": "public/games/2048",
+      "publicLicense": "LICENSE.txt",
       "copiedRules": "grid.js, tile.js, keyboard_input_manager.js, html_actuator.js and game_manager.js copied; original slide/merge, collision, random tile creation and game-over rules remain active.",
       "changes": "Target is explicitly 256 for a short album challenge, instead of upstream 2048. Local ink CSS/HTML, touch direction buttons, Portuguese result, in-memory session storage and shared progress/pause bridge. Upstream fonts, images, analytics and persistent storage module not served.",
-      "controls": "Arrows/WASD, swipe, or directional buttons.", "victory": "A legal merge creates a tile of value 256; track15 editorial title remains pending.", "assets": "No upstream image or font used."
+      "controls": "Arrows/WASD, swipe, or directional buttons.",
+      "victory": "A legal merge creates a tile of value 256; track15 editorial title remains pending.",
+      "assets": "No upstream image or font used."
     }
   ]
 }

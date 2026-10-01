@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brawler · psicoZ</title>
+    <link rel="stylesheet" href="../theme.css" />
+    <link rel="stylesheet" href="skin.css" />
+  </head>
+  <body>
+    <main class="brawler-page">
+      <section class="brawler-hud" aria-label="Status do jogo">
+        <strong>Silêncio // Ringue da capa</strong>
+        <span data-game-status>Escolha um personagem da capa.</span>
+      </section>
+      <section class="fighter-select" data-select aria-label="Escolha de personagem">
+        <button type="button" data-fighter="wing"><strong>Anjo Rasgado</strong><span>Alcance e pulo alto</span></button>
+        <button type="button" data-fighter="nun"><strong>Freira Armada</strong><span>Pesada e resistente</span></button>
+        <button type="button" data-fighter="eye"><strong>Olho Febril</strong><span>Rápido e agressivo</span></button>
+      </section>
+      <canvas id="brawler-canvas" width="960" height="540" aria-label="Arena plataforma de luta de Silêncio"></canvas>
+      <div class="brawler-controls" aria-label="Controles de toque">
+        <button type="button" data-hold="KeyA">←</button>
+        <button type="button" data-hold="KeyD">→</button>
+        <button type="button" data-tap="Space">Pulo</button>
+        <button type="button" data-tap="KeyJ">Ataque</button>
+        <button type="button" data-tap="KeyK">Especial</button>
+      </div>
+      <p class="brawler-tip">PC: A/D ou setas movem, Espaço pula, J ataca, K especial. Mobile: botões e toque na arena para virar.</p>
+    </main>
+    <script src="../shared.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

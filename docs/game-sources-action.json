@@ -1,22 +1,41 @@
 [
   {
-    "game": "snake",
-    "license": "MIT",
+    "game": "zombie",
+    "license": "Projeto local; referencia externa apenas de genero",
     "excludedAssets": [],
-    "target": 6,
-    "repository": "https://github.com/varshney-himanshu/snake-game-js",
-    "condition": "Six real food pickups through upstream snake collisions",
-    "commit": "f07a620bf203b9a62837cc154226e72bb324d4e3",
-    "entry": "public/games/snake/index.html",
+    "target": 4,
+    "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+    "condition": "Survive four real zombie rounds; choose an upgrade card between rounds",
+    "commit": null,
+    "entry": "public/games/zombie/index.html",
     "changes": [
-      "Reuse original entity/game/input/renderer modules",
-      "psicoZ palette and16x16court",
-      "Parent-owned progression; score storage removed",
-      "Swipe and on-screen directions; bridge reports actual score",
-      "Draw snake head after its body so the original grow overlap cannot hide it"
+      "Local Canvas top-down arena for Aditivo",
+      "Keyboard movement plus mouse/touch aim and firing",
+      "Zombie horde spawning from screen edges with collision damage",
+      "Reward cards between rounds improve fire rate, damage, movement, healing, dash or piercing",
+      "Parent-owned progression via PsicoZ.report; no standalone storage"
     ],
     "trackId": "track-02",
-    "upstream": "docs/vendor-games/varshney-himanshu/snake-game-js"
+    "upstream": null
+  },
+  {
+    "game": "brawler",
+    "license": "Projeto local; referencia externa apenas de genero",
+    "excludedAssets": [],
+    "target": 3,
+    "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+    "condition": "Win three platform fighting rounds through real attacks and knockback",
+    "commit": null,
+    "entry": "public/games/brawler/index.html",
+    "changes": [
+      "Local Canvas platform fighter arena for Silêncio",
+      "Three procedural cover-inspired fighters: winged figure, armed nun and fever eye",
+      "Keyboard, pointer and touch controls for movement, jump, attack and special",
+      "Enemy AI, platform collisions, hitboxes, knockback and health bars",
+      "Parent-owned progression via PsicoZ.report; no standalone storage"
+    ],
+    "trackId": "track-03",
+    "upstream": null
   },
   {
     "game": "pong",
@@ -110,5 +129,81 @@
     ],
     "trackId": "track-10",
     "upstream": "docs/vendor-games/jakesgordon/javascript-breakout"
+  },
+  {
+    "game": "riskcards",
+    "license": "Projeto local; referencia externa apenas de genero",
+    "excludedAssets": [],
+    "target": 3,
+    "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+    "condition": "Win three lane combat assaults by placing real cards and resolving battles",
+    "commit": null,
+    "entry": "public/games/riskcards/index.html",
+    "changes": [
+      "Local tactical card battler for Assumindo o Risco",
+      "Three-card hand, lane placement and troop cards with soldier counts",
+      "Fictional psicoZ street archetypes such as dealer, smoker, crackhead and gunman",
+      "Lane combat resolution with traits, attack, resistance and enemy waves",
+      "Parent-owned progression via PsicoZ.report; no standalone storage"
+    ],
+    "trackId": "track-11",
+    "upstream": null
+  },
+  {
+    "game": "redterraria",
+    "license": "Projeto local; referencia externa apenas de genero",
+    "excludedAssets": [],
+    "target": 5,
+    "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+    "condition": "Mine red ore and activate five real sigils in the tile world",
+    "commit": null,
+    "entry": "public/games/redterraria/index.html",
+    "changes": [
+      "Local Canvas side-scrolling block sandbox for PsicoZ",
+      "Tile world with dirt, stone, red ore and sigils",
+      "Keyboard, pointer and touch controls for moving, jumping, mining and building",
+      "Camera, collision, particles and real resource cost for sigil activation",
+      "Parent-owned progression via PsicoZ.report; no standalone storage"
+    ],
+    "trackId": "track-09",
+    "upstream": null
+  },
+  {
+    "game": "greyride",
+    "license": "Projeto local; referencia externa apenas de genero",
+    "excludedAssets": [],
+    "target": 8,
+    "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+    "condition": "Reach the shared ending through eight real choice clicks",
+    "commit": null,
+    "entry": "public/games/greyride/index.html",
+    "changes": [
+      "Local interactive car narrative for Cidade Cinza",
+      "Fixed front-camera car and character with scrolling city background",
+      "Branching choices inside the car, on the road and at the ending",
+      "Three main route moods converge into the same final corner",
+      "Parent-owned progression via PsicoZ.report; no standalone storage"
+    ],
+    "trackId": "track-13",
+    "upstream": null
+  },
+  {
+    "game": "sakurablade",
+    "license": "Projeto local; referencia externa apenas de genero",
+    "excludedAssets": [],
+    "target": 6,
+    "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+    "condition": "Complete six real slash actions so the wall strokes reveal psicoZ",
+    "commit": null,
+    "entry": "public/games/sakurablade/index.html",
+    "changes": [
+      "Local first-person katana scene for Não Posso Errar",
+      "Static samurai guard pose with falling sakura petals and wall target",
+      "Pointer, keyboard and touch buttons create wall slashes",
+      "Six slash groups compose the album name psicoZ as the hidden final image",
+      "Parent-owned progression via PsicoZ.report; no standalone storage"
+    ],
+    "trackId": "track-14",
+    "upstream": null
   }
 ]

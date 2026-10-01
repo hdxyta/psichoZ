@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assumindo o Risco · Cartas</title>
+    <link rel="stylesheet" href="../theme.css" />
+    <link rel="stylesheet" href="skin.css" />
+  </head>
+  <body>
+    <main class="risk-page">
+      <header class="risk-hud" aria-label="Status do jogo">
+        <strong>Assumindo o Risco // baralho de rua</strong>
+        <span data-game-status>Escolha uma carta e uma lane.</span>
+      </header>
+      <section class="risk-board" aria-label="Mesa de combate">
+        <canvas id="risk-canvas" width="960" height="540" aria-label="Campo tático de cartas e tropas"></canvas>
+        <div class="lane-buttons" aria-label="Posicionar carta">
+          <button type="button" data-lane="0">Lane 1</button>
+          <button type="button" data-lane="1">Lane 2</button>
+          <button type="button" data-lane="2">Lane 3</button>
+        </div>
+      </section>
+      <section class="hand" data-hand aria-label="Mão com três cartas"></section>
+      <div class="actions">
+        <button type="button" data-action="resolve">Resolver turno</button>
+        <button type="button" data-action="redraw">Trocar mão</button>
+      </div>
+      <p class="risk-tip">Jogue uma carta em uma lane. Cada carta invoca uma tropa inteira. Vence quem domina 3 assaltos.</p>
+    </main>
+    <script src="../shared.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

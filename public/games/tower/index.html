@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tower defense · psicoZ</title>
+    <link rel="stylesheet" href="../theme.css">
+    <link rel="stylesheet" href="skin.css">
+  </head>
+  <body>
+    <main class="tower-page">
+      <section class="tower-hud" aria-label="Status do jogo">
+        <p class="objective">Defenda a torre: construa sentinelas nos sigilos e sobreviva a 3 ondas.</p>
+        <p data-game-status>ONDAS 0 / 5 · Toque em um sigilo para erguer uma torre.</p>
+      </section>
+      <div class="canvas-wrap">
+        <canvas id="tower-canvas" width="960" height="540" aria-label="Tower defense de Woodstock"></canvas>
+      </div>
+      <div class="tower-controls" aria-label="Ações">
+        <button type="button" data-build="needle">Torre agulha · 20</button>
+        <button type="button" data-build="chain">Corrente lenta · 35</button>
+        <button type="button" data-action="wave">Chamar onda</button>
+      </div>
+    </main>
+    <script src="../shared.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

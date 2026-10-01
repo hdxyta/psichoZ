@@ -8,20 +8,20 @@ As rotas continuam de `#/jogar/track-01` a `#/jogar/track-15`, com `level-01` a 
 
 | Faixa | Título da contracapa | Jogo adaptado | Objetivo real da tentativa |
 | --- | --- | --- | --- |
-| 01 | Woodstock | Labirinto / The Lost Path | Encontrar a saída do labirinto 13 × 13. |
-| 02 | Aditivo | Snake | Recolher seis alimentos sem colidir. |
-| 03 | Silêncio | Flappy Bird | Atravessar oito passagens sem bater. |
+| 01 | Woodstock | Tower defense / psicoZ | Construir torres em sigilos e sobreviver a três ondas. |
+| 02 | Aditivo | Zumbi top-down / psicoZ | Sobreviver a quatro rounds e escolher cartas de melhoria entre ondas. |
+| 03 | Silêncio | Arena fighter / psicoZ | Escolher um personagem da capa e derrubar três oponentes em rounds de plataforma. |
 | 04 | Químico | Pong | Marcar três pontos antes do adversário. |
 | 05 | Inverso | Tetris | Completar duas linhas antes de atingir o teto. |
 | 06 | Conhecida Ilusão | Memória / CSS3 Matching | Encontrar os seis pares. |
 | 07 | Não Me Dizem Nada | JavaScript Racer | Completar uma volta antes de acumular cinco colisões. |
 | 08 | Sublime | Untangle | Desembaralhar duas redes sem cruzamentos e sem sobrepor os nós. |
-| 09 | PsicoZ | Asteroids | Destruir uma onda completa de asteroides. |
+| 09 | PsicoZ | Sandbox de blocos / psicoZ | Minerar minério vermelho e acender cinco sigilos em um mundo lateral. |
 | 10 | Psicose feat Nobre | Breakout | Quebrar 12 blocos antes de perder três vidas. |
-| 11 | Assumindo o Risco | Campo minado | Revelar as 56 casas seguras do tabuleiro 8 × 8, com oito minas. |
+| 11 | Assumindo o Risco | Card battler tático / psicoZ | Posicionar cartas que invocam tropas e vencer três assaltos em lanes. |
 | 12 | Acapella | Space Invaders | Eliminar a formação de 18 invasores. |
-| 13 | Cidade Cinza | Sokoban | Empurrar três caixas para os três alvos. |
-| 14 | Não Posso Errar | Simon | Repetir quatro rodadas de sinais sem errar. |
+| 13 | Cidade Cinza | Narrativa de carro / psicoZ | Fazer escolhas dentro do carro, no caminho e no final até alcançar a mesma esquina. |
+| 14 | Não Posso Errar | FPS de katana / psicoZ | Fazer seis cortes na parede até os traços revelarem psicoZ. |
 | 15 | Título a anunciar | 2048, desafio 256 | Criar um bloco 256 por fusões válidas. |
 
 Cada tentativa tem tempo máximo definido no catálogo. Os limites, mapas e metas foram reduzidos para sessões curtas. Dificuldade, arte adicional e teste em aparelhos físicos continuam sujeitos ao refinamento.
@@ -59,4 +59,11 @@ Nenhuma música final do álbum foi publicada. Os exemplos adaptados não depend
 Validação deve combinar typecheck, testes de catálogo/acesso/persistência, build e navegador. Um teste de store ou mensagem sintética não comprova vitória jogada. O script `scripts/verify-vendor-puzzles.mjs` registra verificações diretas de quatro jogos, incluindo vitórias por ações da interface em memória e Sokoban; o escopo e suas limitações estão em [game-sources.md](game-sources.md#verificação-local-dos-quatro-puzzles).
 
 O [relatório final de 30/09](verification-github-games-2026-09-30.md) registra build, 173 testes unitários, 84 E2E, a repetição final de 34 cenários, inspeção visual e carregamento. Oito jogos tiveram vitória completa verificada; sete tiveram carregamento e controles verificados, sem partida completa até a vitória. Toque emulado e screenshots não comprovam funcionamento em aparelho físico. Este trabalho não executa deploy, upload ou publicação dos masters.
+
+
+
+
+
+
+
 

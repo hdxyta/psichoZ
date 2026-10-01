@@ -102,7 +102,13 @@ describe('catalog with one game for each of the 15 tracks', () => {
     expect(VENDOR_GAMES.map((config) => config.trackId)).toEqual(TRACK_IDS);
     expect(new Set(VENDOR_GAMES.map((config) => config.slug)).size).toBe(15);
     expect(new Set(VENDOR_GAMES.map((config) => config.genre)).size).toBe(15);
-    expect(getVendorGame('track-01')?.slug).toBe('maze');
+    expect(getVendorGame('track-01')?.slug).toBe('tower');
+    expect(getVendorGame('track-02')?.slug).toBe('zombie');
+    expect(getVendorGame('track-03')?.slug).toBe('brawler');
+    expect(getVendorGame('track-09')?.slug).toBe('redterraria');
+    expect(getVendorGame('track-11')?.slug).toBe('riskcards');
+    expect(getVendorGame('track-13')?.slug).toBe('greyride');
+    expect(getVendorGame('track-14')?.slug).toBe('sakurablade');
     expect(getVendorGame('track-15')?.slug).toBe('2048');
     expect(getVendorGame('track-99')).toBeUndefined();
     expect(getVendorGame('../track-02')).toBeUndefined();
@@ -124,4 +130,9 @@ describe('catalog with one game for each of the 15 tracks', () => {
     expect(album).toMatchObject({ id: 'psicoz', title: 'psicoZ', artist: 'YTA', releaseDate: '2026-10-31T00:00:00-03:00', releaseStatus: 'pre-release' });
   });
 });
+
+
+
+
+
 

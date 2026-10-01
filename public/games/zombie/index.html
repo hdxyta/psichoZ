@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Zumbi · psicoZ</title>
+    <link rel="stylesheet" href="../theme.css">
+    <link rel="stylesheet" href="skin.css">
+  </head>
+  <body>
+    <main class="zombie-page">
+      <section class="zombie-hud" aria-label="Status do jogo">
+        <p class="objective">Sobreviva aos rounds. Entre ondas, escolha uma carta para melhorar seu artifício.</p>
+        <p data-game-status>ROUND 0 / 4 · WASD, setas ou joystick. Mira no mouse/toque.</p>
+      </section>
+      <div class="canvas-wrap">
+        <canvas id="zombie-canvas" width="960" height="540" aria-label="Arena top-down de zumbis"></canvas>
+      </div>
+      <div class="zombie-controls" aria-label="Movimento">
+        <button type="button" data-key="KeyW">↑</button>
+        <button type="button" data-key="KeyA">←</button>
+        <button type="button" data-key="KeyS">↓</button>
+        <button type="button" data-key="KeyD">→</button>
+        <button type="button" data-action="dash">Dash</button>
+      </div>
+      <section class="cards" data-cards hidden aria-label="Escolha uma carta de recompensa"></section>
+    </main>
+    <script src="../shared.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

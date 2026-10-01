@@ -107,6 +107,11 @@ async function prepare(page, slug) {
     await page.locator(`[data-card-index="${first.index}"]`).click();
     await page.locator(`[data-card-index="${second.index}"]`).click();
     await advance(page, 250);
+  } else if (slug === 'riskcards') {
+    await page.locator('[data-lane="0"]').click();
+    await advance(page, 80);
+    await page.locator('[data-lane="1"]').click();
+    await advance(page, 80);
   } else if (slug === 'minesweeper') {
     await page.locator('.ms-cell').nth(27).click(); await advance(page, 32);
     await page.locator('#flag-mode').click();
@@ -123,6 +128,11 @@ async function prepare(page, slug) {
       await advance(page, 120);
     }
     if (await page.evaluate(() => gameOver)) throw new Error('Flappy capture reached defeat');
+  } else if (slug === 'brawler') {
+    await page.locator('[data-fighter="wing"]').click();
+    await advance(page, 220);
+    await page.keyboard.press('KeyD'); await advance(page, 80);
+    await page.keyboard.press('KeyJ'); await advance(page, 180);
   } else if (slug === 'racer') {
     await page.keyboard.down('ArrowUp'); await advance(page, 2600); await page.keyboard.up('ArrowUp');
   } else if (slug === 'breakout') {
@@ -131,10 +141,20 @@ async function prepare(page, slug) {
     await page.keyboard.down('ArrowUp'); await advance(page, 180); await page.keyboard.up('ArrowUp'); await advance(page, 600);
   } else if (slug === 'invaders') {
     await page.keyboard.down('Space'); await advance(page, 750); await page.keyboard.up('Space');
+  } else if (slug === 'redterraria') {
+    await page.keyboard.down('ArrowRight'); await advance(page, 800); await page.keyboard.up('ArrowRight');
+    await page.keyboard.press('Space'); await advance(page, 250);
   } else if (slug === 'asteroids') {
     await advance(page, 750); await page.keyboard.down('Space'); await advance(page, 170); await page.keyboard.up('Space');
+  } else if (slug === 'greyride') {
+    await page.locator('[data-choices] button').first().click();
+    await advance(page, 260);
+    await page.locator('[data-choices] button').first().click();
+    await advance(page, 260);
   } else if (slug === 'sokoban') {
     for (const key of ['ArrowRight', 'ArrowRight', 'ArrowDown']) await press(page, key);
+  } else if (slug === 'sakurablade') {
+    for (const key of ['1', '2', '3']) { await page.keyboard.press(key); await advance(page, 120); }
   } else if (slug === 'simon') {
     for (let n = 0; n < 25 && !(await page.locator('.simon-button.active').count()); n++) await advance(page, 50);
   } else await advance(page, 200);
@@ -183,3 +203,13 @@ await writeFile(manifestPath, JSON.stringify({
   games: merged,
 }, null, 2) + '\n');
 console.log(`${merged.length} thumbnails, ${(totalBytes / 1024).toFixed(1)} KiB total. Manifest: docs/game-thumbnails.json`);
+
+
+
+
+
+
+
+
+
+

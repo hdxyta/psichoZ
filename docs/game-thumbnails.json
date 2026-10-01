@@ -2,47 +2,51 @@
   "method": "Playwright locator screenshot of real local gameplay; CSS framing only, no raster editing or game-state injection.",
   "command": "node scripts/capture-game-thumbnails.mjs",
   "jpegQuality": 78,
-  "totalBytes": 338839,
+  "framingTarget": [
+    720,
+    450
+  ],
+  "totalBytes": 317920,
   "notes": "Only the game field is captured. Native markings drawn into a game canvas are retained. Browser subpixel framing can add one pixel to an edge; recorded dimensions come from each JPEG header. Randomized boards vary between captures. Source license and adaptation details are recorded in docs/game-sources.md and sibling manifests.",
   "games": [
     {
       "trackId": "track-01",
-      "slug": "maze",
-      "repository": "https://github.com/wrksp8/TheLostPath",
-      "localGame": "http://127.0.0.1:4173/games/maze/index.html",
+      "slug": "tower",
+      "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+      "localGame": "http://127.0.0.1:4173/games/tower/index.html",
       "selector": "canvas",
-      "asset": "public/assets/game-thumbs/maze.jpg",
-      "width": 450,
-      "height": 451,
-      "bytes": 43764,
-      "sha256": "0847c14fbb7b1282fd5780b8d11a3bcdc683096fe28a15b61bd35d366066a21f",
-      "capturedAt": "2026-10-01T00:29:10.387Z"
+      "asset": "public/assets/game-thumbs/tower.jpg",
+      "width": 720,
+      "height": 406,
+      "bytes": 27082,
+      "sha256": "4ef615c70c791a01ce6625c30d09fb886135c7081779ff61b9d37c775fba51ee",
+      "capturedAt": "2026-10-01T19:39:14.625Z"
     },
     {
       "trackId": "track-02",
-      "slug": "snake",
-      "repository": "https://github.com/varshney-himanshu/snake-game-js",
-      "localGame": "http://127.0.0.1:4173/games/snake/index.html",
+      "slug": "zombie",
+      "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+      "localGame": "http://127.0.0.1:4173/games/zombie/index.html",
       "selector": "canvas",
-      "asset": "public/assets/game-thumbs/snake.jpg",
-      "width": 450,
-      "height": 450,
-      "bytes": 15304,
-      "sha256": "895f3aa259ae2cf9b802ee35f5f3f0bebdd3a9fd4529c70e413cfb3b99a62649",
-      "capturedAt": "2026-10-01T00:30:49.144Z"
+      "asset": "public/assets/game-thumbs/zombie.jpg",
+      "width": 720,
+      "height": 406,
+      "bytes": 14588,
+      "sha256": "bb167b99822459be37f3da29f7faa2a9d67759063a00d8e26038c3b4fdc6f651",
+      "capturedAt": "2026-10-01T19:39:15.152Z"
     },
     {
       "trackId": "track-03",
-      "slug": "flappy",
-      "repository": "https://github.com/pyforgedev/flappy-bird",
-      "localGame": "http://127.0.0.1:4173/games/flappy/index.html",
+      "slug": "brawler",
+      "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+      "localGame": "http://127.0.0.1:4173/games/brawler/index.html",
       "selector": "canvas",
-      "asset": "public/assets/game-thumbs/flappy.jpg",
-      "width": 256,
-      "height": 451,
-      "bytes": 27231,
-      "sha256": "b8cccfd33f66524c72156d63dbd72eb6586d96236864b1601c017aaab80d4dee",
-      "capturedAt": "2026-10-01T00:30:53.362Z"
+      "asset": "public/assets/game-thumbs/brawler.jpg",
+      "width": 720,
+      "height": 405,
+      "bytes": 18685,
+      "sha256": "79f011ecc02cd4910e9169e0ea58a1f75f553b7791ce2665fd7671143ad33883",
+      "capturedAt": "2026-10-01T19:46:33.733Z"
     },
     {
       "trackId": "track-04",
@@ -111,16 +115,16 @@
     },
     {
       "trackId": "track-09",
-      "slug": "asteroids",
-      "repository": "https://github.com/dmcinnes/HTML5-Asteroids",
-      "localGame": "http://127.0.0.1:4173/games/asteroids/index.html",
+      "slug": "redterraria",
+      "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+      "localGame": "http://127.0.0.1:4173/games/redterraria/index.html",
       "selector": "canvas",
-      "asset": "public/assets/game-thumbs/asteroids.jpg",
-      "width": 718,
-      "height": 451,
-      "bytes": 8352,
-      "sha256": "dae071cbb14699d8fdca923100efc2ea375039ae5798efa93b1c7f699da5af26",
-      "capturedAt": "2026-10-01T00:29:20.824Z"
+      "asset": "public/assets/game-thumbs/redterraria.jpg",
+      "width": 720,
+      "height": 406,
+      "bytes": 23508,
+      "sha256": "10ed62c6547d25abf3d10cb3ed0e3dbe9aec54853bec7678567e2f7f952be324",
+      "capturedAt": "2026-10-01T20:07:51.028Z"
     },
     {
       "trackId": "track-10",
@@ -137,16 +141,16 @@
     },
     {
       "trackId": "track-11",
-      "slug": "minesweeper",
-      "repository": "https://github.com/saiuttejr/GameBox",
-      "localGame": "http://127.0.0.1:4173/games/minesweeper/index.html",
-      "selector": "#grid",
-      "asset": "public/assets/game-thumbs/minesweeper.jpg",
-      "width": 440,
-      "height": 441,
-      "bytes": 29197,
-      "sha256": "7d2b72e4f5935763db9035aa3e1f3bf462b5b89512b38e8cbe292b7576163d06",
-      "capturedAt": "2026-10-01T00:29:22.138Z"
+      "slug": "riskcards",
+      "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+      "localGame": "http://127.0.0.1:4173/games/riskcards/index.html",
+      "selector": "canvas",
+      "asset": "public/assets/game-thumbs/riskcards.jpg",
+      "width": 720,
+      "height": 406,
+      "bytes": 26830,
+      "sha256": "a0debb46fe8147690c9bc4e3f91f636a8d78f6fe2e2d914bf9fd70d5cdaa09bf",
+      "capturedAt": "2026-10-01T19:58:19.394Z"
     },
     {
       "trackId": "track-12",
@@ -163,29 +167,29 @@
     },
     {
       "trackId": "track-13",
-      "slug": "sokoban",
-      "repository": "https://github.com/taniarascia/sokoban",
-      "localGame": "http://127.0.0.1:4173/games/sokoban/index.html",
+      "slug": "greyride",
+      "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+      "localGame": "http://127.0.0.1:4173/games/greyride/index.html",
       "selector": "canvas",
-      "asset": "public/assets/game-thumbs/sokoban.jpg",
-      "width": 380,
-      "height": 428,
-      "bytes": 26416,
-      "sha256": "547dc3e4140f23a4ee81f6870385beb0381ac40e25212da7bff0ec140ddeb3eb",
-      "capturedAt": "2026-10-01T00:29:23.327Z"
+      "asset": "public/assets/game-thumbs/greyride.jpg",
+      "width": 644,
+      "height": 363,
+      "bytes": 30596,
+      "sha256": "b4a0ad3e3193d8d6cfe8f08210ce22519b2a99effa7af98c078ea95bd3f4f18d",
+      "capturedAt": "2026-10-01T20:11:52.630Z"
     },
     {
       "trackId": "track-14",
-      "slug": "simon",
-      "repository": "https://github.com/d4vucat/Simon-Game",
-      "localGame": "http://127.0.0.1:4173/games/simon/index.html",
-      "selector": ".simon-board",
-      "asset": "public/assets/game-thumbs/simon.jpg",
-      "width": 480,
-      "height": 347,
-      "bytes": 31248,
-      "sha256": "b3f337b469e2df407b3d14705c5a6933c4072cc9d59514ac97b7b52e4c302e0e",
-      "capturedAt": "2026-10-01T00:29:23.696Z"
+      "slug": "sakurablade",
+      "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
+      "localGame": "http://127.0.0.1:4173/games/sakurablade/index.html",
+      "selector": "canvas",
+      "asset": "public/assets/game-thumbs/sakurablade.jpg",
+      "width": 720,
+      "height": 406,
+      "bytes": 19304,
+      "sha256": "7777af437f1caac28e3d1321d7e0cd8d217a262f87ea5720d71aeebe0e2a8ccc",
+      "capturedAt": "2026-10-01T20:19:19.717Z"
     },
     {
       "trackId": "track-15",
@@ -200,9 +204,5 @@
       "sha256": "7879768e60cb859aa3167e1273b0a5cc5988ea746c7fcd0816003c2d74590b9c",
       "capturedAt": "2026-10-01T00:29:25.178Z"
     }
-  ],
-  "framingTarget": [
-    720,
-    450
   ]
 }

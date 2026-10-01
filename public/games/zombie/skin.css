@@ -1,0 +1,22 @@
+.zombie-page{position:relative;width:min(1100px,100%);min-height:100dvh;margin:auto;padding:12px;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:10px}
+.zombie-hud{display:flex;align-items:center;justify-content:space-between;gap:18px;border:2px solid var(--paper);border-left:9px solid var(--red);background:#050505e8;padding:10px 14px;box-shadow:5px 5px 0 #000}
+.objective{margin:0;font-weight:700;font-size:13px}
+[data-game-status]{margin:0;color:#d9c5ca;text-align:right;font:12px/1.45 monospace}
+.canvas-wrap{min-height:0;display:grid;place-items:center}
+#zombie-canvas{width:min(100%,calc((100dvh - 142px)*16/9));max-height:100%;aspect-ratio:16/9;border:2px solid var(--paper);background:#080808;box-shadow:8px 8px 0 var(--red),12px 12px 0 #000}
+.zombie-controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding-bottom:4px}
+.cards{position:absolute;inset:auto 24px 82px 24px;z-index:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cards[hidden]{display:none}
+.cards button{display:block;min-height:112px;padding:14px;text-align:left;background:#050505f2;color:var(--paper);border:2px solid var(--paper);border-left:8px solid var(--red);box-shadow:6px 6px 0 #000}
+.cards strong{display:block;margin-bottom:8px;color:#fff;font:700 16px/1.2 Georgia,serif}
+.cards span{display:block;color:#d8c7cb;font:12px/1.45 Arial,sans-serif}
+@media(max-width:620px){
+  .zombie-page{padding:8px;gap:8px}
+  .zombie-hud{display:block;padding:9px 10px}
+  .objective{font-size:12px}
+  [data-game-status]{text-align:left;font-size:11px}
+  #zombie-canvas{width:100%;box-shadow:5px 5px 0 var(--red),8px 8px 0 #000}
+  .zombie-controls button{flex:1 1 54px;font-size:12px;padding-inline:8px}
+  .cards{inset:auto 10px 74px 10px;grid-template-columns:1fr}
+  .cards button{min-height:78px}
+}
