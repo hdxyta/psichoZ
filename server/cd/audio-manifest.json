@@ -1,0 +1,282 @@
+{
+  "track-01": {
+    "sourceFilename": "WOODSTOCK - YTA  (Prodby,MB).wav",
+    "sourceSha256": "8286807aa7056ae9c5ad1c619034a62baa76f2f9f2d30c5182e878bc3c8427eb",
+    "durationSeconds": 145.036,
+    "stream": {
+      "key": "stream/track-01-8286807aa705.mp3",
+      "filename": "YTA-PsicoZ-01.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-01-8286807aa705.wav",
+      "filename": "YTA-PsicoZ-01.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-01-8286807aa705.json",
+      "filename": "track-01.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-02": {
+    "sourceFilename": "ADITIVO - YTA  (Prodby,MB).wav",
+    "sourceSha256": "efd52a72997799fd31380710ff60a2a7bae49204be09a3654d84a38e35006627",
+    "durationSeconds": 169.412,
+    "stream": {
+      "key": "stream/track-02-efd52a729977.mp3",
+      "filename": "YTA-PsicoZ-02.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-02-efd52a729977.wav",
+      "filename": "YTA-PsicoZ-02.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-02-efd52a729977.json",
+      "filename": "track-02.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-03": {
+    "sourceFilename": "SILENCIO - YTA  (Prodby,MB).wav",
+    "sourceSha256": "05980db78e32e71ce2ea973e829ead766a6b1a048c6510669bf77fc7435016bd",
+    "durationSeconds": 220.804,
+    "stream": {
+      "key": "stream/track-03-05980db78e32.mp3",
+      "filename": "YTA-PsicoZ-03.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-03-05980db78e32.wav",
+      "filename": "YTA-PsicoZ-03.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-03-05980db78e32.json",
+      "filename": "track-03.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-04": {
+    "sourceFilename": "QUIMICO - YTA  (Prodby,MB).wav",
+    "sourceSha256": "789f0d2f33c2c2df0e156d4948a915a63a89d511df722cb9df588e99f46f398e",
+    "durationSeconds": 123.745,
+    "stream": {
+      "key": "stream/track-04-789f0d2f33c2.mp3",
+      "filename": "YTA-PsicoZ-04.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-04-789f0d2f33c2.wav",
+      "filename": "YTA-PsicoZ-04.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-04-789f0d2f33c2.json",
+      "filename": "track-04.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-05": {
+    "sourceFilename": "IN VERSO - YTA  (Prodby,MB).wav",
+    "sourceSha256": "afb7be9647a640ab95a0965fc65b1629adebc4ea520ef66ff53194741eaf4c7b",
+    "durationSeconds": 166.154,
+    "stream": {
+      "key": "stream/track-05-afb7be9647a6.mp3",
+      "filename": "YTA-PsicoZ-05.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-05-afb7be9647a6.wav",
+      "filename": "YTA-PsicoZ-05.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-05-afb7be9647a6.json",
+      "filename": "track-05.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-06": {
+    "sourceFilename": "CONHECIDA ILUSAO - YTA  (Prodby,MB).wav",
+    "sourceSha256": "646a4a89d08aadd6bb0f789e211c0893eba7d0d17b0d6c557971f0e30790d546",
+    "durationSeconds": 181.622,
+    "stream": {
+      "key": "stream/track-06-646a4a89d08a.mp3",
+      "filename": "YTA-PsicoZ-06.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-06-646a4a89d08a.wav",
+      "filename": "YTA-PsicoZ-06.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-06-646a4a89d08a.json",
+      "filename": "track-06.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-07": {
+    "sourceFilename": "NAO ME DIZEM NADA - YTA  (Prodby,MB).wav",
+    "sourceSha256": "4303829032a60d7fe578c73afd81564ad0549725f0ff6eb3e25392905ac0732a",
+    "durationSeconds": 177.0,
+    "stream": {
+      "key": "stream/track-07-4303829032a6.mp3",
+      "filename": "YTA-PsicoZ-07.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-07-4303829032a6.wav",
+      "filename": "YTA-PsicoZ-07.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-07-4303829032a6.json",
+      "filename": "track-07.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-08": {
+    "sourceFilename": "SUBLIME - YTA  (Prodby,MB).wav",
+    "sourceSha256": "f0526888d8a550b64107bafb3d0c4ec1695e3102f861a6270dcc6813e665aeb7",
+    "durationSeconds": 130.104,
+    "stream": {
+      "key": "stream/track-08-f0526888d8a5.mp3",
+      "filename": "YTA-PsicoZ-08.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-08-f0526888d8a5.wav",
+      "filename": "YTA-PsicoZ-08.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-08-f0526888d8a5.json",
+      "filename": "track-08.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-09": {
+    "sourceFilename": "PSICHO Z - YTA  (Prodby,MB).wav",
+    "sourceSha256": "3d018d1941e569669582710a58a4acc95d904baae2f3212a485d31dca93a057e",
+    "durationSeconds": 155.2,
+    "stream": {
+      "key": "stream/track-09-3d018d1941e5.mp3",
+      "filename": "YTA-PsicoZ-09.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-09-3d018d1941e5.wav",
+      "filename": "YTA-PsicoZ-09.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-09-3d018d1941e5.json",
+      "filename": "track-09.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-10": {
+    "sourceFilename": "PSICOSE - YTA  ft . NOBRE (Prodby,MB).wav",
+    "sourceSha256": "422c381f0aa5c543af15ef3afb8017f9dad9b5e154a277b63a3b640bcc2ab38a",
+    "durationSeconds": 168.332,
+    "stream": {
+      "key": "stream/track-10-422c381f0aa5.mp3",
+      "filename": "YTA-PsicoZ-10.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-10-422c381f0aa5.wav",
+      "filename": "YTA-PsicoZ-10.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-10-422c381f0aa5.json",
+      "filename": "track-10.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-11": {
+    "sourceFilename": "ASSUMINDO O RISCO - YTA  (Prodby,MB).wav",
+    "sourceSha256": "d58fe6209b6e7bb36ef9d21adefeb42eb183a58eb3184b49fe89a965bbfdf4b7",
+    "durationSeconds": 237.682,
+    "stream": {
+      "key": "stream/track-11-d58fe6209b6e.mp3",
+      "filename": "YTA-PsicoZ-11.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-11-d58fe6209b6e.wav",
+      "filename": "YTA-PsicoZ-11.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-11-d58fe6209b6e.json",
+      "filename": "track-11.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-12": {
+    "sourceFilename": "ACAPELLA - YTA  (Prodby,MB).wav",
+    "sourceSha256": "31386a31e2d2e706c8e60eba1736a0abf473c654e47256423c1423a4a60289a5",
+    "durationSeconds": 156.071,
+    "stream": {
+      "key": "stream/track-12-31386a31e2d2.mp3",
+      "filename": "YTA-PsicoZ-12.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-12-31386a31e2d2.wav",
+      "filename": "YTA-PsicoZ-12.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-12-31386a31e2d2.json",
+      "filename": "track-12.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-13": {
+    "sourceFilename": "CIDADE CINZA - YTA  (Prodby,MB).wav",
+    "sourceSha256": "be5366e4160b937cacc279e072bc65ecaf9681ae0bdbbdc830e57d29e122426e",
+    "durationSeconds": 166.011,
+    "stream": {
+      "key": "stream/track-13-be5366e4160b.mp3",
+      "filename": "YTA-PsicoZ-13.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-13-be5366e4160b.wav",
+      "filename": "YTA-PsicoZ-13.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-13-be5366e4160b.json",
+      "filename": "track-13.json",
+      "contentType": "application/json"
+    }
+  },
+  "track-14": {
+    "sourceFilename": "NAO POSSO ERRAR - YTA  (Prodby,MB).wav",
+    "sourceSha256": "4117fc7bfd46584364307565d2db0becc483b83159e11317a466a0439c81bcaa",
+    "durationSeconds": 251.448,
+    "stream": {
+      "key": "stream/track-14-4117fc7bfd46.mp3",
+      "filename": "YTA-PsicoZ-14.mp3",
+      "contentType": "audio/mpeg"
+    },
+    "download": {
+      "key": "download/track-14-4117fc7bfd46.wav",
+      "filename": "YTA-PsicoZ-14.wav",
+      "contentType": "audio/wav"
+    },
+    "peaks": {
+      "key": "peaks/track-14-4117fc7bfd46.json",
+      "filename": "track-14.json",
+      "contentType": "application/json"
+    }
+  }
+}

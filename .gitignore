@@ -7,6 +7,11 @@ test-results/
 playwright-report/
 .env
 .env.local
+.dev.vars
+.dev.vars.*
+.env.*.local
+private/
+psichoZTracks/
 *.log
 .asset-base-check/
 REFS/

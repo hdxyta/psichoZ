@@ -57,7 +57,7 @@ Originais do álbum permanecem em `source-art/`, com derivados otimizados em `pu
 
 `VITE_ASSET_BASE_URL` é pública e opcional. Vazio usa `/assets/...`; uma URL configurada altera a base de imagens e arquivos locais configurados. JavaScript, CSS e fonte continuam no site. Nenhuma credencial deve entrar nessa variável.
 
-O build produz `dist/`, compatível com hospedagem estática. Este trabalho não configura conta, bucket, DNS nem executa deploy. [Preparação de publicação](docs/publication-notes.md) contém pendências de hospedagem e compartilhamento social.
+O build produz `dist/` com a home e a página separada `/cd`. A área da edição física requer também as Pages Functions em `functions/`, secrets de sessão e binding do R2 privado. [Guia da edição física](docs/cd-collector.md) descreve configuração, áudios, NFC e testes (`npm run test:cd`). Nenhuma conta, bucket, DNS ou publicação remota foi configurada. [Preparação de publicação](docs/publication-notes.md) contém as demais pendências de hospedagem.
 
 ## Evidências e documentação
 

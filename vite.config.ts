@@ -1,9 +1,10 @@
 import { defineConfig } from 'vitest/config';
 import { loadEnv } from 'vite';
 import { assetUrl } from './src/config/site.ts';
+import { cdLocalAPI } from './server/cd/local-plugin.ts';
 
 export default defineConfig(({ mode }) => ({
-  plugins: [{
+  plugins: [cdLocalAPI(mode), {
     name: 'psicoz-public-art-origin',
     transformIndexHtml: {
       order: 'pre',
@@ -15,5 +16,5 @@ export default defineConfig(({ mode }) => ({
     },
   }],
   test: { include: ['tests/unit/**/*.test.ts'] },
-  build: { target: 'es2022' },
+  build: { target: 'es2022', rollupOptions: { input: { home: 'index.html', cd: 'cd/index.html' } } },
 }));

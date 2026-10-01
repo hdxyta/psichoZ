@@ -1,4 +1,6 @@
-# Preparação estática, sem publicação
+# Preparação de publicação
+
+Atualização de 01/10/2026: a nova área `/cd` amplia o escopo com Pages Functions e R2 privado. Consultar o [guia da edição física](cd-collector.md); a proteção dos arquivos requer publicar também `functions/`, configurar os secrets e o binding `CD_BUCKET`. Não foi feito deploy. As notas abaixo registram a preparação estática anterior da home e dos assets públicos.
 
 `npm run build` gera `dist/`. Destino previsto pelo briefing: Cloudflare Pages para site estático e R2 para arquivos maiores, sem Worker ou Pages Functions. Não foram criados recursos ou configurações remotas nesta entrega. A skill cloudflare não foi instalada/aplicada: ela pertence à preparação futura de hospedagem.
 
