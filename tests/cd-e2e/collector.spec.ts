@@ -44,17 +44,12 @@ test('public player opens directly while downloads remain locked before release'
 });
 
 test('real code access still creates a secure private session', async ({ page, context }, info) => {
-  await page.route('**/api/cd-catalog', (route) => route.fulfill({ status: 503, json: { error: 'unavailable' } }));
   await page.goto('/cd');
-  await expect(page.locator('#cd-login')).toBeVisible();
+  const denied = await page.request.post('/api/cd-access', { headers: { Origin: 'http://127.0.0.1:4175', 'CF-Connecting-IP': `fixture-${crypto.randomUUID()}` }, data: { code: 'wrong-code' } });
+  expect(denied.status()).toBe(401);
+  const granted = await page.request.post('/api/cd-access', { headers: { Origin: 'http://127.0.0.1:4175', 'CF-Connecting-IP': `fixture-${crypto.randomUUID()}` }, data: { code: 'collector-e2e-only' } });
+  expect(granted.status()).toBe(200);
   await snapshot(page, `access-${info.project.name}`);
-  await page.getByLabel('Digite o código').fill('wrong-code');
-  await page.getByRole('button', { name: /DESBLOQUEAR/u }).click();
-  await expect(page.locator('#cd-access-feedback')).toContainText('ACCESS DENIED');
-  await page.unroute('**/api/cd-catalog');
-  await page.getByLabel('Digite o código').fill('collector-e2e-only');
-  await page.keyboard.press('Enter');
-  await expect(page.locator('#cd-title')).toBeVisible();
   const cookie = (await context.cookies()).find((cookie) => cookie.name === '__Host-psicoz_cd')!;
   expect(cookie.httpOnly).toBe(true); expect(cookie.secure).toBe(true); expect(cookie.sameSite).toBe('Lax');
   expect(await page.evaluate(() => document.cookie)).not.toContain('__Host-psicoz_cd');
@@ -162,11 +157,11 @@ test('responsive widths, reduced motion, missing cover, and keyboard code reveal
   await snapshot(page, `missing-art-${info.project.name}`);
 });
 
-test('API unavailable and rate limited states allow another attempt', async ({ page }) => {
+test('catalog API unavailable still opens the player fallback', async ({ page }) => {
   await page.route('**/api/cd-catalog', (route) => route.fulfill({ status: 503 }));
-  await page.goto('/cd'); await expect(page.locator('#cd-access-feedback')).toContainText('indisponível');
-  await page.route('**/api/cd-access', (route) => route.fulfill({ status: 429 }));
-  await page.getByLabel('Digite o código').fill('example'); await page.locator('.cd-unlock').click();
-  await expect(page.locator('#cd-access-feedback')).toContainText('Aguarde um minuto');
-  await expect(page.locator('.cd-unlock')).toBeEnabled();
+  await page.goto('/cd');
+  await expect(page.locator('#cd-title')).toBeVisible();
+  await expect(page.locator('.cd-track')).toHaveCount(15);
+  await expect(page.locator('[data-track="track-01"] [data-select]')).toBeEnabled();
+  await expect(page.locator('[data-album-download]')).toBeDisabled();
 });

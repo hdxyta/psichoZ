@@ -4,6 +4,7 @@ import './styles.css';
 import { assetUrl } from '../config/site';
 import { CDAPIError, cdRequest, escapeHTML, type CollectorCatalog } from './api';
 import { createAlbumPlayer } from './player';
+import { fallbackCatalog } from './fallback-catalog';
 
 const main = document.querySelector<HTMLElement>('#cd-main')!;
 let disposePlayer: (() => void) | undefined;
@@ -50,7 +51,7 @@ function showLogin(message = '', focus = false) {
   if (focus) input.focus();
 }
 async function showCollector() {
-  const catalog = await cdRequest<CollectorCatalog>('/api/cd-catalog');
+  const catalog = await cdRequest<CollectorCatalog>('/api/cd-catalog').catch(() => fallbackCatalog());
   main.innerHTML = `<section class="cd-intro" aria-labelledby="cd-title"><div class="cd-intro-copy"><p class="section-label">ACCESS GRANTED / PHYSICAL EDITION</p><h1 id="cd-title" tabindex="-1">psicoZ</h1><p class="cd-access-subtitle">Obrigado por fazer parte disso.</p><p>Se você chegou até aqui, uma cópia física de PsicoZ chegou até você.</p><p>Esse disco não termina no arquivo. Ele continua no papel, nos desenhos, no objeto que agora está nas suas mãos. Esta parte do projeto foi feita para acompanhar essa cópia.</p><p>Coloca pra tocar. Guarda o que fizer sentido.<br>Volta quando quiser.</p><span class="cd-signature">— YTA</span><a class="text-link" href="#cd-player">OUVIR O DISCO <span aria-hidden="true">↓</span></a></div><figure class="cd-collector-art">${art}<figcaption><span>PSICOZ // PHYSICAL COPY</span><span>15 POSIÇÕES</span></figcaption></figure></section><section id="cd-player" class="cd-player" aria-label="Player do álbum"></section><section class="cd-physical" aria-labelledby="cd-physical-title"><p class="section-label">O OBJETO TAMBÉM FAZ PARTE.</p><div><h2 id="cd-physical-title">Pra ter nas mãos.</h2><p>Em meio a tanto arquivo, stream e algoritmo, essa edição existe para devolver algo físico ao processo. O CD, a arte, o NFC e esta página são partes da mesma experiência.</p><p>A música atravessa tudo isso. O objeto fica com você.</p></div></section><footer class="cd-footer"><a class="text-link" href="/">← Voltar para PsicoZ</a><span class="cd-code">YTA // PSZ // PHYSICAL</span><button class="text-link cd-logout">Sair desta edição</button><p class="cd-feedback" role="status" id="cd-session-feedback"></p></footer>`;
   prepareImages();
   disposePlayer?.();
