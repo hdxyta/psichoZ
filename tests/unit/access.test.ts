@@ -109,7 +109,7 @@ describe('catalog with one game for each of the 15 tracks', () => {
     for (const config of VENDOR_GAMES) {
       const track = tracks.find((candidate) => candidate.id === config.trackId)!;
       expect(getVendorGame(track.id)).toBe(config);
-      expect(config.title).toBe(track.title ?? 'Faixa 15 — título a anunciar');
+      expect(config.title).toBe(track.title ?? 'FILE_15');
       expect(config.objective.length).toBeGreaterThan(10);
       expect(config.instructions.length).toBeGreaterThan(10);
       expect(config.duration).toBeGreaterThan(0);
@@ -121,7 +121,7 @@ describe('catalog with one game for each of the 15 tracks', () => {
   });
 
   it('centralizes the planned release date and retains an editorial pre-release status', () => {
-    expect(album).toMatchObject({ id: 'psicoz', title: 'psicoZ', releaseDate: '2026-10-31', releaseStatus: 'pre-release' });
+    expect(album).toMatchObject({ id: 'psicoz', title: 'psicoZ', artist: 'YTA', releaseDate: '2026-10-31T00:00:00-03:00', releaseStatus: 'pre-release' });
   });
 });
 

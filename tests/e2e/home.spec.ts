@@ -11,7 +11,7 @@ async function openSettings(page: Page): Promise<void> {
 }
 
 async function openCollection(page: Page): Promise<void> {
-  await page.getByRole('button', { name: /Ver (minha )?coleção/u }).first().click();
+  await page.getByRole('button', { name: /OPEN COLLECTION|Ver (minha )?coleção/u }).first().click();
   await expect(page.locator('#collection-popover')).toBeVisible();
 }
 
@@ -31,8 +31,10 @@ test('home has 15 honest track positions, no fake downloads, audio or game engin
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('request', (request) => requests.push(request.url()));
   await page.goto('/');
-  await expect(page).toHaveTitle('psicoZ — álbum, arte e coleção');
+  await expect(page).toHaveTitle('psicoZ — YTA');
   await expect(page.locator('#release-date')).toHaveText('31/10/2026');
+  await expect(page.locator('#hero-title')).toHaveText('psicoZ');
+  await expect(page.locator('#release-label')).toContainText(/YTA|PSICOZ IS OUT NOW/u);
   await expect(page.locator('#jogo #tracklist > li')).toHaveCount(15);
   await expect(page.locator('#tracklist a.game-card-link')).toHaveCount(15);
   await expect(page.locator('#game-progress')).toHaveAttribute('value', '0');
@@ -43,14 +45,14 @@ test('home has 15 honest track positions, no fake downloads, audio or game engin
     await expect(card.getByRole('link', { name: `Jogar: ${title}`, exact: true })).toHaveAttribute('href', `#/jogar/${id}`);
     await expect(card).toHaveAttribute('data-recovered', 'false');
   }
-  await expect(page.locator('[data-game-track="track-15"] h3')).toHaveText('Faixa 15 — título a anunciar');
+  await expect(page.locator('[data-game-track="track-15"] h3')).toHaveText('FILE_15');
   await expect(page.locator('[data-game-track="track-01"] h3')).toHaveText('Woodstock');
   await expect(page.locator('#tracklist .track-name').filter({ hasText: 'Título a confirmar' })).toHaveCount(0);
   await expect(page.locator('#rewards-list > li')).toHaveCount(17);
-  await expect(page.locator('#rewards-list .reward-action').filter({ hasText: 'Em breve' })).toHaveCount(17);
+  await expect(page.locator('#rewards-list .reward-action').filter({ hasText: 'SEALED' })).toHaveCount(17);
   await expect(page.locator('a[download], audio, canvas')).toHaveCount(0);
-  await expect(page.locator('#artist-bio')).toContainText('aguardam confirmação');
-  await expect(page.locator('#album-concept')).toContainText('após aprovação');
+  await expect(page.locator('#artist-bio')).toContainText('YTA é o artista por trás de psicoZ');
+  await expect(page.locator('#album-concept')).toContainText('psicoZ é um álbum de 15 faixas');
   expect(requests.filter((url) => /(?:three(?:[./-]|$)|\/game\/|\/assets\/(?:runtime|action|puzzles|world)[.-]|\.(?:mp3|wav|ogg|m4a)(?:[?#]|$))/iu.test(url))).toEqual([]);
   expect(errors).toEqual([]);
 });
@@ -60,18 +62,19 @@ test('cover pointer or touch opens an accessible pending panel, traps focus and 
   const cover = page.locator('#cover-button');
   if (isMobile) await cover.tap();
   else await cover.click();
-  const dialog = page.getByRole('dialog', { name: 'Antes de dar o play.' });
+  const dialog = page.getByRole('dialog', { name: 'PRE-SAVE PSICOZ.' });
   await expect(dialog).toBeVisible();
-  await expect(dialog.getByRole('button', { name: 'Spotify Link a anunciar' })).toBeDisabled();
-  await expect(dialog.getByRole('button', { name: 'Apple Music Link a anunciar' })).toBeDisabled();
-  await expect(dialog.locator('a')).toHaveCount(0);
-  await expect(dialog).toContainText('Abrir o link não confirma');
+  await expect(dialog.getByRole('link', { name: /Spotify de YTA/u })).toHaveAttribute('href', /open\.spotify\.com/u);
+  await expect(dialog).toContainText('Abrir um link não confirma');
   const close = dialog.getByRole('button', { name: 'Fechar painel de pré-save' });
+  const spotify = dialog.getByRole('link', { name: /Spotify de YTA/u });
   await expect(close).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expect(spotify).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(close).toBeFocused();
   await page.keyboard.press('Shift+Tab');
-  await expect(close).toBeFocused();
+  await expect(spotify).toBeFocused();
   await page.keyboard.press('Escape');
   await expect(dialog).not.toBeVisible();
   await expect(cover).toBeFocused();
@@ -93,7 +96,7 @@ test('cover is operable with Enter and Space and the close button restores keybo
 test('real section anchors support browser back and forward navigation', async ({ page }) => {
   await page.goto('/');
   const nav = page.getByRole('navigation', { name: 'Navegação principal' });
-  for (const [name, hash] of [['Álbum', 'album'], ['Artista', 'artista'], ['Faixas e jogos', 'faixas'], ['Coleção', 'colecao']]) {
+  for (const [name, hash] of [['Album', 'album'], ['YTA', 'artista'], ['Play', 'faixas'], ['Collection', 'colecao']]) {
     await nav.getByRole('link', { name, exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`#${hash}$`, 'u'));
     await expect(page.locator(`#${hash}`)).toBeInViewport();
@@ -110,16 +113,16 @@ test('real section anchors support browser back and forward navigation', async (
 test('NFC URL persists access on reload without granting victories or publishing files', async ({ page }) => {
   await page.goto('/?edition=nfc');
   await expect(page).toHaveURL(/\?edition=nfc#colecao$/u);
-  await expect(page.locator('#collection-status')).toContainText('Acesso da edição NFC liberado');
-  await expect(page.locator('#rewards-list')).toContainText('Acesso via NFC');
+  await expect(page.locator('#collection-status')).toContainText('NFC ACCESS liberado');
+  await expect(page.locator('#rewards-list')).toContainText('NFC ACCESS');
   await expect(page.locator('#colecao')).toBeInViewport();
   await expectNoVictories(page);
   await page.reload();
-  await expect(page.locator('#collection-status')).toContainText('Acesso da edição NFC liberado');
+  await expect(page.locator('#collection-status')).toContainText('NFC ACCESS liberado');
   await expectNoVictories(page);
   await expect(page.locator('a[download]')).toHaveCount(0);
   await page.goto('/#colecao');
-  await expect(page.locator('#collection-status')).toContainText('Acesso da edição NFC liberado');
+  await expect(page.locator('#collection-status')).toContainText('NFC ACCESS liberado');
 });
 
 for (const fixture of [
@@ -130,7 +133,7 @@ for (const fixture of [
     await page.addInitScript(({ key, raw }) => localStorage.setItem(key, raw), { key: PROGRESS_KEY, raw: fixture.raw });
     await page.goto('/?edition=nfc');
     await expect(page.locator('#collection-status')).toContainText(fixture.message);
-    await expect(page.locator('#collection-status')).toContainText('Acesso da edição NFC liberado');
+    await expect(page.locator('#collection-status')).toContainText('NFC ACCESS liberado');
     await openSettings(page);
     await expect(page.locator('#storage-status')).toBeVisible();
     await expect(page.locator('#storage-status')).toContainText(fixture.message);
@@ -147,7 +150,7 @@ test('blocked localStorage getter keeps the NFC collection usable in memory', as
   });
   await page.goto('/?edition=nfc');
   await expect(page.locator('#collection-status')).toContainText('armazenamento está indisponível');
-  await expect(page.locator('#collection-status')).toContainText('Acesso da edição NFC liberado');
+  await expect(page.locator('#collection-status')).toContainText('NFC ACCESS liberado');
   await openSettings(page);
   await page.getByRole('checkbox', { name: 'Reduzir movimento' }).check();
   await expect(page.locator('html')).toHaveAttribute('data-reduced-motion', 'true');
@@ -159,11 +162,11 @@ test('storage write failure warns honestly and does not claim persistent NFC acc
     Storage.prototype.setItem = function () { throw new DOMException('Quota exceeded for test', 'QuotaExceededError'); };
   });
   await page.goto('/?edition=nfc');
-  await expect(page.locator('#collection-status')).toContainText('Acesso da edição NFC liberado');
+  await expect(page.locator('#collection-status')).toContainText('NFC ACCESS liberado');
   await expect(page.locator('#collection-status')).toContainText('Não foi possível salvar o progresso.');
   expect(await page.evaluate((key) => localStorage.getItem(key), PROGRESS_KEY)).toBeNull();
   await page.goto('/#colecao');
-  await expect(page.locator('#collection-status')).toHaveText('Cada faixa tem um jogo. Complete os objetivos para registrar suas conquistas; a edição NFC libera acesso aos materiais publicados. Seu progresso fica salvo neste navegador.');
+  await expect(page.locator('#collection-status')).toHaveText('PLAY → COMPLETE → UNLOCK. Complete experiências para registrar conquistas; a edição NFC libera acesso aos materiais publicados.');
   await expect(page.locator('#collection-status')).not.toContainText('Acesso da edição NFC liberado');
 });
 
@@ -178,17 +181,17 @@ test('reset cancel preserves access; confirmed reset removes only project progre
   await dialog.getByRole('button', { name: 'Manter progresso' }).click();
   await expect(dialog).not.toBeVisible();
   await expect(reset).toBeFocused();
-  await expect(page.locator('#collection-status')).toContainText('Acesso da edição NFC liberado');
+  await expect(page.locator('#collection-status')).toContainText('NFC ACCESS liberado');
   await reset.click();
   await dialog.getByRole('button', { name: 'Apagar progresso', exact: true }).click();
   await expect(dialog).not.toBeVisible();
-  await expect(page.locator('#collection-status')).toHaveText('Cada faixa tem um jogo. Complete os objetivos para registrar suas conquistas; a edição NFC libera acesso aos materiais publicados. Seu progresso fica salvo neste navegador.');
+  await expect(page.locator('#collection-status')).toHaveText('PLAY → COMPLETE → UNLOCK. Complete experiências para registrar conquistas; a edição NFC libera acesso aos materiais publicados.');
   expect(new URL(page.url()).searchParams.has('edition')).toBe(false);
   expect(new URL(page.url()).searchParams.get('source')).toBe('test');
   const records = await page.evaluate((key) => ({ own: localStorage.getItem(key), other: localStorage.getItem('another-project:progress') }), PROGRESS_KEY);
   expect(records).toEqual({ own: null, other: 'keep this value' });
   await page.reload();
-  await expect(page.locator('#collection-status')).not.toContainText('Acesso da edição NFC liberado');
+  await expect(page.locator('#collection-status')).not.toContainText('NFC ACCESS liberado');
 });
 
 test('reduced motion follows the OS and persists an explicit visitor preference', async ({ page }) => {
@@ -273,14 +276,14 @@ test('captures home, pre-save panel and collection for visual review', async ({ 
   }
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: resolve(folder, `home-${testInfo.project.name}.png`), fullPage: true, animations: 'disabled', scale: 'css' });
-  const trigger = page.getByRole('button', { name: 'Fazer pré-save' });
+  const trigger = page.getByRole('button', { name: /PRE-SAVE PSICOZ|OUVIR PSICOZ/u });
   await trigger.click();
   await expect(page.locator('#presave-dialog')).toBeVisible();
   await page.screenshot({ path: resolve(folder, `panel-${testInfo.project.name}.png`), animations: 'disabled', scale: 'css' });
   await page.keyboard.press('Escape');
   await expect(page.locator('#presave-dialog')).not.toBeVisible();
   await expect(trigger).toBeFocused();
-  await page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', { name: 'Coleção', exact: true }).click();
+  await page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', { name: 'Collection', exact: true }).click();
   await expect(page).toHaveURL(/#colecao$/u);
   await expect(page.locator('#colecao')).toBeInViewport();
   await openCollection(page);

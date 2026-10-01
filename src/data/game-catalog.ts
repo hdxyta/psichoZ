@@ -77,7 +77,7 @@ const ARCADE_DESIGNS: ReadonlyArray<Omit<ArcadeConfig, 'title'>> = [
 
 export const ARCADE_CONFIGS: ReadonlyArray<ArcadeConfig> = ARCADE_DESIGNS.map((config) => ({
   ...config,
-  title: tracks.find((track) => track.id === config.trackId)?.title ?? 'Faixa 15 — título a anunciar',
+  title: tracks.find((track) => track.id === config.trackId)?.title ?? 'FILE_15',
 }));
 
 export function getArcadeConfig(trackId: string): ArcadeConfig | undefined {

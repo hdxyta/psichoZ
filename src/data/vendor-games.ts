@@ -21,7 +21,7 @@ const definitions: Array<Omit<VendorGame, 'title'>> = [
   {trackId:'track-14',slug:'simon',genre:'Simon',subtitle:'Repita o rito',objective:'Repita quatro rodadas de sinais sem errar.',instructions:'Observe a sequência e repita clicando ou tocando nos símbolos.',repository:'https://github.com/d4vucat/Simon-Game',sourceName:'Simon Game',duration:240},
   {trackId:'track-15',slug:'2048',genre:'Fusão numérica',subtitle:'A última fusão',objective:'Combine os blocos até formar o número 256.',instructions:'Use as setas ou deslize o dedo para combinar números iguais.',repository:'https://github.com/gabrielecirulli/2048',sourceName:'2048 / Gabriele Cirulli',duration:360},
 ];
-export const VENDOR_GAMES: ReadonlyArray<VendorGame> = definitions.map(game => ({...game,title:tracks.find(t=>t.id===game.trackId)?.title ?? 'Faixa 15 — título a anunciar'}));
+export const VENDOR_GAMES: ReadonlyArray<VendorGame> = definitions.map(game => ({...game,title:tracks.find(t=>t.id===game.trackId)?.title ?? 'FILE_15'}));
 export const getVendorGame = (id: string) => VENDOR_GAMES.find(game => game.trackId === id);
 
 

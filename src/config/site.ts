@@ -4,33 +4,43 @@ import { ALBUM_ID, type Album, type Artist } from '../data/models.ts';
 export const album: Album = {
   id: ALBUM_ID,
   title: 'psicoZ',
-  releaseDate: '2026-10-31',
+  artist: 'YTA',
+  releaseDate: '2026-10-31T00:00:00-03:00',
   releaseStatus: 'pre-release',
-  concept: null,
+  tagline: '15 TRACKS. 15 EXPERIENCES. ONE WORLD.',
+  concept: 'psicoZ é um álbum de 15 faixas criado para existir além do streaming. Cada música se conecta a uma experiência jogável, uma imagem e uma parte da coleção. Você pode simplesmente ouvir. Ou pode entrar.',
+  trailerUrl: null,
+  trailerPosterUrl: null,
 };
 
 export const artist: Artist = {
-  name: null,
-  bio: null,
+  name: 'YTA',
+  bio: 'YTA é o artista por trás de psicoZ. O projeto atravessa música, imagem e experiências digitais, usando cada lançamento como parte de um universo maior. psicoZ leva essa ideia além da faixa: cada música pode ser explorada, jogada e colecionada. HDX funciona hoje como a estrutura criativa em volta desses projetos.',
   photoUrl: null,
   contactUrl: null,
   links: [
-    { label: 'Instagram', url: null },
-    { label: 'Spotify', url: null },
-    { label: 'YouTube', url: null },
+    { label: 'Instagram', url: 'https://www.instagram.com/hdx.yta/' },
+    { label: 'Spotify', url: 'https://open.spotify.com/intl-pt/artist/2vka7XJAoHam1YYOCU68dv?si=u8fdEqxeR7mV12fWIZHATw' },
   ],
 };
 
 export const presaveLinks: ReadonlyArray<{ label: string; url: string | null }> = [
-  { label: 'Spotify', url: null },
-  { label: 'Apple Music', url: null },
+  { label: 'Spotify de YTA', url: 'https://open.spotify.com/intl-pt/artist/2vka7XJAoHam1YYOCU68dv?si=u8fdEqxeR7mV12fWIZHATw' },
 ];
 
 /** Approved listening links are independent from campaign pre-save destinations. */
 export const listeningLinks: ReadonlyArray<{ label: string; url: string | null }> = [
-  { label: 'Spotify', url: null },
-  { label: 'Apple Music', url: null },
+  { label: 'Spotify de YTA', url: 'https://open.spotify.com/intl-pt/artist/2vka7XJAoHam1YYOCU68dv?si=u8fdEqxeR7mV12fWIZHATw' },
 ];
+
+export const releaseLinks = {
+  spotifyAlbum: '',
+  appleMusic: '',
+  deezer: '',
+  youtube: '',
+} as const;
+
+export const credits: ReadonlyArray<{ role: string; name: string }> = [];
 
 /** Accept explicit web URLs and root-relative local assets, never executable schemes. */
 export function safeUrl(value: unknown, allowLocal = false): string | null {

@@ -16,12 +16,14 @@ const $ = <T extends HTMLElement>(selector: string): T => {
 const text = (selector: string, value: string) => { $(selector).textContent = value; };
 const store = createProgressStore();
 const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-const released = album.releaseStatus === 'released';
-const date = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeZone: 'UTC' }).format(new Date(`${album.releaseDate}T12:00:00Z`));
+const releaseDate = new Date(album.releaseDate);
+const releasedByDate = () => Date.now() >= releaseDate.getTime();
+const released = album.releaseStatus === 'released' || releasedByDate();
+const date = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'America/Sao_Paulo' }).format(releaseDate);
 const dateElement = $<HTMLTimeElement>('#release-date');
 dateElement.dateTime = album.releaseDate;
 dateElement.textContent = date;
-text('#release-label', released ? 'Álbum lançado' : 'Lançamento planejado');
+text('#release-label', released ? 'PSICOZ IS OUT NOW' : album.artist);
 
 // A shared tag URL grants access only. It never fabricates a completed level.
 if (new URLSearchParams(location.search).get('edition') === 'nfc') {
@@ -30,13 +32,11 @@ if (new URLSearchParams(location.search).get('edition') === 'nfc') {
   requestAnimationFrame(() => $('#colecao').scrollIntoView());
 }
 
-if (album.concept) { text('#album-concept', album.concept); $('#album-concept').classList.remove('pending-copy'); }
-if (artist.name) text('#artist-name', artist.name);
-if (artist.bio) text('#artist-bio', artist.bio);
+text('#album-concept', album.concept);
+text('#artist-name', artist.name);
+text('#artist-bio', artist.bio);
 const approvedArtistLinks = artist.links.filter((link) => safeUrl(link.url));
-if (approvedArtistLinks.length || safeUrl(artist.contactUrl)) {
-  $('#artist-links').replaceChildren(...approvedArtistLinks.map(({ label, url }) => externalLink(label, safeUrl(url)!)));
-}
+$('#artist-links').replaceChildren(...approvedArtistLinks.map(({ label, url }) => externalLink(label, safeUrl(url)!)));
 if (safeUrl(artist.contactUrl)) $('#artist-links').append(externalLink('Contato', safeUrl(artist.contactUrl)!));
 if (safeUrl(artist.photoUrl, true)) {
   const photo = document.createElement('img');
@@ -60,38 +60,78 @@ function externalLink(label: string, url: string): HTMLAnchorElement {
   return link;
 }
 
+function trackEvent(name: string, data: Record<string, unknown> = {}): void {
+  window.dispatchEvent(new CustomEvent('psicoz:analytics', { detail: { name, data } }));
+}
+
+function renderCountdown(): void {
+  const countdown = $('#release-countdown');
+  const total = releaseDate.getTime() - Date.now();
+  if (total <= 0) {
+    countdown.textContent = 'PSICOZ IS OUT NOW';
+    text('#release-label', 'PSICOZ IS OUT NOW');
+    document.querySelectorAll<HTMLElement>('[data-open-presave]').forEach((element) => {
+      if (element.id !== 'cover-button') element.textContent = 'OUVIR PSICOZ ↗';
+    });
+    return;
+  }
+  const seconds = Math.floor(total / 1000);
+  const days = Math.floor(seconds / 86400);
+  const hours = Math.floor((seconds % 86400) / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const secs = seconds % 60;
+  countdown.replaceChildren(...[
+    `${days}D`, `${String(hours).padStart(2, '0')}H`, `${String(minutes).padStart(2, '0')}M`, `${String(secs).padStart(2, '0')}S`,
+  ].map((part) => {
+    const span = document.createElement('span');
+    span.textContent = part;
+    return span;
+  }));
+}
+
+function renderTeaser(): void {
+  const teaser = $<HTMLElement>('#teaser');
+  const url = safeUrl(album.trailerUrl, true);
+  if (!url) {
+    teaser.hidden = true;
+    return;
+  }
+  const video = document.createElement('video');
+  video.controls = true;
+  video.preload = 'metadata';
+  video.playsInline = true;
+  video.src = url.startsWith('/') ? assetUrl(url) : url;
+  const poster = safeUrl(album.trailerPosterUrl, true);
+  if (poster) video.poster = poster.startsWith('/') ? assetUrl(poster) : poster;
+  $('#teaser-slot').replaceChildren(video);
+  teaser.hidden = false;
+}
+
 function renderPresave(): void {
   const links = released ? listeningLinks : presaveLinks;
   if (released) {
-    text('#presave-title', 'Dê o play em psicoZ.');
+    text('#presave-title', 'LISTEN TO PSICOZ.');
     text('#presave-description', 'Escolha um serviço de música para ouvir o álbum.');
     text('#panel-release', 'O álbum está entre nós.');
     document.querySelectorAll<HTMLButtonElement>('[data-open-presave]').forEach((button) => {
       if (button.id === 'cover-button') button.setAttribute('aria-label', 'Abrir painel para ouvir psicoZ');
-      else button.textContent = 'Ouvir o álbum ↗';
+      else button.textContent = 'OUVIR PSICOZ ↗';
     });
     text('#presave-dialog > .small-note', 'Os links abrem serviços externos, que podem pedir autenticação.');
   }
-  $('#presave-links').replaceChildren(...links.map(({ label, url }) => {
+  $('#presave-links').replaceChildren(...links.flatMap(({ label, url }) => {
     const valid = safeUrl(url);
     if (valid) {
       const link = externalLink(label, valid);
       link.className = 'service-link';
-      return link;
+      return [link];
     }
-    const button = document.createElement('button');
-    button.className = 'service-link';
-    button.disabled = true;
-    button.append(document.createTextNode(label));
-    const note = document.createElement('small');
-    note.textContent = 'Link a anunciar';
-    button.append(note);
-    return button;
+    return [];
   }));
   if (!links.some(({ url }) => safeUrl(url))) {
     const pending = document.createElement('p');
-    pending.className = 'pending-copy';
-    pending.textContent = 'Os links oficiais ainda não foram fornecidos. Volte aqui para acompanhar.';
+    pending.className = 'small-note';
+    pending.textContent = 'Nenhum serviço aprovado para exibição pública neste momento.';
     $('#presave-links').append(pending);
   }
 }
@@ -100,8 +140,24 @@ function renderCollection(): void {
   const progress = store.getSnapshot();
   text('#collection-count', `${progress.unlockedTrackIds.length} de ${tracks.length} faixas conquistadas no jogo`);
   text('#collection-status', progress.nfcUnlocked
-    ? 'Acesso da edição NFC liberado neste navegador. Os arquivos ainda não publicados aparecem como “Em breve”.'
-    : 'Cada faixa tem um jogo. Complete os objetivos para registrar suas conquistas; a edição NFC libera acesso aos materiais publicados. Seu progresso fica salvo neste navegador.');
+    ? 'NFC ACCESS liberado neste navegador. Isso abre acesso aos materiais publicados, mas não marca fases como completas.'
+    : 'PLAY → COMPLETE → UNLOCK. Complete experiências para registrar conquistas; a edição NFC libera acesso aos materiais publicados.');
+  const completedGames = progress.completedLevelIds.length;
+  $('#collection-stats').replaceChildren(...[
+    ['TRACKS', `${progress.unlockedTrackIds.length} / ${tracks.length}`],
+    ['ARTWORKS', `${progress.collectibles.filter((item) => item.includes('art')).length} / ${artworkTotal()}`],
+    ['GAMES', `${completedGames} / ${tracks.length}`],
+    ['SECRETS', `${progress.collectibles.filter((item) => item.includes('secret')).length} / ??`],
+  ].map(([label, value]) => {
+    const card = document.createElement('div');
+    card.className = 'collection-stat';
+    const strong = document.createElement('strong');
+    strong.textContent = value;
+    const span = document.createElement('span');
+    span.textContent = label;
+    card.append(strong, span);
+    return card;
+  }));
   $('#rewards-list').replaceChildren(...rewards.map((reward, index) => {
     const access = getAccess(reward, progress);
     const row = document.createElement('li');
@@ -116,7 +172,7 @@ function renderCollection(): void {
     name.className = 'reward-name';
     name.textContent = reward.label;
     const detail = document.createElement('small');
-    detail.textContent = access.unlocked ? (progress.nfcUnlocked ? 'Acesso via NFC' : 'Conquistado no jogo') : 'Acesso ainda não conquistado';
+    detail.textContent = access.unlocked ? (progress.nfcUnlocked ? 'NFC ACCESS' : 'COMPLETED') : 'LOCKED';
     if (reward.sizeBytes !== null) detail.textContent += ` · ${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 }).format(reward.sizeBytes / 1048576)} MiB`;
     copy.append(name, detail);
     const action = document.createElement(access.canDownload ? 'a' : 'span');
@@ -127,7 +183,7 @@ function renderCollection(): void {
       action.download = '';
       action.textContent = 'Baixar';
       action.setAttribute('aria-label', `Baixar ${reward.label}`);
-    } else action.textContent = access.published ? 'Jogue para conquistar' : 'Em breve';
+    } else action.textContent = access.published ? 'PLAY TO UNLOCK' : 'SEALED';
     row.append(number, copy, action);
     return row;
   }));
@@ -139,6 +195,10 @@ function renderCollection(): void {
   }
   renderGameHub();
   applyMotion();
+}
+
+function artworkTotal(): number {
+  return rewards.filter((reward) => reward.kind === 'artwork').length;
 }
 
 function renderGameHub(): void {
@@ -160,7 +220,7 @@ function renderGameHub(): void {
     const link = document.createElement('a');
     link.href = `#/jogar/${track.id}`;
     link.className = 'game-card-link';
-    const title = track.title ?? `Faixa ${track.number} — título a anunciar`;
+    const title = track.title ?? `FILE_${String(track.number).padStart(2, '0')}`;
     const sleeve = document.createElement('div');
     sleeve.className = 'game-sleeve';
     sleeve.setAttribute('aria-hidden', 'true');
@@ -213,7 +273,7 @@ function renderGameHub(): void {
     footer.className = 'game-card-footer';
     const music = document.createElement('span');
     music.className = 'game-card-audio';
-    music.textContent = 'Áudio em breve';
+    music.textContent = '';
     const mobileKind = document.createElement('span');
     mobileKind.className = 'game-card-mobile-kind';
     mobileKind.textContent = config?.genre ?? 'Minigame';
@@ -240,10 +300,10 @@ function renderGameHub(): void {
     const card = list.querySelector<HTMLElement>(`[data-game-track="${track.id}"]`)!;
     const recovered = track.levelId !== null && completed.has(track.levelId);
     card.dataset.recovered = String(recovered);
-    const title = track.title ?? `Faixa ${track.number} — título a anunciar`;
+    const title = track.title ?? `FILE_${String(track.number).padStart(2, '0')}`;
     card.querySelector('a')!.setAttribute('aria-label', `${recovered ? 'Jogar novamente' : 'Jogar'}: ${title}`);
-    card.querySelector('.game-card-status')!.textContent = recovered ? 'Conquistada ✓' : '';
-    card.querySelector('.game-card-action-label')!.textContent = recovered ? 'Jogar de novo' : 'Jogar';
+    card.querySelector('.game-card-status')!.textContent = recovered ? 'COMPLETED' : 'AVAILABLE';
+    card.querySelector('.game-card-action-label')!.textContent = recovered ? 'REPLAY' : 'ENTER';
   }
 }
 
@@ -295,11 +355,18 @@ for (const dialog of [presaveDialog, resetDialog]) {
     if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
   } });
 }
-document.querySelectorAll<HTMLButtonElement>('[data-open-presave]').forEach((button) => button.addEventListener('click', () => openDialog(presaveDialog)));
+document.querySelectorAll<HTMLButtonElement>('[data-open-presave]').forEach((button) => button.addEventListener('click', () => {
+  trackEvent(released ? 'spotify_click' : 'presave_click', { source: button.id || 'cta' });
+  openDialog(presaveDialog);
+}));
+document.querySelectorAll<HTMLElement>('[data-enter-psicoz]').forEach((link) => link.addEventListener('click', () => trackEvent('enter_psicoz')));
 collectionTriggers.forEach((button) => {
   button.setAttribute('aria-controls', 'collection-popover');
   button.setAttribute('aria-expanded', 'false');
-  button.addEventListener('click', () => collectionPopover.hidden ? openCollection() : closeCollection());
+  button.addEventListener('click', () => {
+    if (collectionPopover.hidden) trackEvent('collection_open');
+    collectionPopover.hidden ? openCollection() : closeCollection();
+  });
 });
 collectionPopover.querySelector<HTMLButtonElement>('[data-close-collection]')?.addEventListener('click', closeCollection);
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeCollection(); });
@@ -335,6 +402,7 @@ function handleRoute(): void {
   const trackId = /^#\/jogar\/(track-\d{2})$/u.exec(location.hash)?.[1];
   const playable = trackId && tracks.some((track) => track.id === trackId && levels.some((level) => level.id === track.levelId && level.available));
   if (playable) {
+    trackEvent('game_start', { trackId });
     void gameEntry.open(trackId);
   } else {
     gameEntry.close();
@@ -346,6 +414,19 @@ function handleRoute(): void {
   }
 }
 window.addEventListener('hashchange', handleRoute);
+
+$<HTMLFormElement>('#signup-form').addEventListener('submit', (event) => {
+  event.preventDefault();
+  const email = $<HTMLInputElement>('#signup-email');
+  if (!email.validity.valid) {
+    text('#signup-status', 'Digite um e-mail válido para entrar.');
+    email.focus();
+    return;
+  }
+  trackEvent('email_signup', { state: 'email_confirmation_pending' });
+  text('#signup-status', 'CONFIRME SEU E-MAIL. Enviaremos um link quando o endpoint double opt-in estiver conectado.');
+  email.value = '';
+});
 
 // Optional art failure keeps the rest of the page and the cover's textual action usable.
 document.querySelectorAll<HTMLImageElement>('main img').forEach((image) => {
@@ -395,6 +476,9 @@ document.querySelectorAll<HTMLImageElement>('main img').forEach((image) => {
 });
 
 renderPresave();
+renderCountdown();
+window.setInterval(renderCountdown, 1000);
+renderTeaser();
 renderCollection();
 handleRoute();
 

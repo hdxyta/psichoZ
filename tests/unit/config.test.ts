@@ -2,11 +2,13 @@ import { describe, expect, it } from 'vitest';
 import { artist, assetUrl, listeningLinks, presaveLinks, safeUrl } from '../../src/config/site';
 
 describe('configured URLs', () => {
-  it('keeps listening and pre-save configuration independent and unapproved artist content pending', () => {
+  it('keeps listening and pre-save configuration independent and exposes approved YTA channels', () => {
     expect(listeningLinks).not.toBe(presaveLinks);
-    expect(listeningLinks.every((link) => link.url === null)).toBe(true);
-    expect(presaveLinks.every((link) => link.url === null)).toBe(true);
-    expect(artist).toMatchObject({ name: null, bio: null, photoUrl: null, contactUrl: null });
+    expect(listeningLinks.every((link) => link.url === null)).toBe(false);
+    expect(presaveLinks.every((link) => link.url === null)).toBe(false);
+    expect(artist).toMatchObject({ name: 'YTA', photoUrl: null, contactUrl: null });
+    expect(artist.bio).toContain('YTA é o artista por trás de psicoZ');
+    expect(artist.links.map((link) => link.label)).toEqual(['Instagram', 'Spotify']);
   });
 
   it('allows explicit HTTPS links and optional root-relative assets', () => {

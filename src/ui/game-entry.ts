@@ -24,7 +24,7 @@ export function createGameEntry(store: ProgressStore, refreshCollection: () => v
     const request = ++version; currentTrack = track.id;
     previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     const currentDialog = document.createElement('dialog'); dialog = currentDialog;
-    const trackName = track.title ?? `Faixa ${track.number} · título a anunciar`;
+    const trackName = track.title ?? `FILE_${String(track.number).padStart(2, '0')}`;
     currentDialog.id = 'game-dialog'; currentDialog.className = 'game-dialog';
     currentDialog.setAttribute('aria-label', `${trackName} — fase ${track.number}`);
     function loading(message: string) {

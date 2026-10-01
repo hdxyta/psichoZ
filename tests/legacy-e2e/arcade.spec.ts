@@ -4,7 +4,7 @@ import { resolve } from 'node:path';
 
 const captures = resolve('output/playtest/arcade-2026-09-30');
 const storageKey = 'psicoz:progress';
-const tracks = ['Woodstock', 'Aditivo', 'Silêncio', 'Rumildo', 'Inverso', 'Conhecida Ilusão', 'Não Me Dizem Nada', 'Siblime', 'PsicoZ', 'Psicose feat Nobre', 'Assumindo o Risco', 'Acapella', 'Cidade Cinza', 'Não Posso Errar', 'Faixa 15'];
+const tracks = ['Woodstock', 'Aditivo', 'Silêncio', 'Rumildo', 'Inverso', 'Conhecida Ilusão', 'Não Me Dizem Nada', 'Siblime', 'PsicoZ', 'Psicose feat Nobre', 'Assumindo o Risco', 'Acapella', 'Cidade Cinza', 'Não Posso Errar', 'FILE_15'];
 
 async function activate(target: Locator, mobile: boolean) { if (mobile) await target.tap(); else await target.click(); }
 async function open(page: Page, number: number) {
@@ -129,7 +129,7 @@ test('memory wins using visible preview and real buttons, persists through reloa
   await activate(game.locator('[data-collection]'), isMobile);
   await expect(page).toHaveURL(/#colecao$/);
   await expect(page.locator('[data-reward-id="track-06-mp3"]')).toContainText('Conquistado no jogo');
-  await expect(page.locator('[data-reward-id="track-06-mp3"]')).toContainText('Em breve');
+  await expect(page.locator('[data-reward-id="track-06-mp3"]')).toContainText('SEALED');
   await expect(page.locator('a[download]')).toHaveCount(0);
   await page.reload();
   expect(await progress(page)).toEqual(saved);

@@ -11,8 +11,8 @@ export type ReleaseStatus = 'pre-release' | 'released';
 export type LevelId = `level-${string}`;
 
 export interface Artist {
-  name: string | null;
-  bio: string | null;
+  name: string;
+  bio: string;
   photoUrl: string | null;
   contactUrl: string | null;
   links: ReadonlyArray<{ label: string; url: string | null }>;
@@ -21,9 +21,13 @@ export interface Artist {
 export interface Album {
   id: typeof ALBUM_ID;
   title: string;
+  artist: string;
   releaseDate: string;
   releaseStatus: ReleaseStatus;
-  concept: string | null;
+  concept: string;
+  tagline: string;
+  trailerUrl: string | null;
+  trailerPosterUrl: string | null;
 }
 
 export interface Track {
