@@ -1,0 +1,31 @@
+{
+  "repository": "saiuttejr/GameBox",
+  "commit": "8fd141127a7ad2c5fb718d5a9e4068c5f9af0d4b",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "sha256": "72639848a6d451793250f7d0470478702786b4eab455bba55429a3d7ed69e563",
+      "bytes": 1067
+    },
+    {
+      "path": "README.md",
+      "sha256": "e66e6698bea19f2db3560abab2d38a19decef535f1b017e4d9cdb0d6fef70f6e",
+      "bytes": 7382
+    },
+    {
+      "path": "minesweeper/index.html",
+      "sha256": "27bb03a0921aedd5801886642d296079a75864506acd64fb8ea64af7786218f1",
+      "bytes": 1708
+    },
+    {
+      "path": "minesweeper/script.js",
+      "sha256": "141153941174ad6d41e4cc0d430c6084d24ae0b77413a3a8e1ac3d37929a872e",
+      "bytes": 5899
+    },
+    {
+      "path": "minesweeper/style.css",
+      "sha256": "43f296689569cac7fcd6a9f6ccbd5feb2fdbae62532804ecd53772d19a864a92",
+      "bytes": 1245
+    }
+  ]
+}

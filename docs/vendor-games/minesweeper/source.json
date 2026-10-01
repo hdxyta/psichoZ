@@ -1,0 +1,12 @@
+{
+  "files": [
+    "LICENSE.md",
+    "README.md",
+    "minesweeper/index.html",
+    "minesweeper/script.js",
+    "minesweeper/style.css"
+  ],
+  "repo": "saiuttejr/GameBox",
+  "id": "minesweeper",
+  "sha": "8fd141127a7ad2c5fb718d5a9e4068c5f9af0d4b"
+}

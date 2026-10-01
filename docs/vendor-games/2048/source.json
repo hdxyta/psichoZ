@@ -1,0 +1,18 @@
+{
+  "files": [
+    "LICENSE.txt",
+    "README.md",
+    "index.html",
+    "js/game_manager.js",
+    "js/grid.js",
+    "js/tile.js",
+    "js/html_actuator.js",
+    "js/keyboard_input_manager.js",
+    "js/local_storage_manager.js",
+    "js/application.js",
+    "style/main.css"
+  ],
+  "repo": "gabrielecirulli/2048",
+  "id": "2048",
+  "sha": "478b6ec346e3787f589e4af751378d06ded4cbbc"
+}

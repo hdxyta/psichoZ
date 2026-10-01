@@ -1,0 +1,56 @@
+{
+  "copiedAt": "2026-09-30",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "3558c70f0bb199fb5aef2854e797b65d700831b5e276ada5cdd65555a2075ae9"
+    },
+    {
+      "path": "README.md",
+      "sha256": "be6754c6c03fede7681e16e7d563a852fc26b8499a7a7caf7993c7a20a21de34"
+    },
+    {
+      "path": "index.html",
+      "sha256": "00158c930735dc806c1b96d7dc6c92ee8d7e283af822980afe378cbe7a09d1f1"
+    },
+    {
+      "path": "main.js",
+      "sha256": "7a716acc5da889078073eb4ece78d12a3aacca3f0a94239b21b180486590da3f"
+    },
+    {
+      "path": "src/config.js",
+      "sha256": "6a14604146d219a9f5fb21a35e2c37abf3d029ab5bc75ea4a5fbd3461b5b5b6b"
+    },
+    {
+      "path": "src/food.js",
+      "sha256": "798b6bcd225e3b35563b6b886fb968f0f91bc2de0d1d14ad243e765b152659da"
+    },
+    {
+      "path": "src/game.js",
+      "sha256": "aca142747e4c1ad1fe602a69133ab0a5441be88a37cbd8adcd41499337ac3967"
+    },
+    {
+      "path": "src/input.js",
+      "sha256": "4fe3a17ae35a580edb46adc6ca467eee0f9a51193170a24b374454a56e39639a"
+    },
+    {
+      "path": "src/renderer.js",
+      "sha256": "734a1a536c46ee35e3ea1f8e61dc1b779b11f346d8ef0959bb694d1a11b6984a"
+    },
+    {
+      "path": "src/score.js",
+      "sha256": "250b52828e9b4004b150630b8c61c57920b51200d6529211b8dae64d20810609"
+    },
+    {
+      "path": "src/snake.js",
+      "sha256": "67b471a684b66e8a4af06607f87680958c1d709dba909f1b1c7a54e867395382"
+    },
+    {
+      "path": "src/ui.js",
+      "sha256": "37b007e9998c64bd44d4cebd741f5cbbbdb3f2a7b652ba671d6827f128d16b89"
+    }
+  ],
+  "executedExternalScripts": false,
+  "commit": "f07a620bf203b9a62837cc154226e72bb324d4e3",
+  "repository": "varshney-himanshu/snake-game-js"
+}

@@ -1,0 +1,213 @@
+{
+  "date": "2026-09-21T20:14:14.940Z",
+  "browser": "153.0.8010.52",
+  "node": "v20.20.0",
+  "conditions": "Local production preview, isolated Chrome, cold cache, no network/CPU throttling. Desktop tries native mouse capture; any keyboard fallback is recorded. Mobile is emulated. Frame intervals are a stationary laboratory sample, not physical-device FPS.",
+  "screenshotFolder": "docs/screenshots/woodstock-performance/2026-09-21T20-14-14-695Z",
+  "previousResultBaseline": "docs/baselines/woodstock-performance/2026-09-21T20-14-14-695Z/performance-woodstock-results.json",
+  "profiles": [
+    {
+      "name": "desktop",
+      "readyMs": 796,
+      "controls": {
+        "mode": "mouse",
+        "pointerLockConfirmed": true,
+        "fallbackReason": null
+      },
+      "resumedControls": {
+        "mode": "mouse",
+        "pointerLockConfirmed": true,
+        "fallbackReason": null
+      },
+      "opening": [
+        {
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "bytes": 17580,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-D-_uRul1.css",
+          "bytes": 6722,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-BtYUAmOU.js",
+          "bytes": 8464,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "bytes": 294280,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "bytes": 110584,
+          "type": "img"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "bytes": 17580,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-D-_uRul1.css",
+          "bytes": 6722,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-BtYUAmOU.js",
+          "bytes": 8464,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "bytes": 294280,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "bytes": 110584,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+          "bytes": 222018,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/runtime-CGnwewh0.js",
+          "bytes": 148277,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/runtime-ynmn3yh0.css",
+          "bytes": 4602,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-640.webp",
+          "bytes": 107932,
+          "type": "img"
+        }
+      ],
+      "gameChunkAndCssBytes": 152879,
+      "allResourcesAtPlayBytes": 920459,
+      "sample": {
+        "milliseconds": 3504.199999988079,
+        "frames": 351,
+        "estimatedFps": 100,
+        "medianIntervalMs": 10,
+        "p95IntervalMs": 10.199999999999818,
+        "maxDrawCallsPerFrame": 83,
+        "internalResolution": [
+          1440,
+          1000
+        ],
+        "renderer": "WebKit WebGL"
+      },
+      "audioStatus": 206,
+      "canvasCountAfterExit": 0,
+      "errors": []
+    },
+    {
+      "name": "mobile-emulated",
+      "readyMs": 354,
+      "controls": {
+        "mode": "touch",
+        "pointerLockConfirmed": false,
+        "fallbackReason": null
+      },
+      "resumedControls": {
+        "mode": "touch",
+        "pointerLockConfirmed": false,
+        "fallbackReason": null
+      },
+      "opening": [
+        {
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "bytes": 17580,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-BtYUAmOU.js",
+          "bytes": 8464,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-D-_uRul1.css",
+          "bytes": 6722,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "bytes": 294280,
+          "type": "img"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "bytes": 17580,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-BtYUAmOU.js",
+          "bytes": 8464,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-D-_uRul1.css",
+          "bytes": 6722,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "bytes": 294280,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "bytes": 110584,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/runtime-CGnwewh0.js",
+          "bytes": 148277,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/runtime-ynmn3yh0.css",
+          "bytes": 4602,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-640.webp",
+          "bytes": 107932,
+          "type": "img"
+        }
+      ],
+      "gameChunkAndCssBytes": 152879,
+      "allResourcesAtPlayBytes": 698441,
+      "sample": {
+        "milliseconds": 3506.5000000119207,
+        "frames": 351,
+        "estimatedFps": 99.99999999999994,
+        "medianIntervalMs": 10,
+        "p95IntervalMs": 10.200000000000273,
+        "maxDrawCallsPerFrame": 65,
+        "internalResolution": [
+          491,
+          1063
+        ],
+        "renderer": "WebKit WebGL"
+      },
+      "audioStatus": 206,
+      "canvasCountAfterExit": 0,
+      "errors": []
+    }
+  ],
+  "htmlSha256": "e46c22f265bf87ca221629bb8ee35c8284f4bd413658f3f00bf76f8b25176e89"
+}

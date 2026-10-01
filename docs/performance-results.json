@@ -1,0 +1,2478 @@
+{
+  "generatedAt": "2026-10-01T00:17:32.522Z",
+  "target": "http://127.0.0.1:4173/",
+  "environment": {
+    "node": "v20.20.0",
+    "browser": "154.0.8037.58",
+    "platform": "win32",
+    "cache": "Disabled using Network.setCacheDisabled; a new isolated context per profile",
+    "network": "Local Vite preview; no network or CPU throttling; no external service",
+    "tools": "Installed @playwright/test; standard PerformanceObserver and PerformanceResourceTiming; no DevTools MCP or trace"
+  },
+  "distFiles": [
+    {
+      "path": "assets/back-dark-900.webp",
+      "bytes": 110284,
+      "sha256": "f5208a2fca3f0077d8f53aed2169fd6d6f3cb5ee0afcbef51c61acc8b7ba14f6"
+    },
+    {
+      "path": "assets/back-light-900.webp",
+      "bytes": 140022,
+      "sha256": "99378605c9b2c1c1234899ce458da68c693ca6980441c9761f1b35e97615868c"
+    },
+    {
+      "path": "assets/cover-dark-1200.webp",
+      "bytes": 293980,
+      "sha256": "de345a0bfe6ef38cd316717df01b868d5247a67ecdf7c3584fb5cc12239deacb"
+    },
+    {
+      "path": "assets/cover-dark-640.webp",
+      "bytes": 107632,
+      "sha256": "6d4e4016debad188687ba097863943c54b2b475af4ba0cd145eccdf7303fba77"
+    },
+    {
+      "path": "assets/cover-light-900.webp",
+      "bytes": 221718,
+      "sha256": "05e856db704d2c9493eb64ad8fe7c525d1e17b815445025020af91fd3e150f3a"
+    },
+    {
+      "path": "assets/index-C_iaWLg4.js",
+      "bytes": 28694,
+      "sha256": "4e1c844b7f41a47c12fcea8f65cb806f2e8243bf6e4d6958680457d53376f1e4"
+    },
+    {
+      "path": "assets/index-DqJ0Cjha.css",
+      "bytes": 30808,
+      "sha256": "6026ff1ca4599e2da7bd81e59052150ad489319442b671fdb2749ebb9123b655"
+    },
+    {
+      "path": "assets/runtime-BgCAUnP4.js",
+      "bytes": 5619,
+      "sha256": "08b6e2199d5313a9c6991739771d9c5a23b6dd792b7537e75f21186530d34c89"
+    },
+    {
+      "path": "assets/runtime-DiQEJXVd.css",
+      "bytes": 3321,
+      "sha256": "30b249dd57021782208a4162f111d9cd2aaa284202b459e2502e28e7affe2c53"
+    },
+    {
+      "path": "audio/woodstock-demo-v1.wav",
+      "bytes": 384044,
+      "sha256": "69a896ceb1ef9f89aa0ace808578632c1b17e7470d6656c7095a495f49bb187f"
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "bytes": 4535,
+      "sha256": "5188ea5703a25a2fee0f17586c473b3cf6018810146b021ce4bb7a2eb6499802"
+    },
+    {
+      "path": "fonts/unifrakturcook-latin-700.woff2",
+      "bytes": 17280,
+      "sha256": "3304757748716ececd1b87999cb92d61ff5332aefbe8331d5155bbb68218e588"
+    },
+    {
+      "path": "games/2048/adapter.js",
+      "bytes": 2246,
+      "sha256": "b179655b8f51a1c878e1cddb0d2f9b2ea9beee5ebe9fbac49818c250d0c6d5e2"
+    },
+    {
+      "path": "games/2048/game_manager.js",
+      "bytes": 7722,
+      "sha256": "d57b49da92ea0083cac523940f5cb28718bf1e1a0f0173d278f4bbe734a07dad"
+    },
+    {
+      "path": "games/2048/grid.js",
+      "bytes": 2526,
+      "sha256": "169428f5ff7f726c38112fcf1c918028cbca3a1d9f9239838fbc7eb4396b9f9a"
+    },
+    {
+      "path": "games/2048/html_actuator.js",
+      "bytes": 4040,
+      "sha256": "67b796d4f640b927e517b2281f8230c4f65c08b07558001e2c0dc9ea2e2145cf"
+    },
+    {
+      "path": "games/2048/index.html",
+      "bytes": 2003,
+      "sha256": "1f6724442b26481fca8645f5ed90a9f0db44a1357b1137107e8ff3049c8c7228"
+    },
+    {
+      "path": "games/2048/keyboard_input_manager.js",
+      "bytes": 4005,
+      "sha256": "7d579ab5b67dddf339cf28a7d06e4e24eca08b0187204ce352d67c49ae1e48de"
+    },
+    {
+      "path": "games/2048/LICENSE.txt",
+      "bytes": 1083,
+      "sha256": "57e12c39a6ad9d98b2e451065bfdfbd15fc9e0c2ed3bf4dc1d09acab41ff02fc"
+    },
+    {
+      "path": "games/2048/skin.css",
+      "bytes": 2699,
+      "sha256": "d36bb21d77ada93c17617fea5251f6996580b65710f4ef78372d0bf3de8d60b9"
+    },
+    {
+      "path": "games/2048/tile.js",
+      "bytes": 594,
+      "sha256": "13699e51d62179a6d36874108831a29901a98d6e11329918e64cfb5ee82d58e3"
+    },
+    {
+      "path": "games/asteroids/adapter.js",
+      "bytes": 1661,
+      "sha256": "eb71b8e92a8bafc7c618f565071e7f18789e516558f14dad015991e6f185b5b6"
+    },
+    {
+      "path": "games/asteroids/game.js",
+      "bytes": 29897,
+      "sha256": "b0059ef2baac553973252171b43f2d70a9f79e70b2d2bb31c033be4048c718b8"
+    },
+    {
+      "path": "games/asteroids/index.html",
+      "bytes": 856,
+      "sha256": "aa72ff2f3a762d5582326c5e9f6e76f69a81b1aac91907e2682f54ac757db84b"
+    },
+    {
+      "path": "games/asteroids/LICENSE",
+      "bytes": 1087,
+      "sha256": "e0fc2b086d3f3d54ec6a5e36a63a6418f832f3629c4dedc57446fa9b52f22b6a"
+    },
+    {
+      "path": "games/asteroids/README.md",
+      "bytes": 173,
+      "sha256": "ec857d0cfa3839d6c32a30ac28f0aa7366a03d8c4e5d4d261c65cb265de5cadf"
+    },
+    {
+      "path": "games/asteroids/skin.css",
+      "bytes": 1217,
+      "sha256": "0821d9cee15782b0dbd7f035b41303e12b753e9b9204e1e4f820f4f9ed23211e"
+    },
+    {
+      "path": "games/breakout/adapter.js",
+      "bytes": 2985,
+      "sha256": "576cd8f54bc304ba7543690ff153deabebe3cdc96c3460dcad221447ba07cd1e"
+    },
+    {
+      "path": "games/breakout/breakout.js",
+      "bytes": 23210,
+      "sha256": "5904bd60acca73c6addcd2e80489c337d2f9e35246be1a6ab86ef92e412c1b8c"
+    },
+    {
+      "path": "games/breakout/game.js",
+      "bytes": 22516,
+      "sha256": "d5cbb6053f11220d43a7cf71bca06c4513c162f19384911f7fa6dec520197a36"
+    },
+    {
+      "path": "games/breakout/index.html",
+      "bytes": 1380,
+      "sha256": "993fefa84e88c9447e130645ccb7ff9e079f5d45371e3dc9c8e27b80639c6c1b"
+    },
+    {
+      "path": "games/breakout/levels.js",
+      "bytes": 7531,
+      "sha256": "9a12e4fa1d1fa507a8b1bfa3c80643c711fe4f163dd0ff837df319bbe5de99e5"
+    },
+    {
+      "path": "games/breakout/LICENSE",
+      "bytes": 1471,
+      "sha256": "f57c728322b21e4103d485dccf31b59ff48a220df2ecc6cea77349ec15a422e3"
+    },
+    {
+      "path": "games/flappy/adapter.js",
+      "bytes": 577,
+      "sha256": "043fd99b1aa90a41518ce8b0403392760a8a0f40f483fad8652c327173fa5d5c"
+    },
+    {
+      "path": "games/flappy/game.js",
+      "bytes": 12935,
+      "sha256": "49237483587fefc742406c3f4c7d9d840bab4f35afbb391919c11a67af5ffeaa"
+    },
+    {
+      "path": "games/flappy/index.html",
+      "bytes": 866,
+      "sha256": "f7fc1dc01174e6a71edc327cde8d9f2f8394c15aa6bccd9fe1ea342c84215bca"
+    },
+    {
+      "path": "games/flappy/LICENSE",
+      "bytes": 1092,
+      "sha256": "ec7478d631ba97a43818958d20152379468e065a6a3b84d2cf361097a79edb09"
+    },
+    {
+      "path": "games/flappy/README.md",
+      "bytes": 5221,
+      "sha256": "6d80918c4d48e9dd5dda4617b64963f7b6feec7d260d27a6b800fb2825ba904d"
+    },
+    {
+      "path": "games/flappy/skin.css",
+      "bytes": 1217,
+      "sha256": "0821d9cee15782b0dbd7f035b41303e12b753e9b9204e1e4f820f4f9ed23211e"
+    },
+    {
+      "path": "games/invaders/adapter.js",
+      "bytes": 2281,
+      "sha256": "ac553185df83a79426e474557a6edd39a853459ee152269d62b2eb551455ee62"
+    },
+    {
+      "path": "games/invaders/game.js",
+      "bytes": 24589,
+      "sha256": "31eccc831316e79b8a57eabe425135251cac45b9cc4a90652f8d6e48a57bdfbb"
+    },
+    {
+      "path": "games/invaders/index.html",
+      "bytes": 840,
+      "sha256": "2b29808c9a0b159d68a9d52b4699a46706fda227b9853f20f18c65c8d6f635d8"
+    },
+    {
+      "path": "games/invaders/LICENSE",
+      "bytes": 1066,
+      "sha256": "f31e65e771388ceb9f1eeb2386989ab10388fac43bd5725868e5b4ad3d61df43"
+    },
+    {
+      "path": "games/invaders/README.md",
+      "bytes": 3821,
+      "sha256": "7fbf64b96e78aeaddebaf020df0379da9b3db50fe5fbde297cfd1ce38a94b668"
+    },
+    {
+      "path": "games/invaders/skin.css",
+      "bytes": 1217,
+      "sha256": "0821d9cee15782b0dbd7f035b41303e12b753e9b9204e1e4f820f4f9ed23211e"
+    },
+    {
+      "path": "games/maze/adapter.js",
+      "bytes": 2178,
+      "sha256": "cccf6af3118ddd123abb556a40442de114399780084e1e66ce64c3ff838d08f4"
+    },
+    {
+      "path": "games/maze/game.js",
+      "bytes": 11690,
+      "sha256": "286bc2efd971cc3a453cfa3ef6f6e6689b18fd26d16f0207e081a3aecf904417"
+    },
+    {
+      "path": "games/maze/index.html",
+      "bytes": 806,
+      "sha256": "496154080f5929ed52fc7ca5c2e430beb14e3ee55d75978ba840cf6f47b382e3"
+    },
+    {
+      "path": "games/maze/LICENSE",
+      "bytes": 1062,
+      "sha256": "83bc34b1c650fff6f290af3e04d41d719de55dac443fc17d648dfae64e7abb6f"
+    },
+    {
+      "path": "games/maze/README.md",
+      "bytes": 5652,
+      "sha256": "b03f3c5a45a3b2dce56dfada5f82c79d34ed775cbe2f8925c0c7c9d42821aaa2"
+    },
+    {
+      "path": "games/maze/skin.css",
+      "bytes": 1217,
+      "sha256": "0821d9cee15782b0dbd7f035b41303e12b753e9b9204e1e4f820f4f9ed23211e"
+    },
+    {
+      "path": "games/memory/adapter.js",
+      "bytes": 3046,
+      "sha256": "900ec4911724386cf8575b43637303d6497bf4319585cb7fd996ffbf7cde3abe"
+    },
+    {
+      "path": "games/memory/html5games.matchgame.js",
+      "bytes": 5924,
+      "sha256": "63d5e177d134bdab4b743f9197ce4c34bad38b7f0fa79afc908f63a417471e8f"
+    },
+    {
+      "path": "games/memory/index.html",
+      "bytes": 1343,
+      "sha256": "17999e3f944c21e7cad03a509777428d5d5648ff25574a62329a041d9f31972d"
+    },
+    {
+      "path": "games/memory/jquery-1.6.min.js",
+      "bytes": 90517,
+      "sha256": "79e970a410c0fa67175ca1685fc835b4dd14c8faef4ca175daf7ea22bcf897f1"
+    },
+    {
+      "path": "games/memory/jquery-MIT-LICENSE.txt",
+      "bytes": 1074,
+      "sha256": "0ade425df7c0386e04fbaa6b49e97a71ec504e53a4c01137c4bfb425a9a92344"
+    },
+    {
+      "path": "games/memory/LICENSE-source.md",
+      "bytes": 1796,
+      "sha256": "85844534d6e270de8d7312293dacdfe5c1296ffb8794ab3a75503ed9d64fb2ca"
+    },
+    {
+      "path": "games/memory/skin.css",
+      "bytes": 1933,
+      "sha256": "810ec0f45c790438604a37dac6a7936dbfa433a9f4f1fb06adc8f1bbbc175472"
+    },
+    {
+      "path": "games/minesweeper/game.js",
+      "bytes": 7489,
+      "sha256": "3c11cae18f06fd28ea6d75e04fb5f54e2366e341ea3ba30e76d45243158afb45"
+    },
+    {
+      "path": "games/minesweeper/index.html",
+      "bytes": 1156,
+      "sha256": "e213ce56f259d6410738103a192051c66a6c4477910562dfb92b4a490a595ba8"
+    },
+    {
+      "path": "games/minesweeper/LICENSE.md",
+      "bytes": 1067,
+      "sha256": "72639848a6d451793250f7d0470478702786b4eab455bba55429a3d7ed69e563"
+    },
+    {
+      "path": "games/minesweeper/skin.css",
+      "bytes": 1598,
+      "sha256": "8639d74ba3bed7cbf9802eab84a42acec8f18b005ee7c7a41c1f5e151f99bdc1"
+    },
+    {
+      "path": "games/pong/adapter.js",
+      "bytes": 2069,
+      "sha256": "50b05d5ea83e16dd8ef51d68f7ea9c10700997efbf7dd7401cf93ec7618c7d28"
+    },
+    {
+      "path": "games/pong/game.js",
+      "bytes": 10107,
+      "sha256": "7cb904cd294a5fc9780e7d3bfa15597001c933f76e477930d650291ef9a296fb"
+    },
+    {
+      "path": "games/pong/index.html",
+      "bytes": 1073,
+      "sha256": "8e4e86946cfeea76be234d15a2baff7cb908025145dfafe1163ccc56a824bbf8"
+    },
+    {
+      "path": "games/pong/LICENSE",
+      "bytes": 1102,
+      "sha256": "e21a35a09a2eb2681e7b3472226ae95a9317c11bb928dc27f579c5b38068f933"
+    },
+    {
+      "path": "games/pong/pong.js",
+      "bytes": 21945,
+      "sha256": "38ea07c0aee1e393b74d47a0f2437f565a6172073399c853913fda296ca610ee"
+    },
+    {
+      "path": "games/racer/adapter.js",
+      "bytes": 2613,
+      "sha256": "a3d1a64ad5c499e1009e6335823909d077aec5e3adc1de9c32120511201fe586"
+    },
+    {
+      "path": "games/racer/art.js",
+      "bytes": 3167,
+      "sha256": "a2256579be153106bb12f4e4b8e2d5c271af450ba5c06b063c367cb6bec5d795"
+    },
+    {
+      "path": "games/racer/common.js",
+      "bytes": 17692,
+      "sha256": "418105707329e882ce146440f19a7f6797a24197f3999b4762e752c6a55bf44a"
+    },
+    {
+      "path": "games/racer/index.html",
+      "bytes": 1906,
+      "sha256": "68961b25188c801b49bc5a6f1cbd14b9be8c2b0bdd98db51fa43c3c5b0636005"
+    },
+    {
+      "path": "games/racer/LICENSE",
+      "bytes": 1178,
+      "sha256": "ae8effccf4eb09d2abc39d9e5b087bc728c6147292f5139fce75a02b99ae4294"
+    },
+    {
+      "path": "games/racer/racer.js",
+      "bytes": 28403,
+      "sha256": "7e636cf445ae4d0c5bea38bc76f8c49ce9bfd05f3c5bb825384612c0839a8ae1"
+    },
+    {
+      "path": "games/shared.js",
+      "bytes": 5356,
+      "sha256": "dddb9e0cab02659334124632f1d9f663509ebe7c11124081eac2ced3df2d238d"
+    },
+    {
+      "path": "games/simon/adapter.js",
+      "bytes": 616,
+      "sha256": "de5a4ab105089d580afd537b2a521eca5c9ca953fce153f8c44548774fdbeb42"
+    },
+    {
+      "path": "games/simon/game.js",
+      "bytes": 18100,
+      "sha256": "fd412b29f4ac615c116cbe0460d173251b3ee790b22d5a7c89c8dacd72212774"
+    },
+    {
+      "path": "games/simon/index.html",
+      "bytes": 1841,
+      "sha256": "3c7dce73f435ff3c254db01972455bdb6d661e55760fee51e22fc59a7bbaab70"
+    },
+    {
+      "path": "games/simon/LICENSE",
+      "bytes": 1073,
+      "sha256": "23cd3d010bf7349d8c439b40ce29f591c41cd4087ba2f0bf503e9d3f285d628a"
+    },
+    {
+      "path": "games/simon/README.md",
+      "bytes": 6152,
+      "sha256": "365472ceba4e68023e62a5a9f4e16e35ca33df61cc59239eb00cf15117dc17fa"
+    },
+    {
+      "path": "games/simon/skin.css",
+      "bytes": 2038,
+      "sha256": "266ebfc0304f279eb585bd7e6e0d0d76e0762405e322b9191c78632646eb86a5"
+    },
+    {
+      "path": "games/snake/index.html",
+      "bytes": 1263,
+      "sha256": "2f6dffc4059a4de94afc8216e52c69fb8234373b60cacfc572b7004aa8ef55b3"
+    },
+    {
+      "path": "games/snake/LICENSE",
+      "bytes": 1073,
+      "sha256": "3558c70f0bb199fb5aef2854e797b65d700831b5e276ada5cdd65555a2075ae9"
+    },
+    {
+      "path": "games/snake/main.js",
+      "bytes": 1895,
+      "sha256": "ff03b58498950756b4d46831b2b8c66942114e2bf9be83a0aa1282b078c4fbf3"
+    },
+    {
+      "path": "games/snake/src/config.js",
+      "bytes": 282,
+      "sha256": "23eb6f23f062c8400d23f920e2514c157834bf1aba888558ae1cb5f9de8e70dc"
+    },
+    {
+      "path": "games/snake/src/food.js",
+      "bytes": 583,
+      "sha256": "798b6bcd225e3b35563b6b886fb968f0f91bc2de0d1d14ad243e765b152659da"
+    },
+    {
+      "path": "games/snake/src/game.js",
+      "bytes": 4271,
+      "sha256": "8c525675980bc347804a88f32bee0238cf66e3ec231368edf2b55670624a2d8f"
+    },
+    {
+      "path": "games/snake/src/input.js",
+      "bytes": 733,
+      "sha256": "4fe3a17ae35a580edb46adc6ca467eee0f9a51193170a24b374454a56e39639a"
+    },
+    {
+      "path": "games/snake/src/renderer.js",
+      "bytes": 2133,
+      "sha256": "734a1a536c46ee35e3ea1f8e61dc1b779b11f346d8ef0959bb694d1a11b6984a"
+    },
+    {
+      "path": "games/snake/src/score.js",
+      "bytes": 612,
+      "sha256": "9372ce71b429e7d09097afdbdb67ee48edeac29590a9c73070081bd4861e0602"
+    },
+    {
+      "path": "games/snake/src/snake.js",
+      "bytes": 1591,
+      "sha256": "67b471a684b66e8a4af06607f87680958c1d709dba909f1b1c7a54e867395382"
+    },
+    {
+      "path": "games/snake/src/ui.js",
+      "bytes": 569,
+      "sha256": "37b007e9998c64bd44d4cebd741f5cbbbdb3f2a7b652ba671d6827f128d16b89"
+    },
+    {
+      "path": "games/sokoban/adapter.js",
+      "bytes": 3982,
+      "sha256": "1466dc26222590207ecba87ec17fd4d0b53aaf0558a3922e02dfc421374b0d86"
+    },
+    {
+      "path": "games/sokoban/constants.js",
+      "bytes": 1526,
+      "sha256": "e6425ba687b882863a693d3b13f75467d72148a6b552341f116acd349bf37ee0"
+    },
+    {
+      "path": "games/sokoban/index.html",
+      "bytes": 1464,
+      "sha256": "6c8cc89a1c7238ac2ff37260c8aa8ba2ef28accf92b19e31d5fcfc48cb811518"
+    },
+    {
+      "path": "games/sokoban/LICENSE",
+      "bytes": 1069,
+      "sha256": "7b030458c61ca2815eff075d87c93a1888272d1809b803d8122b2f1c17e1c2fe"
+    },
+    {
+      "path": "games/sokoban/skin.css",
+      "bytes": 1467,
+      "sha256": "b0c03c7c9a795f9daa377a9fabb2045f1f0f502d5daebbedd5af50da0ad2e207"
+    },
+    {
+      "path": "games/sokoban/Sokoban.js",
+      "bytes": 5463,
+      "sha256": "166c56369bbcad0ea56050c329dca30f302e3fcd32b13af8fba33d394d4b5516"
+    },
+    {
+      "path": "games/sokoban/utils.js",
+      "bytes": 1291,
+      "sha256": "b5271ecae6377b71c40eaaf14045c5be92c8beffa5b1d00ad4561b9f3896c951"
+    },
+    {
+      "path": "games/tetris/adapter.js",
+      "bytes": 1834,
+      "sha256": "d16e57e388a3e21b375484e73aa305606846fa8d961716234cdedd93ca092c25"
+    },
+    {
+      "path": "games/tetris/index.html",
+      "bytes": 1775,
+      "sha256": "1b0dd934b0e842782d2f8ca9bbb90fc880b0d698263757fe49f46c393ac6dc74"
+    },
+    {
+      "path": "games/tetris/LICENSE",
+      "bytes": 1103,
+      "sha256": "31744bd674567634d06949f7bbc581ef148583106751dfbafa362b1a3cea116b"
+    },
+    {
+      "path": "games/tetris/tetris.js",
+      "bytes": 14676,
+      "sha256": "32f4cacd37a652bf54ee58dbb7f22df731f7bc999e048fc53545f9deaeb6a8f7"
+    },
+    {
+      "path": "games/theme.css",
+      "bytes": 1833,
+      "sha256": "e4a02c8b10f325ec7fd57272ad167680fcfba64c97d5bc6bdf17805485d6441d"
+    },
+    {
+      "path": "games/untangle/adapter.js",
+      "bytes": 4655,
+      "sha256": "ad4ed9c03e26f74b2ce833b1ce9ccfa5c100cf758c30cbe2ba8e6f10230b5ca4"
+    },
+    {
+      "path": "games/untangle/index.html",
+      "bytes": 1827,
+      "sha256": "574f38be3617e2ef3bea219972cbd9700fb4c15ce19e6b375f3613e2ffdac85b"
+    },
+    {
+      "path": "games/untangle/NOTICE.txt",
+      "bytes": 640,
+      "sha256": "87d18bec278746bdfdc74c527685046d5da4de6b208667b1953bef4cad4178c0"
+    },
+    {
+      "path": "games/untangle/untangle.data.js",
+      "bytes": 2967,
+      "sha256": "116ef0c75dc0be3e9bad1b885a5e6baa595121a6e576765fda6291bc4edc8f28"
+    },
+    {
+      "path": "games/untangle/untangle.drawing.js",
+      "bytes": 4356,
+      "sha256": "1e0fa864ea7f9564ae6f402fe550b0c8b80c6395b28d8df05ed46d02e72fb127"
+    },
+    {
+      "path": "games/untangle/untangle.game.js",
+      "bytes": 1442,
+      "sha256": "9ddc3525cd0fcf48f71cc50b9be74d01e4a2d4081d2eec845fbce8605a5f1916"
+    },
+    {
+      "path": "games/untangle/untangle.levels.js",
+      "bytes": 1094,
+      "sha256": "b5a410b9f9c57d93e4ddf026f198c27fa70cc9b5cd0e11566e377d749cc1dd64"
+    },
+    {
+      "path": "games/untangle/UPSTREAM-README.md",
+      "bytes": 1796,
+      "sha256": "85844534d6e270de8d7312293dacdfe5c1296ffb8794ab3a75503ed9d64fb2ca"
+    },
+    {
+      "path": "index.html",
+      "bytes": 13337,
+      "sha256": "5481c039ec1a46c6a421450d2619ac30b887dc10ebbf7b3ef49cadad7036590f"
+    }
+  ],
+  "forbiddenDistFiles": [],
+  "profiles": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "initial": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 7539
+        },
+        "totals": {
+          "transferBytes": 446004,
+          "encodedBytes": 444204,
+          "decodedBytes": 494383,
+          "entries": 6
+        },
+        "lcp": {
+          "startTime": 524,
+          "renderTime": 524,
+          "loadTime": 94.5,
+          "size": 247506,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 524,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 5.700000002980232,
+          "domContentLoadedEventEnd": 71.09999999403954,
+          "loadEventEnd": 96
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 96
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 13.200000002980232,
+            "duration": 6.5999999940395355
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 13.700000002980232,
+            "duration": 9.099999994039536
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 13.799999997019768,
+            "duration": 15
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 13.899999991059303,
+            "duration": 14.300000011920929
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 241.5,
+            "duration": 4.5999999940395355
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 498,
+            "height": 498
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 291,
+            "height": 291
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 352,
+            "height": 352
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "afterScroll": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 6539,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 7539
+        },
+        "totals": {
+          "transferBytes": 668022,
+          "encodedBytes": 665922,
+          "decodedBytes": 716101,
+          "entries": 7
+        },
+        "lcp": {
+          "startTime": 524,
+          "renderTime": 524,
+          "loadTime": 94.5,
+          "size": 247506,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 524,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 5.700000002980232,
+          "domContentLoadedEventEnd": 71.09999999403954,
+          "loadEventEnd": 96
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 96
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 13.200000002980232,
+            "duration": 6.5999999940395355
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 13.700000002980232,
+            "duration": 9.099999994039536
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 13.799999997019768,
+            "duration": 15
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 13.899999991059303,
+            "duration": 14.300000011920929
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 241.5,
+            "duration": 4.5999999940395355
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 1675.5999999940395,
+            "duration": 3
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 498,
+            "height": 498
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 291,
+            "height": 291
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 352,
+            "height": 352
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "scrollSteps": 9,
+      "reload": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 7539
+        },
+        "totals": {
+          "transferBytes": 446004,
+          "encodedBytes": 444204,
+          "decodedBytes": 494383,
+          "entries": 6
+        },
+        "lcp": {
+          "startTime": 144,
+          "renderTime": 144,
+          "loadTime": 57.6000000089407,
+          "size": 247506,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 144,
+        "navigation": {
+          "type": "reload",
+          "responseStart": 5.299999997019768,
+          "domContentLoadedEventEnd": 49.70000000298023,
+          "loadEventEnd": 58.6000000089407
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 58.6000000089407
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 17.100000008940697,
+            "duration": 7.899999991059303
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 17.900000005960464,
+            "duration": 14.099999994039536
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 17.900000005960464,
+            "duration": 12.599999994039536
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 17.900000005960464,
+            "duration": 16.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 92.79999999701977,
+            "duration": 6.100000008940697
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 498,
+            "height": 498
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 291,
+            "height": 291
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 352,
+            "height": 352
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "lazyAddedUrls": [
+        "http://127.0.0.1:4173/assets/cover-light-900.webp"
+      ],
+      "requests": [
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "scroll",
+          "url": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/?edition=nfc",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        }
+      ],
+      "blockedContentRequests": [],
+      "errors": [],
+      "warnings": [],
+      "normalFontProbe": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 7539
+        },
+        "totals": {
+          "transferBytes": 446004,
+          "encodedBytes": 444204,
+          "decodedBytes": 494383,
+          "entries": 6
+        },
+        "lcp": {
+          "startTime": 144,
+          "renderTime": 144,
+          "loadTime": 57.6000000089407,
+          "size": 247506,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 144,
+        "navigation": {
+          "type": "reload",
+          "responseStart": 5.299999997019768,
+          "domContentLoadedEventEnd": 49.70000000298023,
+          "loadEventEnd": 58.6000000089407
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 58.6000000089407
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 17.100000008940697,
+            "duration": 7.899999991059303
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 17.900000005960464,
+            "duration": 14.099999994039536
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 17.900000005960464,
+            "duration": 12.599999994039536
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 17.900000005960464,
+            "duration": 16.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 92.79999999701977,
+            "duration": 6.100000008940697
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 498,
+            "height": 498
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 291,
+            "height": 291
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 352,
+            "height": 352
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "renderedFonts": [
+          {
+            "selector": "#hero-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "selector": "#collection-title",
+            "fonts": [
+              {
+                "familyName": "Arial",
+                "postScriptName": "Arial-BoldMT",
+                "isCustomFont": false,
+                "glyphCount": 12
+              }
+            ]
+          }
+        ]
+      },
+      "nfcFontProbe": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 5704,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 7539
+        },
+        "totals": {
+          "transferBytes": 335420,
+          "encodedBytes": 333920,
+          "decodedBytes": 384099,
+          "entries": 5
+        },
+        "lcp": {
+          "startTime": 120,
+          "renderTime": 120,
+          "loadTime": 0,
+          "size": 14023,
+          "url": "",
+          "element": "p"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 120,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 4.5,
+          "domContentLoadedEventEnd": 52.5,
+          "loadEventEnd": 81.29999999701977
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/?edition=nfc",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 81.29999999701977
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 21.899999991059303,
+            "duration": 8.400000005960464
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 22.200000002980232,
+            "duration": 11.799999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 22.200000002980232,
+            "duration": 10
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 22.299999997019768,
+            "duration": 13.599999994039536
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 498,
+            "height": 498
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 291,
+            "height": 291
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 352,
+            "height": 352
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "renderedFonts": [
+          {
+            "selector": "#hero-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "selector": "#collection-title",
+            "fonts": [
+              {
+                "familyName": "Arial",
+                "postScriptName": "Arial-BoldMT",
+                "isCustomFont": false,
+                "glyphCount": 12
+              }
+            ]
+          }
+        ]
+      },
+      "accessibilitySnapshot": "- link \"Pular para o conteúdo\":\n  - /url: \"#conteudo\"\n- banner:\n  - link \"psicoZ, início\":\n    - /url: \"#inicio\"\n    - text: psicoZ\n  - navigation \"Navegação principal\":\n    - link \"Álbum\":\n      - /url: \"#album\"\n    - link \"Artista\":\n      - /url: \"#artista\"\n    - link \"Faixas\":\n      - /url: \"#faixas\"\n    - link \"Jogo\":\n      - /url: \"#jogo\"\n    - link \"Coleção\":\n      - /url: \"#colecao\"\n  - link \"Explorar o visual\":\n    - /url: \"#visual\"\n- main:\n  - region \"psicoZ\":\n    - paragraph:\n      - text: Lançamento planejado\n      - time: 31/10/2026\n    - heading \"psicoZ\" [level=1]\n    - text: Álbum 15 faixas Traço vermelho\n    - paragraph: Ouça. Explore. Leve com você.\n    - paragraph: 15 faixas, jogos curtos e uma coleção digital. Entre no universo preto, branco e vermelho.\n    - button \"Fazer pré-save\"\n    - link \"Explorar o álbum\":\n      - /url: \"#faixas\"\n    - link \"Jogar Woodstock O primeiro de 15 jogos\":\n      - /url: \"#/jogar/track-01\"\n    - figure \"A arte é a porta de entrada. Toque na capa\":\n      - button \"Abrir painel de pré-save de psicoZ\":\n        - 'img \"Capa de psicoZ: colagem de desenhos vermelhos sobre preto, com mãos, olhos, correntes e figuras surreais.\"'\n      - text: A arte é a porta de entrada. Toque na capa\n  - text: 15 faixas ·Traço de tattoo ·Releituras jogáveis ·Progresso no seu aparelho\n  - navigation \"Explorar o álbum\":\n    - link \"As 15 faixas\":\n      - /url: \"#faixas\"\n    - link \"Os 15 jogos\":\n      - /url: \"#jogo\"\n    - link \"Experiência visual\":\n      - /url: \"#visual\"\n    - link \"Sobre o projeto\":\n      - /url: \"#album\"\n    - link \"Minha coleção\":\n      - /url: \"#colecao\"\n  - region \"Entre frequências.\":\n    - paragraph: Um outro jeito de explorar\n    - heading \"Entre frequências.\" [level=2]\n    - text: Estudo visual · sem áudio\n    - group \"Forma da visualização\":\n      - button \"Relevo\" [pressed]\n      - button \"Linhas\"\n      - button \"Cores do espectro\"\n    - text: Perspectiva\n    - slider \"Perspectiva\": \"0\"\n    - paragraph: Mude a forma, a cor e o ponto de vista. As formas são abstratas e não representam o áudio das faixas.\n  - region \"15 maneiras de entrar.\":\n    - paragraph: O álbum, faixa a faixa\n    - heading \"15 maneiras de entrar.\" [level=2]\n    - text: Nomes transcritos da contracapa\n    - list \"As 15 posições do álbum\":\n      - listitem:\n        - text: Woodstock\n        - link \"Jogar a fase de Woodstock\":\n          - /url: \"#/jogar/track-01\"\n          - text: Jogar fase 01\n      - listitem:\n        - text: Aditivo\n        - link \"Jogar a fase de Aditivo\":\n          - /url: \"#/jogar/track-02\"\n          - text: Jogar fase 02\n      - listitem:\n        - text: Silêncio\n        - link \"Jogar a fase de Silêncio\":\n          - /url: \"#/jogar/track-03\"\n          - text: Jogar fase 03\n      - listitem:\n        - text: Rumildo\n        - link \"Jogar a fase de Rumildo\":\n          - /url: \"#/jogar/track-04\"\n          - text: Jogar fase 04\n      - listitem:\n        - text: Inverso\n        - link \"Jogar a fase de Inverso\":\n          - /url: \"#/jogar/track-05\"\n          - text: Jogar fase 05\n      - listitem:\n        - text: Conhecida Ilusão\n        - link \"Jogar a fase de Conhecida Ilusão\":\n          - /url: \"#/jogar/track-06\"\n          - text: Jogar fase 06\n      - listitem:\n        - text: Não Me Dizem Nada\n        - link \"Jogar a fase de Não Me Dizem Nada\":\n          - /url: \"#/jogar/track-07\"\n          - text: Jogar fase 07\n      - listitem:\n        - text: Siblime\n        - link \"Jogar a fase de Siblime\":\n          - /url: \"#/jogar/track-08\"\n          - text: Jogar fase 08\n      - listitem:\n        - text: PsicoZ\n        - link \"Jogar a fase de PsicoZ\":\n          - /url: \"#/jogar/track-09\"\n          - text: Jogar fase 09\n      - listitem:\n        - text: Psicose feat Nobre\n        - link \"Jogar a fase de Psicose feat Nobre\":\n          - /url: \"#/jogar/track-10\"\n          - text: Jogar fase 10\n      - listitem:\n        - text: Assumindo o Risco\n        - link \"Jogar a fase de Assumindo o Risco\":\n          - /url: \"#/jogar/track-11\"\n          - text: Jogar fase 11\n      - listitem:\n        - text: Acapella\n        - link \"Jogar a fase de Acapella\":\n          - /url: \"#/jogar/track-12\"\n          - text: Jogar fase 12\n      - listitem:\n        - text: Cidade Cinza\n        - link \"Jogar a fase de Cidade Cinza\":\n          - /url: \"#/jogar/track-13\"\n          - text: Jogar fase 13\n      - listitem:\n        - text: Não Posso Errar\n        - link \"Jogar a fase de Não Posso Errar\":\n          - /url: \"#/jogar/track-14\"\n          - text: Jogar fase 14\n      - listitem:\n        - text: A anunciar\n        - link \"Jogar a fase de faixa 15\":\n          - /url: \"#/jogar/track-15\"\n          - text: Jogar fase 15\n    - paragraph: As 14 faixas nomeadas seguem a contracapa fornecida. A posição 15 permanece reservada até a confirmação final.\n    - figure \"Contracapa de referência Arte original · posição 15 pendente\":\n      - img \"Contracapa de referência com 14 títulos em lettering vermelho e uma posição reservada.\"\n      - text: Contracapa de referência Arte original · posição 15 pendente\n  - region \"Muito além da escuta.\":\n    - figure \"A mesma arte, sob outra luz. Encarte / psicoZ\":\n      - img \"Variante clara da arte de psicoZ, com desenhos vermelhos sobre branco.\"\n      - text: A mesma arte, sob outra luz. Encarte / psicoZ\n    - paragraph: Sobre o álbum\n    - heading \"Muito além da escuta.\" [level=2]\n    - paragraph: Conheça as imagens, acompanhe as 15 faixas e encontre sua coleção em um só lugar.\n    - paragraph: O texto conceitual do álbum será apresentado aqui após aprovação do artista.\n    - link \"Conhecer a coleção\":\n      - /url: \"#colecao\"\n  - region \"O artista.\":\n    - paragraph: Por trás do álbum\n    - heading \"O artista.\" [level=2]\n    - paragraph: Uma apresentação a caminho.\n    - paragraph: Nome artístico e biografia aguardam confirmação. Este espaço será dedicado à voz e à história de quem criou psicoZ.\n    - text: Redes e contato a anunciar\n  - region \"Entre nesse universo.\":\n    - paragraph: 15 faixas. 15 jogos.\n    - heading \"Entre nesse universo.\" [level=2]\n    - paragraph: Escolha uma faixa e encare seu desafio. Cada vitória deixa uma marca na sua coleção. Jogue na ordem que quiser.\n    - text: Seu percurso\n    - progressbar \"0 de 15 jogos conquistados\"\n    - paragraph: 0 de 15 jogos conquistados\n    - list \"Escolha um jogo por faixa\":\n      - listitem:\n        - 'link \"Jogar: Woodstock\"':\n          - /url: \"#/jogar/track-01\"\n          - text: 01 Jogar\n          - heading \"Woodstock\" [level=3]\n          - paragraph: O caminho perdido\n          - paragraph: Encontre a saída do labirinto.\n          - text: Labirinto\n      - listitem:\n        - 'link \"Jogar: Aditivo\"':\n          - /url: \"#/jogar/track-02\"\n          - text: 02 Jogar\n          - heading \"Aditivo\" [level=3]\n          - paragraph: Fome de sinal\n          - paragraph: Recolha seis sinais sem bater no próprio corpo.\n          - text: Snake\n      - listitem:\n        - 'link \"Jogar: Silêncio\"':\n          - /url: \"#/jogar/track-03\"\n          - text: 03 Jogar\n          - heading \"Silêncio\" [level=3]\n          - paragraph: Atravesse o silêncio\n          - paragraph: Passe por oito portais sem colidir.\n          - text: Voo entre obstáculos\n      - listitem:\n        - 'link \"Jogar: Rumildo\"':\n          - /url: \"#/jogar/track-04\"\n          - text: 04 Jogar\n          - heading \"Rumildo\" [level=3]\n          - paragraph: Duelo vermelho\n          - paragraph: Faça três pontos antes da raquete adversária.\n          - text: Pong\n      - listitem:\n        - 'link \"Jogar: Inverso\"':\n          - /url: \"#/jogar/track-05\"\n          - text: 05 Jogar\n          - heading \"Inverso\" [level=3]\n          - paragraph: Inverta a queda\n          - paragraph: Complete duas linhas antes de empilhar até o teto.\n          - text: Blocos em queda\n      - listitem:\n        - 'link \"Jogar: Conhecida Ilusão\"':\n          - /url: \"#/jogar/track-06\"\n          - text: 06 Jogar\n          - heading \"Conhecida Ilusão\" [level=3]\n          - paragraph: Duplo negativo\n          - paragraph: Encontre os seis pares de símbolos.\n          - text: Memória\n      - listitem:\n        - 'link \"Jogar: Não Me Dizem Nada\"':\n          - /url: \"#/jogar/track-07\"\n          - text: 07 Jogar\n          - heading \"Não Me Dizem Nada\" [level=3]\n          - paragraph: Estrada sem voz\n          - paragraph: Complete uma volta no circuito.\n          - text: Corrida na estrada\n      - listitem:\n        - 'link \"Jogar: Siblime\"':\n          - /url: \"#/jogar/track-08\"\n          - text: 08 Jogar\n          - heading \"Siblime\" [level=3]\n          - paragraph: Nós do sinal\n          - paragraph: Desembarace duas redes sem deixar linhas cruzadas.\n          - text: Desatar nós\n      - listitem:\n        - 'link \"Jogar: PsicoZ\"':\n          - /url: \"#/jogar/track-09\"\n          - text: 09 Jogar\n          - heading \"PsicoZ\" [level=3]\n          - paragraph: Órbita do caos\n          - paragraph: Destrua os asteroides para recuperar o sinal.\n          - text: Asteroids\n      - listitem:\n        - 'link \"Jogar: Psicose feat Nobre\"':\n          - /url: \"#/jogar/track-10\"\n          - text: 10 Jogar\n          - heading \"Psicose feat Nobre\" [level=3]\n          - paragraph: Ruptura\n          - paragraph: Quebre os 12 blocos antes de perder três vidas.\n          - text: Quebra de blocos\n      - listitem:\n        - 'link \"Jogar: Assumindo o Risco\"':\n          - /url: \"#/jogar/track-11\"\n          - text: 11 Jogar\n          - heading \"Assumindo o Risco\" [level=3]\n          - paragraph: Não pise em falso\n          - paragraph: Revele as 56 casas seguras sem detonar as oito minas.\n          - text: Campo minado\n      - listitem:\n        - 'link \"Jogar: Acapella\"':\n          - /url: \"#/jogar/track-12\"\n          - text: 12 Jogar\n          - heading \"Acapella\" [level=3]\n          - paragraph: A última voz\n          - paragraph: Elimine uma formação de invasores.\n          - text: Invasores\n      - listitem:\n        - 'link \"Jogar: Cidade Cinza\"':\n          - /url: \"#/jogar/track-13\"\n          - text: 13 Jogar\n          - heading \"Cidade Cinza\" [level=3]\n          - paragraph: Peso da cidade\n          - paragraph: Empurre as três caixas para os três alvos.\n          - text: Sokoban\n      - listitem:\n        - 'link \"Jogar: Não Posso Errar\"':\n          - /url: \"#/jogar/track-14\"\n          - text: 14 Jogar\n          - heading \"Não Posso Errar\" [level=3]\n          - paragraph: Repita o rito\n          - paragraph: Repita quatro rodadas de sinais sem errar.\n          - text: Simon\n      - listitem:\n        - 'link \"Jogar: Faixa 15 — título a anunciar\"':\n          - /url: \"#/jogar/track-15\"\n          - text: 15 Jogar\n          - heading \"Faixa 15 — título a anunciar\" [level=3]\n          - paragraph: A última fusão\n          - paragraph: Combine os blocos até formar o número 256.\n          - text: Fusão numérica\n    - paragraph: Preto, papel e vermelho. Um desafio por faixa.\n    - paragraph: Protótipos jogáveis para PC e celular. As músicas e os arquivos para download ainda estão em preparação; conquistar uma fase registra seu progresso local.\n    - link \"Jogar Woodstock\":\n      - /url: \"#/jogar/track-01\"\n    - link \"Ver minha coleção\":\n      - /url: \"#colecao\"\n  - region \"Sua coleção.\":\n    - paragraph: Para levar com você\n    - heading \"Sua coleção.\" [level=2]\n    - paragraph: 0 de 15 faixas conquistadas no jogo\n    - status: Cada faixa tem um jogo. Complete os objetivos para registrar suas conquistas; a edição NFC libera acesso aos materiais publicados. Seu progresso fica salvo neste navegador.\n    - heading \"Músicas e materiais\" [level=3]\n    - text: Arquivos em preparação\n    - list:\n      - listitem:\n        - text: \"01\"\n        - paragraph: Woodstock — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"02\"\n        - paragraph: Aditivo — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"03\"\n        - paragraph: Silêncio — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"04\"\n        - paragraph: Rumildo — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"05\"\n        - paragraph: Inverso — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"06\"\n        - paragraph: Conhecida Ilusão — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"07\"\n        - paragraph: Não Me Dizem Nada — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"08\"\n        - paragraph: Siblime — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"09\"\n        - paragraph: PsicoZ — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"10\"\n        - paragraph: Psicose feat Nobre — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"11\"\n        - paragraph: Assumindo o Risco — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"12\"\n        - paragraph: Acapella — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"13\"\n        - paragraph: Cidade Cinza — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"14\"\n        - paragraph: Não Posso Errar — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"15\"\n        - paragraph: Faixa 15 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: ✧\n        - paragraph: Arte do álbum — PNG\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: ✧\n        - paragraph: Álbum completo — ZIP\n        - text: Acesso ainda não conquistado Em breve\n    - complementary \"Do físico ao digital.\":\n      - heading \"Do físico ao digital.\" [level=3]\n      - paragraph: Aproxime o mini CD NFC de um celular compatível para abrir a coleção e liberar acesso aos materiais publicados.\n      - paragraph: O endereço da tag é compartilhável. Ele libera acesso, mas não conta como conquista no jogo.\n      - group: Como funciona o acesso?\n    - group: Seu progresso neste aparelho\n- contentinfo:\n  - link \"psicoZ\":\n    - /url: \"#inicio\"\n  - paragraph: Álbum, arte e outros caminhos.\n  - paragraph: Créditos artísticos e técnicos aguardam confirmação.\n  - link \"Voltar ao início\":\n    - /url: \"#inicio\"\n- status"
+    },
+    {
+      "name": "mobile-emulated",
+      "viewport": {
+        "width": 393,
+        "height": 851
+      },
+      "deviceScaleFactor": 2.75,
+      "isMobile": true,
+      "hasTouch": true,
+      "initial": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 11772
+        },
+        "totals": {
+          "transferBytes": 335420,
+          "encodedBytes": 333920,
+          "decodedBytes": 384099,
+          "entries": 5
+        },
+        "lcp": {
+          "startTime": 256,
+          "renderTime": 256,
+          "loadTime": 75.1000000089407,
+          "size": 70902,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 256,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 4.200000002980232,
+          "domContentLoadedEventEnd": 55.900000005960464,
+          "loadEventEnd": 75.90000000596046
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 75.90000000596046
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 16,
+            "duration": 5.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 16.400000005960464,
+            "duration": 7.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 16.5,
+            "duration": 8.700000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 16.700000002980232,
+            "duration": 9.400000005960464
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 303,
+            "height": 303
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 313,
+            "height": 313
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 278,
+            "height": 278
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "afterScroll": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 10921,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 11772
+        },
+        "totals": {
+          "transferBytes": 668022,
+          "encodedBytes": 665922,
+          "decodedBytes": 716101,
+          "entries": 7
+        },
+        "lcp": {
+          "startTime": 256,
+          "renderTime": 256,
+          "loadTime": 75.1000000089407,
+          "size": 70902,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 256,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 4.200000002980232,
+          "domContentLoadedEventEnd": 55.900000005960464,
+          "loadEventEnd": 75.90000000596046
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 75.90000000596046
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 16,
+            "duration": 5.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 16.400000005960464,
+            "duration": 7.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 16.5,
+            "duration": 8.700000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 16.700000002980232,
+            "duration": 9.400000005960464
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 1567.7000000029802,
+            "duration": 3.1000000089406967
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 1703.2000000029802,
+            "duration": 5.799999997019768
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 303,
+            "height": 303
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 313,
+            "height": 313
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 278,
+            "height": 278
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "scrollSteps": 17,
+      "reload": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 11772
+        },
+        "totals": {
+          "transferBytes": 335420,
+          "encodedBytes": 333920,
+          "decodedBytes": 384099,
+          "entries": 5
+        },
+        "lcp": {
+          "startTime": 136,
+          "renderTime": 136,
+          "loadTime": 57.79999999701977,
+          "size": 70902,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 136,
+        "navigation": {
+          "type": "reload",
+          "responseStart": 4.4000000059604645,
+          "domContentLoadedEventEnd": 53.29999999701977,
+          "loadEventEnd": 58.5
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 58.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 31.200000002980232,
+            "duration": 6.0999999940395355
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 31.5,
+            "duration": 8.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 31.600000008940697,
+            "duration": 8.799999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 31.600000008940697,
+            "duration": 7.299999997019768
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 303,
+            "height": 303
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 313,
+            "height": 313
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 278,
+            "height": 278
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "lazyAddedUrls": [
+        "http://127.0.0.1:4173/assets/back-dark-900.webp",
+        "http://127.0.0.1:4173/assets/cover-light-900.webp"
+      ],
+      "requests": [
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "scroll",
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "scroll",
+          "url": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/?edition=nfc",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        }
+      ],
+      "blockedContentRequests": [],
+      "errors": [],
+      "warnings": [],
+      "normalFontProbe": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 11772
+        },
+        "totals": {
+          "transferBytes": 335420,
+          "encodedBytes": 333920,
+          "decodedBytes": 384099,
+          "entries": 5
+        },
+        "lcp": {
+          "startTime": 136,
+          "renderTime": 136,
+          "loadTime": 57.79999999701977,
+          "size": 70902,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 136,
+        "navigation": {
+          "type": "reload",
+          "responseStart": 4.4000000059604645,
+          "domContentLoadedEventEnd": 53.29999999701977,
+          "loadEventEnd": 58.5
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 58.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 31.200000002980232,
+            "duration": 6.0999999940395355
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 31.5,
+            "duration": 8.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 31.600000008940697,
+            "duration": 8.799999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 31.600000008940697,
+            "duration": 7.299999997019768
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 303,
+            "height": 303
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 313,
+            "height": 313
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 278,
+            "height": 278
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "renderedFonts": [
+          {
+            "selector": "#hero-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "selector": "#collection-title",
+            "fonts": [
+              {
+                "familyName": "Arial",
+                "postScriptName": "Arial-BoldMT",
+                "isCustomFont": false,
+                "glyphCount": 12
+              }
+            ]
+          }
+        ]
+      },
+      "nfcFontProbe": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 9335,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 11751
+        },
+        "totals": {
+          "transferBytes": 335420,
+          "encodedBytes": 333920,
+          "decodedBytes": 384099,
+          "entries": 5
+        },
+        "lcp": {
+          "startTime": 88,
+          "renderTime": 88,
+          "loadTime": 0,
+          "size": 17499,
+          "url": "",
+          "element": "p#collection-status"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 88,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 3.7999999970197678,
+          "domContentLoadedEventEnd": 45,
+          "loadEventEnd": 65.90000000596046
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/?edition=nfc",
+            "type": "document",
+            "transferSize": 4682,
+            "encodedBodySize": 4382,
+            "decodedBodySize": 13337,
+            "startTime": 0,
+            "duration": 65.90000000596046
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 24.200000002980232,
+            "duration": 5.9000000059604645
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-C_iaWLg4.js",
+            "type": "script",
+            "transferSize": 10959,
+            "encodedBodySize": 10659,
+            "decodedBodySize": 28694,
+            "startTime": 24.400000005960464,
+            "duration": 5.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-DqJ0Cjha.css",
+            "type": "link",
+            "transferSize": 7919,
+            "encodedBodySize": 7619,
+            "decodedBodySize": 30808,
+            "startTime": 24.5,
+            "duration": 6.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 24.600000008940697,
+            "duration": 6.5999999940395355
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 303,
+            "height": 303
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 313,
+            "height": 313
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 278,
+            "height": 278
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "renderedFonts": [
+          {
+            "selector": "#hero-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "selector": "#collection-title",
+            "fonts": [
+              {
+                "familyName": "Arial",
+                "postScriptName": "Arial-BoldMT",
+                "isCustomFont": false,
+                "glyphCount": 12
+              }
+            ]
+          }
+        ]
+      },
+      "accessibilitySnapshot": "- link \"Pular para o conteúdo\":\n  - /url: \"#conteudo\"\n- banner:\n  - link \"psicoZ, início\":\n    - /url: \"#inicio\"\n    - text: psicoZ\n  - navigation \"Navegação principal\":\n    - link \"Álbum\":\n      - /url: \"#album\"\n    - link \"Artista\":\n      - /url: \"#artista\"\n    - link \"Faixas\":\n      - /url: \"#faixas\"\n    - link \"Jogo\":\n      - /url: \"#jogo\"\n    - link \"Coleção\":\n      - /url: \"#colecao\"\n  - link \"Explorar o visual\":\n    - /url: \"#visual\"\n- main:\n  - region \"psicoZ\":\n    - paragraph:\n      - text: Lançamento planejado\n      - time: 31/10/2026\n    - heading \"psicoZ\" [level=1]\n    - text: Álbum 15 faixas Traço vermelho\n    - paragraph: Ouça. Explore. Leve com você.\n    - paragraph: 15 faixas, jogos curtos e uma coleção digital. Entre no universo preto, branco e vermelho.\n    - button \"Fazer pré-save\"\n    - link \"Explorar o álbum\":\n      - /url: \"#faixas\"\n    - link \"Jogar Woodstock O primeiro de 15 jogos\":\n      - /url: \"#/jogar/track-01\"\n    - figure \"A arte é a porta de entrada. Toque na capa\":\n      - button \"Abrir painel de pré-save de psicoZ\":\n        - 'img \"Capa de psicoZ: colagem de desenhos vermelhos sobre preto, com mãos, olhos, correntes e figuras surreais.\"'\n      - text: A arte é a porta de entrada. Toque na capa\n  - text: 15 faixas Traço de tattoo Releituras jogáveis Progresso no seu aparelho\n  - navigation \"Explorar o álbum\":\n    - link \"As 15 faixas\":\n      - /url: \"#faixas\"\n    - link \"Os 15 jogos\":\n      - /url: \"#jogo\"\n    - link \"Experiência visual\":\n      - /url: \"#visual\"\n    - link \"Sobre o projeto\":\n      - /url: \"#album\"\n    - link \"Minha coleção\":\n      - /url: \"#colecao\"\n  - region \"Entre frequências.\":\n    - paragraph: Um outro jeito de explorar\n    - heading \"Entre frequências.\" [level=2]\n    - text: Estudo visual · sem áudio\n    - group \"Forma da visualização\":\n      - button \"Relevo\" [pressed]\n      - button \"Linhas\"\n      - button \"Cores do espectro\"\n    - text: Perspectiva\n    - slider \"Perspectiva\": \"0\"\n    - paragraph: Mude a forma, a cor e o ponto de vista. As formas são abstratas e não representam o áudio das faixas.\n  - region \"15 maneiras de entrar.\":\n    - paragraph: O álbum, faixa a faixa\n    - heading \"15 maneiras de entrar.\" [level=2]\n    - text: Nomes transcritos da contracapa\n    - list \"As 15 posições do álbum\":\n      - listitem:\n        - text: Woodstock\n        - link \"Jogar a fase de Woodstock\":\n          - /url: \"#/jogar/track-01\"\n          - text: Jogar fase 01\n      - listitem:\n        - text: Aditivo\n        - link \"Jogar a fase de Aditivo\":\n          - /url: \"#/jogar/track-02\"\n          - text: Jogar fase 02\n      - listitem:\n        - text: Silêncio\n        - link \"Jogar a fase de Silêncio\":\n          - /url: \"#/jogar/track-03\"\n          - text: Jogar fase 03\n      - listitem:\n        - text: Rumildo\n        - link \"Jogar a fase de Rumildo\":\n          - /url: \"#/jogar/track-04\"\n          - text: Jogar fase 04\n      - listitem:\n        - text: Inverso\n        - link \"Jogar a fase de Inverso\":\n          - /url: \"#/jogar/track-05\"\n          - text: Jogar fase 05\n      - listitem:\n        - text: Conhecida Ilusão\n        - link \"Jogar a fase de Conhecida Ilusão\":\n          - /url: \"#/jogar/track-06\"\n          - text: Jogar fase 06\n      - listitem:\n        - text: Não Me Dizem Nada\n        - link \"Jogar a fase de Não Me Dizem Nada\":\n          - /url: \"#/jogar/track-07\"\n          - text: Jogar fase 07\n      - listitem:\n        - text: Siblime\n        - link \"Jogar a fase de Siblime\":\n          - /url: \"#/jogar/track-08\"\n          - text: Jogar fase 08\n      - listitem:\n        - text: PsicoZ\n        - link \"Jogar a fase de PsicoZ\":\n          - /url: \"#/jogar/track-09\"\n          - text: Jogar fase 09\n      - listitem:\n        - text: Psicose feat Nobre\n        - link \"Jogar a fase de Psicose feat Nobre\":\n          - /url: \"#/jogar/track-10\"\n          - text: Jogar fase 10\n      - listitem:\n        - text: Assumindo o Risco\n        - link \"Jogar a fase de Assumindo o Risco\":\n          - /url: \"#/jogar/track-11\"\n          - text: Jogar fase 11\n      - listitem:\n        - text: Acapella\n        - link \"Jogar a fase de Acapella\":\n          - /url: \"#/jogar/track-12\"\n          - text: Jogar fase 12\n      - listitem:\n        - text: Cidade Cinza\n        - link \"Jogar a fase de Cidade Cinza\":\n          - /url: \"#/jogar/track-13\"\n          - text: Jogar fase 13\n      - listitem:\n        - text: Não Posso Errar\n        - link \"Jogar a fase de Não Posso Errar\":\n          - /url: \"#/jogar/track-14\"\n          - text: Jogar fase 14\n      - listitem:\n        - text: A anunciar\n        - link \"Jogar a fase de faixa 15\":\n          - /url: \"#/jogar/track-15\"\n          - text: Jogar fase 15\n    - paragraph: As 14 faixas nomeadas seguem a contracapa fornecida. A posição 15 permanece reservada até a confirmação final.\n    - figure \"Contracapa de referência Arte original · posição 15 pendente\":\n      - img \"Contracapa de referência com 14 títulos em lettering vermelho e uma posição reservada.\"\n      - text: Contracapa de referência Arte original · posição 15 pendente\n  - region \"Muito além da escuta.\":\n    - figure \"A mesma arte, sob outra luz. Encarte / psicoZ\":\n      - img \"Variante clara da arte de psicoZ, com desenhos vermelhos sobre branco.\"\n      - text: A mesma arte, sob outra luz. Encarte / psicoZ\n    - paragraph: Sobre o álbum\n    - heading \"Muito além da escuta.\" [level=2]\n    - paragraph: Conheça as imagens, acompanhe as 15 faixas e encontre sua coleção em um só lugar.\n    - paragraph: O texto conceitual do álbum será apresentado aqui após aprovação do artista.\n    - link \"Conhecer a coleção\":\n      - /url: \"#colecao\"\n  - region \"O artista.\":\n    - paragraph: Por trás do álbum\n    - heading \"O artista.\" [level=2]\n    - paragraph: Uma apresentação a caminho.\n    - paragraph: Nome artístico e biografia aguardam confirmação. Este espaço será dedicado à voz e à história de quem criou psicoZ.\n    - text: Redes e contato a anunciar\n  - region \"Entre nesse universo.\":\n    - paragraph: 15 faixas. 15 jogos.\n    - heading \"Entre nesse universo.\" [level=2]\n    - paragraph: Escolha uma faixa e encare seu desafio. Cada vitória deixa uma marca na sua coleção. Jogue na ordem que quiser.\n    - text: Seu percurso\n    - progressbar \"0 de 15 jogos conquistados\"\n    - paragraph: 0 de 15 jogos conquistados\n    - list \"Escolha um jogo por faixa\":\n      - listitem:\n        - 'link \"Jogar: Woodstock\"':\n          - /url: \"#/jogar/track-01\"\n          - text: 01 Jogar\n          - heading \"Woodstock\" [level=3]\n          - paragraph: O caminho perdido\n          - paragraph: Encontre a saída do labirinto.\n          - text: Labirinto\n      - listitem:\n        - 'link \"Jogar: Aditivo\"':\n          - /url: \"#/jogar/track-02\"\n          - text: 02 Jogar\n          - heading \"Aditivo\" [level=3]\n          - paragraph: Fome de sinal\n          - paragraph: Recolha seis sinais sem bater no próprio corpo.\n          - text: Snake\n      - listitem:\n        - 'link \"Jogar: Silêncio\"':\n          - /url: \"#/jogar/track-03\"\n          - text: 03 Jogar\n          - heading \"Silêncio\" [level=3]\n          - paragraph: Atravesse o silêncio\n          - paragraph: Passe por oito portais sem colidir.\n          - text: Voo entre obstáculos\n      - listitem:\n        - 'link \"Jogar: Rumildo\"':\n          - /url: \"#/jogar/track-04\"\n          - text: 04 Jogar\n          - heading \"Rumildo\" [level=3]\n          - paragraph: Duelo vermelho\n          - paragraph: Faça três pontos antes da raquete adversária.\n          - text: Pong\n      - listitem:\n        - 'link \"Jogar: Inverso\"':\n          - /url: \"#/jogar/track-05\"\n          - text: 05 Jogar\n          - heading \"Inverso\" [level=3]\n          - paragraph: Inverta a queda\n          - paragraph: Complete duas linhas antes de empilhar até o teto.\n          - text: Blocos em queda\n      - listitem:\n        - 'link \"Jogar: Conhecida Ilusão\"':\n          - /url: \"#/jogar/track-06\"\n          - text: 06 Jogar\n          - heading \"Conhecida Ilusão\" [level=3]\n          - paragraph: Duplo negativo\n          - paragraph: Encontre os seis pares de símbolos.\n          - text: Memória\n      - listitem:\n        - 'link \"Jogar: Não Me Dizem Nada\"':\n          - /url: \"#/jogar/track-07\"\n          - text: 07 Jogar\n          - heading \"Não Me Dizem Nada\" [level=3]\n          - paragraph: Estrada sem voz\n          - paragraph: Complete uma volta no circuito.\n          - text: Corrida na estrada\n      - listitem:\n        - 'link \"Jogar: Siblime\"':\n          - /url: \"#/jogar/track-08\"\n          - text: 08 Jogar\n          - heading \"Siblime\" [level=3]\n          - paragraph: Nós do sinal\n          - paragraph: Desembarace duas redes sem deixar linhas cruzadas.\n          - text: Desatar nós\n      - listitem:\n        - 'link \"Jogar: PsicoZ\"':\n          - /url: \"#/jogar/track-09\"\n          - text: 09 Jogar\n          - heading \"PsicoZ\" [level=3]\n          - paragraph: Órbita do caos\n          - paragraph: Destrua os asteroides para recuperar o sinal.\n          - text: Asteroids\n      - listitem:\n        - 'link \"Jogar: Psicose feat Nobre\"':\n          - /url: \"#/jogar/track-10\"\n          - text: 10 Jogar\n          - heading \"Psicose feat Nobre\" [level=3]\n          - paragraph: Ruptura\n          - paragraph: Quebre os 12 blocos antes de perder três vidas.\n          - text: Quebra de blocos\n      - listitem:\n        - 'link \"Jogar: Assumindo o Risco\"':\n          - /url: \"#/jogar/track-11\"\n          - text: 11 Jogar\n          - heading \"Assumindo o Risco\" [level=3]\n          - paragraph: Não pise em falso\n          - paragraph: Revele as 56 casas seguras sem detonar as oito minas.\n          - text: Campo minado\n      - listitem:\n        - 'link \"Jogar: Acapella\"':\n          - /url: \"#/jogar/track-12\"\n          - text: 12 Jogar\n          - heading \"Acapella\" [level=3]\n          - paragraph: A última voz\n          - paragraph: Elimine uma formação de invasores.\n          - text: Invasores\n      - listitem:\n        - 'link \"Jogar: Cidade Cinza\"':\n          - /url: \"#/jogar/track-13\"\n          - text: 13 Jogar\n          - heading \"Cidade Cinza\" [level=3]\n          - paragraph: Peso da cidade\n          - paragraph: Empurre as três caixas para os três alvos.\n          - text: Sokoban\n      - listitem:\n        - 'link \"Jogar: Não Posso Errar\"':\n          - /url: \"#/jogar/track-14\"\n          - text: 14 Jogar\n          - heading \"Não Posso Errar\" [level=3]\n          - paragraph: Repita o rito\n          - paragraph: Repita quatro rodadas de sinais sem errar.\n          - text: Simon\n      - listitem:\n        - 'link \"Jogar: Faixa 15 — título a anunciar\"':\n          - /url: \"#/jogar/track-15\"\n          - text: 15 Jogar\n          - heading \"Faixa 15 — título a anunciar\" [level=3]\n          - paragraph: A última fusão\n          - paragraph: Combine os blocos até formar o número 256.\n          - text: Fusão numérica\n    - paragraph: Preto, papel e vermelho. Um desafio por faixa.\n    - paragraph: Protótipos jogáveis para PC e celular. As músicas e os arquivos para download ainda estão em preparação; conquistar uma fase registra seu progresso local.\n    - link \"Jogar Woodstock\":\n      - /url: \"#/jogar/track-01\"\n    - link \"Ver minha coleção\":\n      - /url: \"#colecao\"\n  - region \"Sua coleção.\":\n    - paragraph: Para levar com você\n    - heading \"Sua coleção.\" [level=2]\n    - paragraph: 0 de 15 faixas conquistadas no jogo\n    - status: Cada faixa tem um jogo. Complete os objetivos para registrar suas conquistas; a edição NFC libera acesso aos materiais publicados. Seu progresso fica salvo neste navegador.\n    - heading \"Músicas e materiais\" [level=3]\n    - text: Arquivos em preparação\n    - list:\n      - listitem:\n        - text: \"01\"\n        - paragraph: Woodstock — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"02\"\n        - paragraph: Aditivo — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"03\"\n        - paragraph: Silêncio — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"04\"\n        - paragraph: Rumildo — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"05\"\n        - paragraph: Inverso — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"06\"\n        - paragraph: Conhecida Ilusão — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"07\"\n        - paragraph: Não Me Dizem Nada — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"08\"\n        - paragraph: Siblime — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"09\"\n        - paragraph: PsicoZ — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"10\"\n        - paragraph: Psicose feat Nobre — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"11\"\n        - paragraph: Assumindo o Risco — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"12\"\n        - paragraph: Acapella — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"13\"\n        - paragraph: Cidade Cinza — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"14\"\n        - paragraph: Não Posso Errar — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"15\"\n        - paragraph: Faixa 15 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: ✧\n        - paragraph: Arte do álbum — PNG\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: ✧\n        - paragraph: Álbum completo — ZIP\n        - text: Acesso ainda não conquistado Em breve\n    - complementary \"Do físico ao digital.\":\n      - heading \"Do físico ao digital.\" [level=3]\n      - paragraph: Aproxime o mini CD NFC de um celular compatível para abrir a coleção e liberar acesso aos materiais publicados.\n      - paragraph: O endereço da tag é compartilhável. Ele libera acesso, mas não conta como conquista no jogo.\n      - group: Como funciona o acesso?\n    - group: Seu progresso neste aparelho\n- contentinfo:\n  - link \"psicoZ\":\n    - /url: \"#inicio\"\n  - paragraph: Álbum, arte e outros caminhos.\n  - paragraph: Créditos artísticos e técnicos aguardam confirmação.\n  - link \"Voltar ao início\":\n    - /url: \"#inicio\"\n- status"
+    }
+  ],
+  "distBytes": 1875142
+}

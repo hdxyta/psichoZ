@@ -1,0 +1,122 @@
+[
+  {
+    "profile": "desktop",
+    "slug": "maze",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 1200,
+      "width": 1200,
+      "height": 719,
+      "bodyScroll": 719
+    }
+  },
+  {
+    "profile": "desktop",
+    "slug": "flappy",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 1200,
+      "width": 1200,
+      "height": 743,
+      "bodyScroll": 743
+    }
+  },
+  {
+    "profile": "desktop",
+    "slug": "asteroids",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 1200,
+      "width": 1200,
+      "height": 743,
+      "bodyScroll": 743
+    }
+  },
+  {
+    "profile": "desktop",
+    "slug": "invaders",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 1200,
+      "width": 1200,
+      "height": 743,
+      "bodyScroll": 743
+    }
+  },
+  {
+    "profile": "desktop",
+    "slug": "simon",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 1200,
+      "width": 1200,
+      "height": 743,
+      "bodyScroll": 743
+    }
+  },
+  {
+    "profile": "mobile",
+    "slug": "maze",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 412,
+      "width": 412,
+      "height": 696,
+      "bodyScroll": 696
+    }
+  },
+  {
+    "profile": "mobile",
+    "slug": "flappy",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 412,
+      "width": 412,
+      "height": 695,
+      "bodyScroll": 695
+    }
+  },
+  {
+    "profile": "mobile",
+    "slug": "asteroids",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 412,
+      "width": 412,
+      "height": 695,
+      "bodyScroll": 695
+    }
+  },
+  {
+    "profile": "mobile",
+    "slug": "invaders",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 412,
+      "width": 412,
+      "height": 719,
+      "bodyScroll": 719
+    }
+  },
+  {
+    "profile": "mobile",
+    "slug": "simon",
+    "errors": [],
+    "remote": [],
+    "bounds": {
+      "scroll": 412,
+      "width": 412,
+      "height": 695,
+      "bodyScroll": 695
+    }
+  }
+]

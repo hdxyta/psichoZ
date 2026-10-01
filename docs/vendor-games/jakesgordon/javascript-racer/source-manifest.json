@@ -1,0 +1,32 @@
+{
+  "copiedAt": "2026-09-30",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "ae8effccf4eb09d2abc39d9e5b087bc728c6147292f5139fce75a02b99ae4294"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7c7abfb637207da833a39adc63c83562b62c7b167937a2dc7c77cea105d5a2ca"
+    },
+    {
+      "path": "common.css",
+      "sha256": "4c386c1de0ab8bd948ea7de4cf655aafc04f43b53933a742b81d994bd9f9af93"
+    },
+    {
+      "path": "common.js",
+      "sha256": "f2e07bf70605e2f59792ccf18ffef51398371623e5fee55fd20bb346f64fa0f6"
+    },
+    {
+      "path": "v4.final.html",
+      "sha256": "a70be3caa7eb4fece5ea5ac8c9f6b873ceaba788e142fb909a2c47b8e9db2535"
+    },
+    {
+      "path": "stats.js",
+      "sha256": "c2e5cb63bb6abb0cb57071bb0ef76177bf73e309cfa63e1efa2355a34bcd2bb4"
+    }
+  ],
+  "executedExternalScripts": false,
+  "commit": "3e8a060b5900755db27f899612a74a77427c853e",
+  "repository": "jakesgordon/javascript-racer"
+}

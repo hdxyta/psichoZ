@@ -1,0 +1,32 @@
+{
+  "copiedAt": "2026-09-30",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "e21a35a09a2eb2681e7b3472226ae95a9317c11bb928dc27f579c5b38068f933"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1d87a6d199059f6510b478aff7371e65e0a183e423fe457c5097a94dec1f6262"
+    },
+    {
+      "path": "game.js",
+      "sha256": "dc27867e038b5e099f6100335adb63a8728f26e06044df8a0c060578ebe9ee77"
+    },
+    {
+      "path": "index.html",
+      "sha256": "09a3f3b4b4e714ae9d003278d0299370e1bc2f675bde2b22980922692693d53f"
+    },
+    {
+      "path": "pong.css",
+      "sha256": "40d2b3a86b7b63e821e15df99d77805c0ddbd1856c3b9e3d73ba0720dc2de503"
+    },
+    {
+      "path": "pong.js",
+      "sha256": "38ea07c0aee1e393b74d47a0f2437f565a6172073399c853913fda296ca610ee"
+    }
+  ],
+  "executedExternalScripts": false,
+  "commit": "ca3240536e4f79ab7144388e56ed19de715b6662",
+  "repository": "jakesgordon/javascript-pong"
+}

@@ -1,0 +1,10 @@
+Source: https://github.com/makzan/HTML5-Games-Examples
+Commit: 646cc1dbfdb5238b36798eec3791a868ede9de2b
+Author: Thomas Mak (Makzan).
+The upstream readme.md states: All game code here is under MIT license.
+Upstream does not provide a separate full LICENSE file in this commit.
+The exact README is preserved as UPSTREAM-README.md.
+Original game code: untangle.data.js, untangle.drawing.js, untangle.game.js,
+untangle.levels.js. psicoZ adapter replaces jQuery input/UI, renders original
+geometry in album colors and adds a two-level completion goal, pausing, keyboard
+and touch controls. Original artwork and external fonts are not included.

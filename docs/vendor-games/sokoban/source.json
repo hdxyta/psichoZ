@@ -1,0 +1,15 @@
+{
+  "files": [
+    "LICENSE",
+    "README.md",
+    "Sokoban.js",
+    "constants.js",
+    "index.html",
+    "script.js",
+    "style.css",
+    "utils.js"
+  ],
+  "repo": "taniarascia/sokoban",
+  "id": "sokoban",
+  "sha": "23ee71c46566506d85445130c78dfae2b6347792"
+}

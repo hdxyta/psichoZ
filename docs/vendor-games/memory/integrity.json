@@ -1,0 +1,41 @@
+{
+  "repository": "makzan/HTML5-Games-Examples",
+  "commit": "646cc1dbfdb5238b36798eec3791a868ede9de2b",
+  "files": [
+    {
+      "path": "jquery-MIT-LICENSE.txt",
+      "sha256": "0ade425df7c0386e04fbaa6b49e97a71ec504e53a4c01137c4bfb425a9a92344",
+      "bytes": 1074
+    },
+    {
+      "path": "readme.md",
+      "sha256": "85844534d6e270de8d7312293dacdfe5c1296ffb8794ab3a75503ed9d64fb2ca",
+      "bytes": 1796
+    },
+    {
+      "path": "css3-matching-game/index.html",
+      "sha256": "5906b72ac5462b5aafab3d0a5a8b272c33d78ca10f3e1e748a0dd970402f0ee5",
+      "bytes": 1637
+    },
+    {
+      "path": "css3-matching-game/readme.md",
+      "sha256": "6f4c36edf13837104e855ffff49bec75b6224aa57226019776b68514e02fed1e",
+      "bytes": 551
+    },
+    {
+      "path": "css3-matching-game/css/matchgame.css",
+      "sha256": "2762f6cbdb21eca9c725afa5c9f783141eaf7a59300070c69a1cada8db533ad9",
+      "bytes": 5087
+    },
+    {
+      "path": "css3-matching-game/js/html5games.matchgame.js",
+      "sha256": "21cc8185438156f672a7e7fe5a3171a531418ff24b7ced2ce888e04b99be915e",
+      "bytes": 8543
+    },
+    {
+      "path": "css3-matching-game/js/jquery-1.6.min.js",
+      "sha256": "79e970a410c0fa67175ca1685fc835b4dd14c8faef4ca175daf7ea22bcf897f1",
+      "bytes": 90517
+    }
+  ]
+}

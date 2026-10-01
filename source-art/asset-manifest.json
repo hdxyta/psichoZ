@@ -1,0 +1,99 @@
+{
+  "tool": {
+    "name": "sharp",
+    "version": "0.35.4",
+    "libvips": "8.18.6"
+  },
+  "transformation": "Full-frame Lanczos3 resize; WebP quality 88, smartSubsample, effort 6; no crop/recolor/background removal",
+  "images": [
+    {
+      "source": "Teste Export fundo preto 4.png",
+      "sourceDimensions": [
+        3000,
+        3000
+      ],
+      "sourceBytes": 2114269,
+      "sourceSha256": "ce6670fb7d2f15fb6efd0a35818da39f0cfb3f7ee66b968e107dbdd66d0a0d3f",
+      "output": "public/assets/cover-dark-640.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 107632,
+      "sha256": "6d4e4016debad188687ba097863943c54b2b475af4ba0cd145eccdf7303fba77"
+    },
+    {
+      "source": "Teste Export fundo preto 4.png",
+      "sourceDimensions": [
+        3000,
+        3000
+      ],
+      "sourceBytes": 2114269,
+      "sourceSha256": "ce6670fb7d2f15fb6efd0a35818da39f0cfb3f7ee66b968e107dbdd66d0a0d3f",
+      "output": "public/assets/cover-dark-1200.webp",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "bytes": 293980,
+      "sha256": "de345a0bfe6ef38cd316717df01b868d5247a67ecdf7c3584fb5cc12239deacb"
+    },
+    {
+      "source": "Teste Export fundo branco 3.png",
+      "sourceDimensions": [
+        3000,
+        3000
+      ],
+      "sourceBytes": 2326749,
+      "sourceSha256": "e17567ae8ffd4ca0e3b1a38352920ad3d5da23bd0a91a407f23e682ce995e2d1",
+      "output": "public/assets/cover-light-900.webp",
+      "dimensions": [
+        900,
+        900
+      ],
+      "bytes": 221718,
+      "sha256": "05e856db704d2c9493eb64ad8fe7c525d1e17b815445025020af91fd3e150f3a"
+    },
+    {
+      "source": "contra capa 1  fundo branco .png",
+      "sourceDimensions": [
+        3000,
+        3000
+      ],
+      "sourceBytes": 1061564,
+      "sourceSha256": "4033d1f0e2b4b17d0b706207914316beeefbb863790cef5531cbf45c75e966b5",
+      "output": "public/assets/back-light-900.webp",
+      "dimensions": [
+        900,
+        900
+      ],
+      "bytes": 140022,
+      "sha256": "99378605c9b2c1c1234899ce458da68c693ca6980441c9761f1b35e97615868c"
+    },
+    {
+      "source": "contra capa 1  fundo preto .png",
+      "sourceDimensions": [
+        3000,
+        3000
+      ],
+      "sourceBytes": 959630,
+      "sourceSha256": "4cf6bb9bc0ae5ed365b82b4249ce54d233539eff7523142bfb41f3b710ac0b29",
+      "output": "public/assets/back-dark-900.webp",
+      "dimensions": [
+        900,
+        900
+      ],
+      "bytes": 110284,
+      "sha256": "f5208a2fca3f0077d8f53aed2169fd6d6f3cb5ee0afcbef51c61acc8b7ba14f6"
+    }
+  ],
+  "font": {
+    "package": "@fontsource/unifrakturcook",
+    "version": "5.3.0",
+    "source": "files/unifrakturcook-latin-700-normal.woff2",
+    "output": "public/fonts/unifrakturcook-latin-700.woff2",
+    "license": "OFL-1.1; unmodified license copied to public/fonts/OFL.txt",
+    "bytes": 17280,
+    "sha256": "3304757748716ececd1b87999cb92d61ff5332aefbe8331d5155bbb68218e588"
+  }
+}

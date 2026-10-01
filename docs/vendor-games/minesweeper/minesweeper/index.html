@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Minesweeper — reveal cells and avoid hidden mines. Classic logic puzzle in your browser.">
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-panel.css">
+    <title>Minesweeper — GameBox</title>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← Back to GameBox</a>
+    <div class="game-shell ms-shell">
+        <h1>Minesweeper</h1>
+        <div id="difficulty-selector" class="gb-selector">
+            <button class="gb-btn active" data-rows="9" data-cols="9" data-mines="10">Easy</button>
+            <button class="gb-btn" data-rows="12" data-cols="12" data-mines="25">Medium</button>
+            <button class="gb-btn" data-rows="16" data-cols="16" data-mines="50">Hard</button>
+        </div>
+        <p id="status" class="gb-status">🚩 Mines: <span id="mine-count">10</span> | ⏱ <span id="timer">0</span>s</p>
+        <div id="grid" class="ms-grid"></div>
+        <button id="new-game-btn" class="gb-btn-solid mt-2">New Game</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="../code-panel.js"></script>
+</body>
+</html>

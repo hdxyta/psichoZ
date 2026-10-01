@@ -1,0 +1,36 @@
+{
+  "copiedAt": "2026-09-30",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "f57c728322b21e4103d485dccf31b59ff48a220df2ecc6cea77349ec15a422e3"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c8ebdc1c389170f680ffb83c2fb752bee4b660553f23389c9012728c1255fcec"
+    },
+    {
+      "path": "breakout.css",
+      "sha256": "23a486f5f4ed7563af5eb03ff0bd65b309c1811bd66361be420393d84d10b4a7"
+    },
+    {
+      "path": "breakout.js",
+      "sha256": "5904bd60acca73c6addcd2e80489c337d2f9e35246be1a6ab86ef92e412c1b8c"
+    },
+    {
+      "path": "game.js",
+      "sha256": "87e7219f32df8348ab26ce7d6bd86313daa2be29cf26a3639f848345bfde0350"
+    },
+    {
+      "path": "index.html",
+      "sha256": "82630dc254c3501debfa11d32bc87c620e087896be4c6f0d8fb69bacd70763dc"
+    },
+    {
+      "path": "levels.js",
+      "sha256": "9a12e4fa1d1fa507a8b1bfa3c80643c711fe4f163dd0ff837df319bbe5de99e5"
+    }
+  ],
+  "executedExternalScripts": false,
+  "commit": "eed59e2affa9423b93d2ac8ff93061bb88b33284",
+  "repository": "jakesgordon/javascript-breakout"
+}

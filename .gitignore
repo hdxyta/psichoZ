@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.npm-cache/
+.playwright/
+.playwright-cli/
+test-results/
+playwright-report/
+.env
+.env.local
+*.log
+.asset-base-check/

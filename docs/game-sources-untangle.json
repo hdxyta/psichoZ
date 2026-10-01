@@ -1,0 +1,37 @@
+{
+  "copied": "untangle.data.js,untangle.drawing.js,untangle.game.js,untangle.levels.js",
+  "repository": "https://github.com/makzan/HTML5-Games-Examples",
+  "excluded": "All original artwork, jQuery and remote font",
+  "modifications": "adapter.js replaces input/UI/rendering and adds two-round completion; original intersection, graph and levels remain active",
+  "entry": "public/games/untangle/index.html",
+  "trackId": "track-08",
+  "commit": "646cc1dbfdb5238b36798eec3791a868ede9de2b",
+  "files": [
+    {
+      "path": "docs/vendor-games/makzan/canvas-untangle-game/js/untangle.data.js",
+      "sha256": "116ef0c75dc0be3e9bad1b885a5e6baa595121a6e576765fda6291bc4edc8f28"
+    },
+    {
+      "path": "docs/vendor-games/makzan/canvas-untangle-game/js/untangle.drawing.js",
+      "sha256": "1e0fa864ea7f9564ae6f402fe550b0c8b80c6395b28d8df05ed46d02e72fb127"
+    },
+    {
+      "path": "docs/vendor-games/makzan/canvas-untangle-game/js/untangle.game.js",
+      "sha256": "9ddc3525cd0fcf48f71cc50b9be74d01e4a2d4081d2eec845fbce8605a5f1916"
+    },
+    {
+      "path": "docs/vendor-games/makzan/canvas-untangle-game/js/untangle.input.js",
+      "sha256": "9e2608b74446c72f51411e9ad457678f729f4e13444e5cce99a764da77dcd267"
+    },
+    {
+      "path": "docs/vendor-games/makzan/canvas-untangle-game/js/untangle.js",
+      "sha256": "73cc8fdc3a97af2e9b3098c0dd4bd224c739c684cb24c03cb32ae21e8c03e17c"
+    },
+    {
+      "path": "docs/vendor-games/makzan/canvas-untangle-game/js/untangle.levels.js",
+      "sha256": "b5a410b9f9c57d93e4ddf026f198c27fa70cc9b5cd0e11566e377d749cc1dd64"
+    }
+  ],
+  "license": "MIT declared in upstream README",
+  "game": "untangle"
+}

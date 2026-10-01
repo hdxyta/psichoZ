@@ -1,0 +1,2236 @@
+{
+  "generatedAt": "2026-09-18T01:49:24.889Z",
+  "target": "http://127.0.0.1:4173/",
+  "environment": {
+    "node": "v20.20.0",
+    "browser": "153.0.8010.47",
+    "platform": "win32",
+    "cache": "Disabled using Network.setCacheDisabled; a new isolated context per profile",
+    "network": "Local Vite preview; no network or CPU throttling; no external service",
+    "tools": "Installed @playwright/test; standard PerformanceObserver and PerformanceResourceTiming; no DevTools MCP or trace"
+  },
+  "distFiles": [
+    {
+      "path": "assets/back-dark-900.webp",
+      "bytes": 110284,
+      "sha256": "f5208a2fca3f0077d8f53aed2169fd6d6f3cb5ee0afcbef51c61acc8b7ba14f6"
+    },
+    {
+      "path": "assets/back-light-900.webp",
+      "bytes": 140022,
+      "sha256": "99378605c9b2c1c1234899ce458da68c693ca6980441c9761f1b35e97615868c"
+    },
+    {
+      "path": "assets/cover-dark-1200.webp",
+      "bytes": 293980,
+      "sha256": "de345a0bfe6ef38cd316717df01b868d5247a67ecdf7c3584fb5cc12239deacb"
+    },
+    {
+      "path": "assets/cover-dark-640.webp",
+      "bytes": 107632,
+      "sha256": "6d4e4016debad188687ba097863943c54b2b475af4ba0cd145eccdf7303fba77"
+    },
+    {
+      "path": "assets/cover-light-900.webp",
+      "bytes": 221718,
+      "sha256": "05e856db704d2c9493eb64ad8fe7c525d1e17b815445025020af91fd3e150f3a"
+    },
+    {
+      "path": "assets/index-B34ooTNE.css",
+      "bytes": 15100,
+      "sha256": "d0e946af490a81b223ebee8cd87b4075b93b5a1b91e0fcb59f016c0443c8c376"
+    },
+    {
+      "path": "assets/index-BqhWcaUk.js",
+      "bytes": 13967,
+      "sha256": "4f23ed007ad28394a2b3e4032472cb0092d8e7e2f2d5a883cff386fbbdadcd56"
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "bytes": 4535,
+      "sha256": "5188ea5703a25a2fee0f17586c473b3cf6018810146b021ce4bb7a2eb6499802"
+    },
+    {
+      "path": "fonts/unifrakturcook-latin-700.woff2",
+      "bytes": 17280,
+      "sha256": "3304757748716ececd1b87999cb92d61ff5332aefbe8331d5155bbb68218e588"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10742,
+      "sha256": "51a04cfe51154567bd8ea6c1ed6c0c24d9a738c9973efc1572a85de39aeb163a"
+    }
+  ],
+  "forbiddenDistFiles": [],
+  "profiles": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "initial": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 5708
+        },
+        "totals": {
+          "transferBytes": 658681,
+          "encodedBytes": 656581,
+          "decodedBytes": 683071,
+          "entries": 7
+        },
+        "lcp": {
+          "startTime": 256,
+          "renderTime": 256,
+          "loadTime": 45,
+          "size": 404496,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 256,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 4.299999997019768,
+          "domContentLoadedEventEnd": 37.20000000298023,
+          "loadEventEnd": 45.29999999701977
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 45.29999999701977
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 11,
+            "duration": 4.799999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 11.399999998509884,
+            "duration": 9.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 11.5,
+            "duration": 7.700000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 11.700000002980232,
+            "duration": 9.699999995529652
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 118.29999999701977,
+            "duration": 5.4000000059604645
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 118.39999999850988,
+            "duration": 4.899999998509884
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 636,
+            "height": 636
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 460,
+            "height": 460
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 502,
+            "height": 502
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 408,
+            "height": 408
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "afterScroll": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 4708,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 5708
+        },
+        "totals": {
+          "transferBytes": 799003,
+          "encodedBytes": 796603,
+          "decodedBytes": 823093,
+          "entries": 8
+        },
+        "lcp": {
+          "startTime": 256,
+          "renderTime": 256,
+          "loadTime": 45,
+          "size": 404496,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 256,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 4.299999997019768,
+          "domContentLoadedEventEnd": 37.20000000298023,
+          "loadEventEnd": 45.29999999701977
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 45.29999999701977
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 11,
+            "duration": 4.799999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 11.399999998509884,
+            "duration": 9.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 11.5,
+            "duration": 7.700000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 11.700000002980232,
+            "duration": 9.699999995529652
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 118.29999999701977,
+            "duration": 5.4000000059604645
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 118.39999999850988,
+            "duration": 4.899999998509884
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "type": "img",
+            "transferSize": 140322,
+            "encodedBodySize": 140022,
+            "decodedBodySize": 140022,
+            "startTime": 1611.3999999985099,
+            "duration": 2.600000001490116
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 636,
+            "height": 636
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 460,
+            "height": 460
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 502,
+            "height": 502
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 408,
+            "height": 408
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "scrollSteps": 6,
+      "reload": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 5708
+        },
+        "totals": {
+          "transferBytes": 658681,
+          "encodedBytes": 656581,
+          "decodedBytes": 683071,
+          "entries": 7
+        },
+        "lcp": {
+          "startTime": 64,
+          "renderTime": 64,
+          "loadTime": 21.5,
+          "size": 404496,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 64,
+        "navigation": {
+          "type": "reload",
+          "responseStart": 2.7999999970197678,
+          "domContentLoadedEventEnd": 31.799999997019768,
+          "loadEventEnd": 32.899999998509884
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 32.899999998509884
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 9.199999995529652,
+            "duration": 4.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 9.5,
+            "duration": 8
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 9.5,
+            "duration": 7.299999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 9.5,
+            "duration": 7.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 30,
+            "duration": 3.899999998509884
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 30,
+            "duration": 3.6999999955296516
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 636,
+            "height": 636
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 460,
+            "height": 460
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 502,
+            "height": 502
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 408,
+            "height": 408
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "lazyAddedUrls": [
+        "http://127.0.0.1:4173/assets/back-light-900.webp"
+      ],
+      "requests": [
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "scroll",
+          "url": "http://127.0.0.1:4173/assets/back-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/?edition=nfc",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/back-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        }
+      ],
+      "blockedContentRequests": [],
+      "errors": [],
+      "warnings": [],
+      "normalFontProbe": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 5708
+        },
+        "totals": {
+          "transferBytes": 658681,
+          "encodedBytes": 656581,
+          "decodedBytes": 683071,
+          "entries": 7
+        },
+        "lcp": {
+          "startTime": 64,
+          "renderTime": 64,
+          "loadTime": 21.5,
+          "size": 404496,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 64,
+        "navigation": {
+          "type": "reload",
+          "responseStart": 2.7999999970197678,
+          "domContentLoadedEventEnd": 31.799999997019768,
+          "loadEventEnd": 32.899999998509884
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 32.899999998509884
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 9.199999995529652,
+            "duration": 4.200000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 9.5,
+            "duration": 8
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 9.5,
+            "duration": 7.299999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 9.5,
+            "duration": 7.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 30,
+            "duration": 3.899999998509884
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 30,
+            "duration": 3.6999999955296516
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 636,
+            "height": 636
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 460,
+            "height": 460
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 502,
+            "height": 502
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 408,
+            "height": 408
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "renderedFonts": [
+          {
+            "selector": "#hero-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "selector": "#collection-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 12
+              }
+            ]
+          }
+        ]
+      },
+      "nfcFontProbe": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 3780,
+          "viewportWidth": 1440,
+          "viewportHeight": 1000,
+          "documentHeight": 5708
+        },
+        "totals": {
+          "transferBytes": 576985,
+          "encodedBytes": 574885,
+          "decodedBytes": 601375,
+          "entries": 7
+        },
+        "lcp": {
+          "startTime": 52,
+          "renderTime": 52,
+          "loadTime": 0,
+          "size": 27778,
+          "url": "",
+          "element": "h2#collection-title"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 52,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 2.100000001490116,
+          "domContentLoadedEventEnd": 19.600000001490116,
+          "loadEventEnd": 29.299999997019768
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/?edition=nfc",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 29.299999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 10.199999995529652,
+            "duration": 4.100000001490116
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 10.600000001490116,
+            "duration": 3.5999999940395355
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 10.699999995529652,
+            "duration": 4.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 10.699999995529652,
+            "duration": 3.9000000059604645
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 33.100000001490116,
+            "duration": 3.2999999970197678
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "type": "img",
+            "transferSize": 140322,
+            "encodedBodySize": 140022,
+            "decodedBodySize": 140022,
+            "startTime": 33.100000001490116,
+            "duration": 3.5999999940395355
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 662,
+            "width": 636,
+            "height": 636
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 460,
+            "height": 460
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 502,
+            "height": 502
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 408,
+            "height": 408
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "renderedFonts": [
+          {
+            "selector": "#hero-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "selector": "#collection-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 12
+              }
+            ]
+          }
+        ]
+      },
+      "accessibilitySnapshot": "- link \"Pular para o conteúdo\":\n  - /url: \"#conteudo\"\n- banner:\n  - link \"psicoZ, início\":\n    - /url: \"#inicio\"\n    - text: psicoZ\n  - navigation \"Navegação principal\":\n    - link \"Álbum\":\n      - /url: \"#album\"\n    - link \"Artista\":\n      - /url: \"#artista\"\n    - link \"Faixas\":\n      - /url: \"#faixas\"\n    - link \"Jogo\":\n      - /url: \"#jogo\"\n    - link \"Coleção\":\n      - /url: \"#colecao\"\n  - text: Um álbum. Um universo.\n- main:\n  - region \"psicoZ\":\n    - paragraph:\n      - text: Lançamento planejado\n      - time: 31/10/2026\n    - heading \"psicoZ\" [level=1]\n    - paragraph: Ouça. Explore. Leve com você.\n    - paragraph: 15 faixas, arte e uma coleção digital. O universo do álbum começa aqui.\n    - button \"Fazer pré-save\"\n    - link \"Explorar o álbum\":\n      - /url: \"#faixas\"\n    - link \"Jogar e conquistar faixas Em desenvolvimento\":\n      - /url: \"#jogo\"\n    - figure \"A arte é a porta de entrada. Toque na capa\":\n      - button \"Abrir painel de pré-save de psicoZ\":\n        - 'img \"Capa de psicoZ: colagem de desenhos vermelhos sobre preto, com mãos, olhos, correntes e figuras surreais.\"'\n      - text: A arte é a porta de entrada. Toque na capa\n  - text: 15 faixas ✧Um universo autoral ✧Edição mini CD NFC ✧Progresso no seu aparelho\n  - region \"Muito além da escuta.\":\n    - figure \"A mesma arte, sob outra luz. Encarte / psicoZ\":\n      - img \"Variante clara da arte de psicoZ, com desenhos vermelhos sobre branco.\"\n      - text: A mesma arte, sob outra luz. Encarte / psicoZ\n    - paragraph: Sobre o álbum\n    - heading \"Muito além da escuta.\" [level=2]\n    - paragraph: Conheça as imagens, acompanhe as 15 faixas e encontre sua coleção em um só lugar.\n    - paragraph: O texto conceitual do álbum será apresentado aqui após aprovação do artista.\n    - link \"Conhecer a coleção\":\n      - /url: \"#colecao\"\n  - region \"O artista.\":\n    - paragraph: Por trás do álbum\n    - heading \"O artista.\" [level=2]\n    - paragraph: Uma apresentação a caminho.\n    - paragraph: Nome artístico e biografia aguardam confirmação. Este espaço será dedicado à voz e à história de quem criou psicoZ.\n    - text: Redes e contato a anunciar\n  - region \"15 maneiras de entrar.\":\n    - paragraph: O álbum, faixa a faixa\n    - heading \"15 maneiras de entrar.\" [level=2]\n    - text: Títulos em confirmação\n    - list \"As 15 posições do álbum\":\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: A anunciar Em breve\n    - paragraph: A contracapa de referência tem 14 faixas. A posição 15 e a lista textual final aguardam confirmação.\n    - figure \"Contracapa de referência Arte original · lista ainda em revisão\":\n      - img \"Contracapa de referência com 14 títulos em lettering vermelho. A lista final terá 15 faixas.\"\n      - text: Contracapa de referência Arte original · lista ainda em revisão\n  - region \"Entre nesse universo.\":\n    - figure \"Referência visual do álbum. O jogo ainda está em criação.\":\n      - 'img \"Arte da contracapa clara: mãos com olhos, correntes e figuras que servem de referência visual ao futuro jogo.\"'\n      - text: Referência visual do álbum. O jogo ainda está em criação.\n    - paragraph: Jogar e conquistar faixas\n    - heading \"Entre nesse universo.\" [level=2]\n    - paragraph: Uma experiência em primeira pessoa inspirada nas artes do álbum está em desenvolvimento. Explore, encontre símbolos e conquiste músicas e materiais digitais.\n    - text: Jogo em desenvolvimento\n    - paragraph: \"Controles previstos: teclado e mouse no computador; controles de toque no celular. A primeira fase ainda não está disponível.\"\n    - link \"Ver minha coleção\":\n      - /url: \"#colecao\"\n  - region \"Sua coleção.\":\n    - paragraph: Para levar com você\n    - heading \"Sua coleção.\" [level=2]\n    - paragraph: 0 de 15 faixas conquistadas no jogo\n    - status: Sua coleção começa aqui. Quando o jogo estiver disponível, conquiste faixas; a edição NFC libera acesso aos materiais publicados.\n    - heading \"Músicas e materiais\" [level=3]\n    - text: Arquivos em preparação\n    - list:\n      - listitem:\n        - text: \"01\"\n        - paragraph: Faixa 01 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"02\"\n        - paragraph: Faixa 02 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"03\"\n        - paragraph: Faixa 03 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"04\"\n        - paragraph: Faixa 04 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"05\"\n        - paragraph: Faixa 05 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"06\"\n        - paragraph: Faixa 06 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"07\"\n        - paragraph: Faixa 07 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"08\"\n        - paragraph: Faixa 08 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"09\"\n        - paragraph: Faixa 09 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"10\"\n        - paragraph: Faixa 10 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"11\"\n        - paragraph: Faixa 11 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"12\"\n        - paragraph: Faixa 12 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"13\"\n        - paragraph: Faixa 13 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"14\"\n        - paragraph: Faixa 14 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"15\"\n        - paragraph: Faixa 15 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: ✧\n        - paragraph: Arte do álbum — PNG\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: ✧\n        - paragraph: Álbum completo — ZIP\n        - text: Acesso ainda não conquistado Em breve\n    - complementary \"Do físico ao digital.\":\n      - heading \"Do físico ao digital.\" [level=3]\n      - paragraph: Aproxime o mini CD NFC de um celular compatível para abrir a coleção e liberar acesso aos materiais publicados.\n      - paragraph: O endereço da tag é compartilhável. Ele libera acesso, mas não conta como conquista no jogo.\n      - group: Como funciona o acesso?\n    - group: Seu progresso neste aparelho\n- contentinfo:\n  - link \"psicoZ\":\n    - /url: \"#inicio\"\n  - paragraph: Álbum, arte e outros caminhos.\n  - paragraph: Créditos artísticos e técnicos aguardam confirmação.\n  - link \"Voltar ao início\":\n    - /url: \"#inicio\"\n- status"
+    },
+    {
+      "name": "mobile-emulated",
+      "viewport": {
+        "width": 393,
+        "height": 851
+      },
+      "deviceScaleFactor": 2.75,
+      "isMobile": true,
+      "hasTouch": true,
+      "initial": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 7536
+        },
+        "totals": {
+          "transferBytes": 548097,
+          "encodedBytes": 546297,
+          "decodedBytes": 572787,
+          "entries": 6
+        },
+        "lcp": {
+          "startTime": 152,
+          "renderTime": 152,
+          "loadTime": 43,
+          "size": 53901,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 152,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 2.7000000029802322,
+          "domContentLoadedEventEnd": 35.80000000447035,
+          "loadEventEnd": 43.400000005960464
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 43.400000005960464
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 9.900000005960464,
+            "duration": 3.7999999970197678
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 10.100000001490116,
+            "duration": 8.700000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 10.200000002980232,
+            "duration": 9.399999998509884
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 10.200000002980232,
+            "duration": 7.299999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 96.60000000149012,
+            "duration": 2.3000000044703484
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 339,
+            "height": 339
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 271,
+            "height": 271
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 351,
+            "height": 351
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 270,
+            "height": 270
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "afterScroll": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 6685,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 7536
+        },
+        "totals": {
+          "transferBytes": 799003,
+          "encodedBytes": 796603,
+          "decodedBytes": 823093,
+          "entries": 8
+        },
+        "lcp": {
+          "startTime": 152,
+          "renderTime": 152,
+          "loadTime": 43,
+          "size": 53901,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 152,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 2.7000000029802322,
+          "domContentLoadedEventEnd": 35.80000000447035,
+          "loadEventEnd": 43.400000005960464
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 43.400000005960464
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 9.900000005960464,
+            "duration": 3.7999999970197678
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 10.100000001490116,
+            "duration": 8.700000002980232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 10.200000002980232,
+            "duration": 9.399999998509884
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 10.200000002980232,
+            "duration": 7.299999997019768
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 96.60000000149012,
+            "duration": 2.3000000044703484
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 1685.6000000014901,
+            "duration": 2.899999998509884
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "type": "img",
+            "transferSize": 140322,
+            "encodedBodySize": 140022,
+            "decodedBodySize": 140022,
+            "startTime": 1807.1000000014901,
+            "duration": 2.5
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 339,
+            "height": 339
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 271,
+            "height": 271
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 351,
+            "height": 351
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 270,
+            "height": 270
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "scrollSteps": 10,
+      "reload": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 7536
+        },
+        "totals": {
+          "transferBytes": 548097,
+          "encodedBytes": 546297,
+          "decodedBytes": 572787,
+          "entries": 6
+        },
+        "lcp": {
+          "startTime": 64,
+          "renderTime": 64,
+          "loadTime": 26.899999998509884,
+          "size": 53901,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 64,
+        "navigation": {
+          "type": "reload",
+          "responseStart": 2.2999999970197678,
+          "domContentLoadedEventEnd": 19,
+          "loadEventEnd": 29.5
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 29.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 8.399999998509884,
+            "duration": 5.600000001490116
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 8.600000001490116,
+            "duration": 6.199999995529652
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 8.600000001490116,
+            "duration": 7.0999999940395355
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 8.699999995529652,
+            "duration": 14.100000001490116
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 29.299999997019768,
+            "duration": 3
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 339,
+            "height": 339
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 271,
+            "height": 271
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 351,
+            "height": 351
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 270,
+            "height": 270
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ]
+      },
+      "lazyAddedUrls": [
+        "http://127.0.0.1:4173/assets/back-dark-900.webp",
+        "http://127.0.0.1:4173/assets/back-light-900.webp"
+      ],
+      "requests": [
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "initial",
+          "url": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "scroll",
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "scroll",
+          "url": "http://127.0.0.1:4173/assets/back-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "reload",
+          "url": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/?edition=nfc",
+          "type": "document",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "type": "font",
+          "method": "GET",
+          "status": 200,
+          "contentType": "font/woff2",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+          "type": "script",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/javascript",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+          "type": "stylesheet",
+          "method": "GET",
+          "status": 200,
+          "contentType": "text/css",
+          "contentEncoding": "gzip",
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        },
+        {
+          "phase": "nfc-font-check",
+          "url": "http://127.0.0.1:4173/assets/back-light-900.webp",
+          "type": "image",
+          "method": "GET",
+          "status": 200,
+          "contentType": "image/webp",
+          "contentEncoding": null,
+          "cacheControl": "no-cache"
+        }
+      ],
+      "blockedContentRequests": [],
+      "errors": [],
+      "warnings": [],
+      "normalFontProbe": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 0,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 7536
+        },
+        "totals": {
+          "transferBytes": 548097,
+          "encodedBytes": 546297,
+          "decodedBytes": 572787,
+          "entries": 6
+        },
+        "lcp": {
+          "startTime": 64,
+          "renderTime": 64,
+          "loadTime": 26.899999998509884,
+          "size": 53901,
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "element": "img"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 64,
+        "navigation": {
+          "type": "reload",
+          "responseStart": 2.2999999970197678,
+          "domContentLoadedEventEnd": 19,
+          "loadEventEnd": 29.5
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 29.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 8.399999998509884,
+            "duration": 5.600000001490116
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 8.600000001490116,
+            "duration": 6.199999995529652
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 8.600000001490116,
+            "duration": 7.0999999940395355
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 8.699999995529652,
+            "duration": 14.100000001490116
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "type": "img",
+            "transferSize": 222018,
+            "encodedBodySize": 221718,
+            "decodedBodySize": 221718,
+            "startTime": 29.299999997019768,
+            "duration": 3
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 339,
+            "height": 339
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 271,
+            "height": 271
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 351,
+            "height": 351
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 270,
+            "height": 270
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "renderedFonts": [
+          {
+            "selector": "#hero-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "selector": "#collection-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 12
+              }
+            ]
+          }
+        ]
+      },
+      "nfcFontProbe": {
+        "position": {
+          "scrollX": 0,
+          "scrollY": 5069,
+          "viewportWidth": 393,
+          "viewportHeight": 851,
+          "documentHeight": 7536
+        },
+        "totals": {
+          "transferBytes": 576985,
+          "encodedBytes": 574885,
+          "decodedBytes": 601375,
+          "entries": 7
+        },
+        "lcp": {
+          "startTime": 40,
+          "renderTime": 40,
+          "loadTime": 0,
+          "size": 17806,
+          "url": "",
+          "element": "p#collection-status"
+        },
+        "cls": 0,
+        "layoutShifts": [],
+        "fcpMs": 40,
+        "navigation": {
+          "type": "navigate",
+          "responseStart": 2.5999999940395355,
+          "domContentLoadedEventEnd": 18.399999998509884,
+          "loadEventEnd": 26.69999999552965
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/?edition=nfc",
+            "type": "document",
+            "transferSize": 3959,
+            "encodedBodySize": 3659,
+            "decodedBodySize": 10742,
+            "startTime": 0,
+            "duration": 26.69999999552965
+          },
+          {
+            "name": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+            "type": "link",
+            "transferSize": 17580,
+            "encodedBodySize": 17280,
+            "decodedBodySize": 17280,
+            "startTime": 10.299999997019768,
+            "duration": 3.5
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-BqhWcaUk.js",
+            "type": "script",
+            "transferSize": 5704,
+            "encodedBodySize": 5404,
+            "decodedBodySize": 13967,
+            "startTime": 10.5,
+            "duration": 3.7999999970197678
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "type": "img",
+            "transferSize": 294280,
+            "encodedBodySize": 293980,
+            "decodedBodySize": 293980,
+            "startTime": 10.599999994039536,
+            "duration": 4
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/index-B34ooTNE.css",
+            "type": "link",
+            "transferSize": 4556,
+            "encodedBodySize": 4256,
+            "decodedBodySize": 15100,
+            "startTime": 10.599999994039536,
+            "duration": 3
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "type": "img",
+            "transferSize": 110584,
+            "encodedBodySize": 110284,
+            "decodedBodySize": 110284,
+            "startTime": 29.299999997019768,
+            "duration": 2.7000000029802322
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "type": "img",
+            "transferSize": 140322,
+            "encodedBodySize": 140022,
+            "decodedBodySize": 140022,
+            "startTime": 29.399999998509884,
+            "duration": 2.7999999970197678
+          }
+        ],
+        "images": [
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+            "loading": "auto",
+            "complete": true,
+            "naturalWidth": 353,
+            "width": 339,
+            "height": 339
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+            "loading": "lazy",
+            "complete": false,
+            "naturalWidth": 0,
+            "width": 271,
+            "height": 271
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 351,
+            "height": 351
+          },
+          {
+            "source": "http://127.0.0.1:4173/assets/back-light-900.webp",
+            "loading": "lazy",
+            "complete": true,
+            "naturalWidth": 900,
+            "width": 270,
+            "height": 270
+          }
+        ],
+        "fonts": {
+          "status": "loaded",
+          "check700": true,
+          "faces": [
+            {
+              "family": "UnifrakturCook",
+              "weight": "700",
+              "status": "loaded"
+            }
+          ],
+          "heroComputedFamily": "UnifrakturCook, Georgia, serif",
+          "heroComputedWeight": "700"
+        },
+        "supportedEntryTypes": [
+          "element",
+          "event",
+          "first-input",
+          "interaction-contentful-paint",
+          "largest-contentful-paint",
+          "layout-shift",
+          "long-animation-frame",
+          "longtask",
+          "mark",
+          "measure",
+          "navigation",
+          "paint",
+          "resource",
+          "soft-navigation",
+          "visibility-state"
+        ],
+        "renderedFonts": [
+          {
+            "selector": "#hero-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "selector": "#collection-title",
+            "fonts": [
+              {
+                "familyName": "UnifrakturCook",
+                "postScriptName": "UnifrakturCook-Bold",
+                "isCustomFont": true,
+                "glyphCount": 12
+              }
+            ]
+          }
+        ]
+      },
+      "accessibilitySnapshot": "- link \"Pular para o conteúdo\":\n  - /url: \"#conteudo\"\n- banner:\n  - link \"psicoZ, início\":\n    - /url: \"#inicio\"\n    - text: psicoZ\n  - navigation \"Navegação principal\":\n    - link \"Álbum\":\n      - /url: \"#album\"\n    - link \"Artista\":\n      - /url: \"#artista\"\n    - link \"Faixas\":\n      - /url: \"#faixas\"\n    - link \"Jogo\":\n      - /url: \"#jogo\"\n    - link \"Coleção\":\n      - /url: \"#colecao\"\n- main:\n  - region \"psicoZ\":\n    - paragraph:\n      - text: Lançamento planejado\n      - time: 31/10/2026\n    - heading \"psicoZ\" [level=1]\n    - paragraph: Ouça. Explore. Leve com você.\n    - paragraph: 15 faixas, arte e uma coleção digital. O universo do álbum começa aqui.\n    - button \"Fazer pré-save\"\n    - link \"Explorar o álbum\":\n      - /url: \"#faixas\"\n    - link \"Jogar e conquistar faixas Em desenvolvimento\":\n      - /url: \"#jogo\"\n    - figure \"A arte é a porta de entrada. Toque na capa\":\n      - button \"Abrir painel de pré-save de psicoZ\":\n        - 'img \"Capa de psicoZ: colagem de desenhos vermelhos sobre preto, com mãos, olhos, correntes e figuras surreais.\"'\n      - text: A arte é a porta de entrada. Toque na capa\n  - text: 15 faixas Um universo autoral Edição mini CD NFC Progresso no seu aparelho\n  - region \"Muito além da escuta.\":\n    - figure \"A mesma arte, sob outra luz. Encarte / psicoZ\":\n      - img \"Variante clara da arte de psicoZ, com desenhos vermelhos sobre branco.\"\n      - text: A mesma arte, sob outra luz. Encarte / psicoZ\n    - paragraph: Sobre o álbum\n    - heading \"Muito além da escuta.\" [level=2]\n    - paragraph: Conheça as imagens, acompanhe as 15 faixas e encontre sua coleção em um só lugar.\n    - paragraph: O texto conceitual do álbum será apresentado aqui após aprovação do artista.\n    - link \"Conhecer a coleção\":\n      - /url: \"#colecao\"\n  - region \"O artista.\":\n    - paragraph: Por trás do álbum\n    - heading \"O artista.\" [level=2]\n    - paragraph: Uma apresentação a caminho.\n    - paragraph: Nome artístico e biografia aguardam confirmação. Este espaço será dedicado à voz e à história de quem criou psicoZ.\n    - text: Redes e contato a anunciar\n  - region \"15 maneiras de entrar.\":\n    - paragraph: O álbum, faixa a faixa\n    - heading \"15 maneiras de entrar.\" [level=2]\n    - text: Títulos em confirmação\n    - list \"As 15 posições do álbum\":\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: Título a confirmar Em breve\n      - listitem: A anunciar Em breve\n    - paragraph: A contracapa de referência tem 14 faixas. A posição 15 e a lista textual final aguardam confirmação.\n    - figure \"Contracapa de referência Arte original · lista ainda em revisão\":\n      - img \"Contracapa de referência com 14 títulos em lettering vermelho. A lista final terá 15 faixas.\"\n      - text: Contracapa de referência Arte original · lista ainda em revisão\n  - region \"Entre nesse universo.\":\n    - figure \"Referência visual do álbum. O jogo ainda está em criação.\":\n      - 'img \"Arte da contracapa clara: mãos com olhos, correntes e figuras que servem de referência visual ao futuro jogo.\"'\n      - text: Referência visual do álbum. O jogo ainda está em criação.\n    - paragraph: Jogar e conquistar faixas\n    - heading \"Entre nesse universo.\" [level=2]\n    - paragraph: Uma experiência em primeira pessoa inspirada nas artes do álbum está em desenvolvimento. Explore, encontre símbolos e conquiste músicas e materiais digitais.\n    - text: Jogo em desenvolvimento\n    - paragraph: \"Controles previstos: teclado e mouse no computador; controles de toque no celular. A primeira fase ainda não está disponível.\"\n    - link \"Ver minha coleção\":\n      - /url: \"#colecao\"\n  - region \"Sua coleção.\":\n    - paragraph: Para levar com você\n    - heading \"Sua coleção.\" [level=2]\n    - paragraph: 0 de 15 faixas conquistadas no jogo\n    - status: Sua coleção começa aqui. Quando o jogo estiver disponível, conquiste faixas; a edição NFC libera acesso aos materiais publicados.\n    - heading \"Músicas e materiais\" [level=3]\n    - text: Arquivos em preparação\n    - list:\n      - listitem:\n        - text: \"01\"\n        - paragraph: Faixa 01 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"02\"\n        - paragraph: Faixa 02 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"03\"\n        - paragraph: Faixa 03 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"04\"\n        - paragraph: Faixa 04 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"05\"\n        - paragraph: Faixa 05 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"06\"\n        - paragraph: Faixa 06 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"07\"\n        - paragraph: Faixa 07 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"08\"\n        - paragraph: Faixa 08 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"09\"\n        - paragraph: Faixa 09 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"10\"\n        - paragraph: Faixa 10 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"11\"\n        - paragraph: Faixa 11 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"12\"\n        - paragraph: Faixa 12 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"13\"\n        - paragraph: Faixa 13 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"14\"\n        - paragraph: Faixa 14 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: \"15\"\n        - paragraph: Faixa 15 — MP3\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: ✧\n        - paragraph: Arte do álbum — PNG\n        - text: Acesso ainda não conquistado Em breve\n      - listitem:\n        - text: ✧\n        - paragraph: Álbum completo — ZIP\n        - text: Acesso ainda não conquistado Em breve\n    - complementary \"Do físico ao digital.\":\n      - heading \"Do físico ao digital.\" [level=3]\n      - paragraph: Aproxime o mini CD NFC de um celular compatível para abrir a coleção e liberar acesso aos materiais publicados.\n      - paragraph: O endereço da tag é compartilhável. Ele libera acesso, mas não conta como conquista no jogo.\n      - group: Como funciona o acesso?\n    - group: Seu progresso neste aparelho\n- contentinfo:\n  - link \"psicoZ\":\n    - /url: \"#inicio\"\n  - paragraph: Álbum, arte e outros caminhos.\n  - paragraph: Créditos artísticos e técnicos aguardam confirmação.\n  - link \"Voltar ao início\":\n    - /url: \"#inicio\"\n- status"
+    }
+  ],
+  "distBytes": 935260
+}

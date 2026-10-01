@@ -1,0 +1,61 @@
+{
+  "repository": "gabrielecirulli/2048",
+  "commit": "478b6ec346e3787f589e4af751378d06ded4cbbc",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "7a76f74c23aeb8ee6af73ff796343834b82f75271a610b7174a8ea6707cc8c77",
+      "bytes": 3988
+    },
+    {
+      "path": "LICENSE.txt",
+      "sha256": "57e12c39a6ad9d98b2e451065bfdfbd15fc9e0c2ed3bf4dc1d09acab41ff02fc",
+      "bytes": 1083
+    },
+    {
+      "path": "README.md",
+      "sha256": "3b624490f45eb6315b00bcaac65cefa713678401c42971b0e65cad8d8ff0ccfc",
+      "bytes": 2350
+    },
+    {
+      "path": "js/application.js",
+      "sha256": "5fc43863225b371c458615ef431fac73003546f437aa32026641de48817bd27a",
+      "bytes": 197
+    },
+    {
+      "path": "js/game_manager.js",
+      "sha256": "b02baa6b75f8c8cad8606e680b6f73b7c843c61e3a643ee48410022499a649f0",
+      "bytes": 7627
+    },
+    {
+      "path": "js/grid.js",
+      "sha256": "169428f5ff7f726c38112fcf1c918028cbca3a1d9f9239838fbc7eb4396b9f9a",
+      "bytes": 2526
+    },
+    {
+      "path": "js/html_actuator.js",
+      "sha256": "67b796d4f640b927e517b2281f8230c4f65c08b07558001e2c0dc9ea2e2145cf",
+      "bytes": 4040
+    },
+    {
+      "path": "js/keyboard_input_manager.js",
+      "sha256": "7d579ab5b67dddf339cf28a7d06e4e24eca08b0187204ce352d67c49ae1e48de",
+      "bytes": 4005
+    },
+    {
+      "path": "js/local_storage_manager.js",
+      "sha256": "8e12c6a9aa34097c0b634b1f6690da091b1b4ac158ff914097a8ac83c86b5bc6",
+      "bytes": 1588
+    },
+    {
+      "path": "js/tile.js",
+      "sha256": "13699e51d62179a6d36874108831a29901a98d6e11329918e64cfb5ee82d58e3",
+      "bytes": 594
+    },
+    {
+      "path": "style/main.css",
+      "sha256": "2e0fd51d6950afe1cb0af861f92b9d01111e56b825aa46de9475e8afa1a13f1b",
+      "bytes": 20647
+    }
+  ]
+}

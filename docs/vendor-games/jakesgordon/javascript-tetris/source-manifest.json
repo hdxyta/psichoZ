@@ -1,0 +1,24 @@
+{
+  "copiedAt": "2026-09-30",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "31744bd674567634d06949f7bbc581ef148583106751dfbafa362b1a3cea116b"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f1ed7e3419a320d1500c737f3464f62db11d2df4ec33ed72c830c1b3c71f05af"
+    },
+    {
+      "path": "index.html",
+      "sha256": "b18ad94ae7c0c3199d1b42507a20a7c30de35b2e5393c8a05b22bf2ee8e9b468"
+    },
+    {
+      "path": "stats.js",
+      "sha256": "a58c25488ff7ac0a9868dffd0b521d4e4dbd0473ef1bccab641e10e74b44f701"
+    }
+  ],
+  "executedExternalScripts": false,
+  "commit": "e5c0c42f7dac0f3514a55eff656c6e22e95d68ed",
+  "repository": "jakesgordon/javascript-tetris"
+}

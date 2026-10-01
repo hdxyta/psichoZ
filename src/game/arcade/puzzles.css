@@ -1,0 +1,15 @@
+.puzzle-panel { width: min(88%, 650px); padding: 14px; background: #090909; border: 2px solid #f51d36; box-shadow: 7px 7px 0 #090909; }
+.puzzle-heading { margin: 0 0 16px; color: #f2ece2; font: 700 clamp(17px, 2vw, 27px)/1.2 monospace; text-align: center; }
+.puzzle-detail { margin: 16px 0 0; color: #f2ece2; font: 700 12px/1.4 monospace; text-align: center; }
+.puzzle-controls { display: grid; gap: 10px; width: 100%; margin: 0 auto; }
+.puzzle-controls button { border: 2px solid #f2ece2; border-radius: 0; background: #111; color: #f2ece2; min-height: 82px; padding: 8px 5px; touch-action: manipulation; font: 700 12px/1.2 monospace; box-shadow: 3px 3px 0 #000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; }
+.puzzle-controls button:focus-visible { outline: 3px solid #f51d36; outline-offset: 3px; }
+.puzzle-controls button[data-state="on"], .puzzle-controls button[data-state="active"] { background: #f51d36; color: #090909; border-color: #f2ece2; }
+.puzzle-controls button[data-state="matched"] { background: #f2ece2; color: #090909; border-color: #f51d36; }
+.puzzle-controls button:disabled { cursor: default; opacity: 0.8; }
+.puzzle-controls button[data-state="active"]:disabled { opacity: 1; }
+.puzzle-controls svg { width: 40px; height: 40px; flex-shrink: 0; }
+.puzzle-panel[data-kind="rhythm"] { width: min(90%, 340px); padding: 0; border: 0; box-shadow: none; }
+.puzzle-controls [data-puzzle-index="0"].puzzle-pulse { min-height: 58px; background: #f51d36; color: #090909; font-size: 14px; }
+@media (max-width: 480px) { .puzzle-panel { width: 94%; padding: 10px; } .puzzle-controls { gap: 6px; } .puzzle-controls button { min-height: 69px; padding: 7px 2px; font-size: 10px; gap: 4px; } .puzzle-controls svg { width: 30px; height: 30px; } .puzzle-heading { margin-bottom: 12px; } }
+@media (max-height: 540px) and (min-width: 601px) { .puzzle-panel { max-width: 510px; padding: 8px; } .puzzle-heading { font-size: 16px; margin-bottom: 6px; } .puzzle-detail { font-size: 10px; margin-top: 6px; } .puzzle-controls { gap: 5px; } .puzzle-controls button { min-height: 46px; padding: 3px; flex-direction: row; font-size: 10px; } .puzzle-controls svg { width: 25px; height: 25px; } }

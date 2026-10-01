@@ -1,0 +1,120 @@
+/* Quiet playlist: ink, restrained silver edges and original album artwork. */
+.game-hub {
+  --hub-red: #ff203c;
+  --hub-ink: #090909;
+  --hub-paper: #e8e6e2;
+  --playlist-columns: 26px 64px minmax(180px, 1fr) minmax(220px, .85fr) 118px;
+  --playlist-gap: 22px;
+  padding: 42px 0 58px;
+  margin-bottom: 60px;
+  background: var(--hub-ink);
+}
+.game-hub-heading { display: grid; grid-template-columns: 1fr 190px; gap: 60px; align-items: end; padding-bottom: 36px; scroll-margin-top: 30px; }
+.game-hub .section-label { color: #969491; margin-bottom: 16px; font-size: .68rem; }
+.game-hub h2 { margin: 0 0 16px; font-size: clamp(3rem, 4.5vw, 4.2rem); line-height: 1; letter-spacing: -.025em; }
+.game-hub-intro { max-width: 52ch; margin: 0; color: #a6a4a2; font-size: .8rem; }
+.game-hub-progress { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 12px; padding: 0; border: 0; }
+.game-hub-progress > span { color: #a6a4a2; font-size: .7rem; }
+.game-hub-progress strong { font: 400 1.1rem/1.2 Arial, Helvetica, sans-serif; margin: 0; font-variant-numeric: tabular-nums; }
+.game-hub-progress progress { grid-column: 1 / -1; display: block; width: 100%; height: 2px; border: 0; border-radius: 0; accent-color: #d4d1cc; background: #303030; }
+.game-hub-progress progress::-webkit-progress-bar { background: #303030; }
+.game-hub-progress progress::-webkit-progress-value { background: #d4d1cc; }
+.game-hub-progress progress::-moz-progress-bar { background: #d4d1cc; }
+.game-hub-progress p { font-size: .66rem; margin: 9px 0 0; color: #bdb6b8; }
+.game-hub-progress a { grid-column: 1 / -1; display: inline-flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 44px; font-size: .7rem; }
+.game-hub-progress a:hover { color: #ff677b; }
+.tracklist-caption { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid #7c7975; padding: 18px 14px; font-size: .67rem; color: #a6a4a2; }
+.tracklist-caption > span:last-child { display: flex; gap: 14px; align-items: center; color: #969491; }
+.tracklist-caption > span:last-child > span { font-size: 1.3rem; color: var(--hub-red); }
+.playlist-columns, .game-card-link { display: grid; grid-template-columns: var(--playlist-columns); column-gap: var(--playlist-gap); align-items: center; padding-inline: 14px; }
+.playlist-columns { min-height: 37px; border-bottom: 1px solid #363636; font-size: .64rem; color: #969491; }
+.playlist-columns > span:first-child { text-align: center; }
+.playlist-columns > span:last-child { text-align: right; padding-right: 9px; }
+.game-grid { display: block; list-style: none; padding: 0; margin: 0; }
+.game-card { min-width: 0; }
+.game-card-link { position: relative; min-height: 91px; padding-block: 12px; border-bottom: 1px solid #242424; background: transparent; color: var(--hub-paper); transition: background-color .15s ease; }
+.game-card-link:hover, .game-card-link:focus-visible { background: #151515; }
+.game-card-link:focus-visible { outline: 2px solid var(--hub-paper); outline-offset: -2px; }
+.game-card-number { text-align: center; color: #969491; font: 400 .73rem/1 Arial, Helvetica, sans-serif; font-variant-numeric: tabular-nums; }
+.game-card-link:hover .game-card-number, .game-card-link:focus-visible .game-card-number { color: #ff637a; }
+.game-sleeve { position: relative; isolation: isolate; width: 64px; height: 64px; overflow: hidden; border: 1px solid #6a6865; border-radius: 1px; background: #151515; }
+.game-sleeve-art { position: absolute; inset: -2px; background-size: 200%; opacity: .22; }
+.game-sleeve::before { content: ''; position: absolute; inset: 0; z-index: 1; background: #d4d1cc08; -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px); }
+.game-sleeve::after { content: ''; position: absolute; z-index: 3; pointer-events: none; inset: 0; border-top: 1px solid #ffffff30; }
+.game-card-link:hover .game-sleeve, .game-card-link:focus-visible .game-sleeve { border-color: #d4d1cc; }
+.game-screen { position: absolute; z-index: 2; inset: 4px; display: grid; place-items: center; overflow: hidden; background: #080808d9; }
+.game-thumbnail { position: relative; display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.game-thumbnail[hidden] { display: none; }
+.game-card[data-game-track='track-09'] .game-thumbnail { filter: brightness(3) contrast(1.3); }
+.game-thumb-fallback { display: none; padding: 3px; text-align: center; overflow-wrap: anywhere; font: 700 .55rem/1.15 Arial, sans-serif; color: #ff899a; }
+.game-screen[data-unavailable] .game-thumb-fallback { display: block; }
+.game-card-copy, .game-card-meta { min-width: 0; }
+.game-card h3 { color: var(--hub-paper); font: 700 1.4rem/1.2 UnifrakturCook, Georgia, serif; margin: 0 0 5px; overflow-wrap: anywhere; text-shadow: none; text-wrap: pretty; }
+.game-card-track-meta { margin: 0; color: #a6a4a2; font-size: .68rem; line-height: 1.5; }
+.game-card-audio { display: none; }
+.game-card-mobile-kind { display: none; }
+.game-card .track-credit { margin: 0 0 4px; }
+.game-card-meta { display: flex; flex-direction: column; gap: 5px; }
+.game-card-genre { font-size: .75rem; color: #c8c5c0; }
+.game-card-objective { max-width: 46ch; color: #969491; font-size: .69rem; line-height: 1.5; margin: 0; }
+.game-card-footer { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 5px; }
+.game-card-action { display: inline-flex; min-height: 44px; align-items: center; gap: 12px; font-size: .73rem; font-weight: 600; white-space: nowrap; }
+.game-card-play { display: grid; place-items: center; width: 34px; height: 34px; color: #d4d1cc; background: transparent; font-size: 1.15rem; line-height: 1; }
+.game-card-link:hover .game-card-play, .game-card-link:focus-visible .game-card-play { color: #ff536b; }
+.game-card-status { color: #a6a4a2; font-size: .61rem; white-space: nowrap; }
+.game-card-status:empty { display: none; }
+.game-card[data-recovered='true'] .game-card-number { color: var(--hub-red); }
+.game-hub-footer { display: flex; align-items: center; justify-content: space-between; gap: 48px; margin-top: 30px; padding-top: 24px; border-top: 1px solid #363636; }
+.tracklist-back-cover { display: flex; align-items: center; gap: 20px; margin: 0; max-width: 550px; }
+.tracklist-back-cover img { width: 80px; height: 80px; flex: 0 0 80px; object-fit: cover; border: 1px solid #494949; }
+.tracklist-back-cover figcaption { font-size: .8rem; line-height: 1.5; }
+.tracklist-back-cover figcaption span { display: block; color: #a6a4a2; font-size: .68rem; margin-top: 7px; }
+.game-hub-footer > p { max-width: 35ch; margin: 0; font-size: .7rem; }
+@media (max-width: 1050px) {
+  .game-hub { --playlist-columns: 22px 60px minmax(150px, 1fr) minmax(140px, .7fr) 90px; --playlist-gap: 16px; }
+  .game-sleeve { width: 60px; height: 60px; }
+  .game-hub-heading { grid-template-columns: 1fr 185px; gap: 30px; }
+  .game-card-action-label { display: none; }
+}
+@media (max-width: 760px) {
+  .game-hub { --playlist-columns: 20px 52px minmax(0, 1fr) 38px; --playlist-gap: 12px; padding-block: 28px 36px; margin-bottom: 36px; }
+  .game-hub-heading { grid-template-columns: 1fr; gap: 22px; padding-bottom: 22px; }
+  .game-hub h2 { font-size: clamp(2.7rem, 10vw, 3.5rem); }
+  .game-hub .section-label { font-size: .61rem; }
+  .game-hub-intro { font-size: .8rem; }
+  .game-hub-progress { grid-template-columns: 1fr auto; gap: 10px 16px; padding: 0; }
+  .game-hub-progress > span { align-self: center; font-size: .7rem; }
+  .game-hub-progress strong { grid-column: 2; align-self: center; margin: 0; font-size: 1.1rem; }
+  .game-hub-progress progress { grid-column: 1 / -1; width: 100%; }
+  .game-hub-progress p { margin: 0; font-size: .63rem; }
+  .game-hub-progress a { grid-column: 1 / -1; font-size: .7rem; min-height: 44px; }
+  .tracklist-caption { padding: 16px 0 12px; font-size: .62rem; gap: 10px; }
+  .tracklist-caption > span:last-child { gap: 6px; white-space: nowrap; }
+  .playlist-columns { font-size: .63rem; min-height: 34px; }
+  .playlist-columns, .game-card-link { padding-inline: 8px; }
+  .playlist-columns > span:nth-child(4), .game-card-meta { display: none; }
+  .playlist-columns > span:last-child { padding-right: 0; text-align: center; }
+  .game-card-link { min-height: 80px; padding-block: 11px; }
+  .game-card-number { font-size: .67rem; }
+  .game-sleeve { width: 52px; height: 52px; }
+  .game-screen { inset: 3px; }
+  .game-card h3 { font-size: 1.25rem; margin-bottom: 4px; }
+  .game-card-track-meta { font-size: .61rem; line-height: 1.5; }
+  .game-card-mobile-kind { display: inline; }
+  .game-card-footer { align-items: center; gap: 1px; }
+  .game-card-play { width: 30px; height: 30px; font-size: 1.1rem; }
+  .game-card-status { font-size: 0; }
+  .game-card-status:not(:empty)::after { content: '✓'; font-size: .68rem; }
+  .game-hub-footer { flex-direction: column; align-items: stretch; gap: 20px; }
+  .game-hub-footer > p { max-width: none; }
+  .tracklist-back-cover { gap: 18px; }
+  .tracklist-back-cover img { width: 65px; height: 65px; flex-basis: 65px; }
+}
+@media (max-width: 380px) {
+  .game-hub { --playlist-columns: 14px 46px minmax(0, 1fr) 32px; --playlist-gap: 8px; }
+  .game-sleeve { width: 46px; height: 46px; }
+  .game-card-link, .playlist-columns { padding-inline: 6px; }
+  .game-card h3 { font-size: 1.15rem; }
+}
+@media (prefers-reduced-motion: reduce) { .game-card-link { transition: none; } }
+html[data-reduced-motion='true'] .game-card-link { transition: none; }

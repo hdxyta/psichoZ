@@ -1,0 +1,24 @@
+[
+  {
+    "game": "maze",
+    "result": "won through arrow inputs",
+    "pathLength": 54,
+    "errors": []
+  },
+  {
+    "game": "simon",
+    "result": "won through four visible sequences",
+    "errors": []
+  },
+  {
+    "game": "flappy",
+    "result": "idle loses, no free victory",
+    "errors": []
+  },
+  {
+    "game": "invaders",
+    "result": "real projectile hit",
+    "score": 5,
+    "errors": []
+  }
+]

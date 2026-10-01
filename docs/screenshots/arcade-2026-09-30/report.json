@@ -1,0 +1,656 @@
+[
+  {
+    "profile": "desktop",
+    "track": "02",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 74.96875,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "03",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 84.3125,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "04",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 74.96875,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "05",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 74.96875,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "06",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 109.3125,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "07",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 84.3125,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "08",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 99.96875,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "10",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 240,
+        "y": 133.40625,
+        "width": 960,
+        "height": 540
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "12",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 74.96875,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "13",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 74.96875,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "14",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 109.3125,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "track": "15",
+    "layout": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 108.4375,
+        "y": 99.96875,
+        "width": 1223.109375,
+        "height": 687.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "desktop",
+    "errors": [],
+    "initialScripts": [
+      "http://127.0.0.1:4173/assets/index-BoVOwji8.js"
+    ],
+    "requestedScripts": [
+      "http://127.0.0.1:4173/assets/index-BoVOwji8.js",
+      "http://127.0.0.1:4173/assets/runtime-4Jo8Xwsc.js",
+      "http://127.0.0.1:4173/assets/world-B3IaNDgb.js",
+      "http://127.0.0.1:4173/assets/action-gcBOqNqz.js",
+      "http://127.0.0.1:4173/assets/puzzles-CIyXaRs-.js"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "track": "02",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 272.53125,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "03",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 278.96875,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "04",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 264.5625,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "05",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 279.421875,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "06",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 312.96875,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "07",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 292.15625,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "08",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 306.53125,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "10",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 276.765625,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "12",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 272.53125,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "13",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 272.53125,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "14",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 319.15625,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "track": "15",
+    "layout": {
+      "viewport": [
+        393,
+        851
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 312.71875,
+        "width": 393,
+        "height": 221.0625
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "mobile",
+    "errors": [],
+    "initialScripts": [
+      "http://127.0.0.1:4173/assets/index-BoVOwji8.js"
+    ],
+    "requestedScripts": [
+      "http://127.0.0.1:4173/assets/index-BoVOwji8.js",
+      "http://127.0.0.1:4173/assets/runtime-4Jo8Xwsc.js",
+      "http://127.0.0.1:4173/assets/world-B3IaNDgb.js",
+      "http://127.0.0.1:4173/assets/action-gcBOqNqz.js",
+      "http://127.0.0.1:4173/assets/puzzles-CIyXaRs-.js"
+    ]
+  },
+  {
+    "profile": "landscape",
+    "track": "02",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 56.859375,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "03",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 63.296875,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "04",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 56.859375,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "05",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 56.859375,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "06",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 81.296875,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "07",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 63.296875,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "08",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 74.859375,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "10",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 219,
+        "y": 50.640625,
+        "width": 413,
+        "height": 232.3125
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "12",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 56.859375,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "13",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 56.859375,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "14",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 81.296875,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "track": "15",
+    "layout": {
+      "viewport": [
+        851,
+        393
+      ],
+      "canvas": {
+        "x": 207.71875,
+        "y": 74.859375,
+        "width": 435.546875,
+        "height": 244.984375
+      },
+      "overflow": false
+    }
+  },
+  {
+    "profile": "landscape",
+    "errors": [],
+    "initialScripts": [
+      "http://127.0.0.1:4173/assets/index-BoVOwji8.js"
+    ],
+    "requestedScripts": [
+      "http://127.0.0.1:4173/assets/index-BoVOwji8.js",
+      "http://127.0.0.1:4173/assets/runtime-4Jo8Xwsc.js",
+      "http://127.0.0.1:4173/assets/world-B3IaNDgb.js",
+      "http://127.0.0.1:4173/assets/action-gcBOqNqz.js",
+      "http://127.0.0.1:4173/assets/puzzles-CIyXaRs-.js"
+    ]
+  }
+]

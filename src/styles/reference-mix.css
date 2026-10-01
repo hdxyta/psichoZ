@@ -1,0 +1,158 @@
+/* psicoZ: black ink, pale metal and the original red artwork. */
+:root {
+  --ink: #090909;
+  --charcoal: #121212;
+  --paper: #e8e6e2;
+  --muted: #a6a4a2;
+  --line: #303030;
+  --red: #f02138;
+  --red-deep: #a31425;
+  background: var(--ink);
+}
+body { background: var(--ink); }
+.wrap { width: min(1280px, calc(100% - 96px)); }
+.section-space { padding-block: 84px; }
+.section-label, .release-line { color: var(--muted); }
+.site-header { min-height: 80px; margin-block: 12px 0; padding: 12px 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; box-shadow: none; gap: 28px; }
+.site-header .wordmark { color: var(--paper); font-size: 2.2rem; }
+.site-header nav { gap: 30px; }
+.site-header nav a { color: #b9b7b4; font-weight: 400; }
+.site-header nav a:hover { color: var(--paper); text-decoration: underline; text-underline-offset: 7px; }
+.header-note { display: inline-flex; gap: 18px; align-items: center; min-height: 44px; padding: 0; background: transparent; color: #b9b7b4; font-size: .72rem; }
+.header-note:hover { color: var(--paper); }
+.hero { background: transparent; border: 0; grid-template-columns: 1fr 1fr; gap: 88px; min-height: 610px; padding: 64px 0 68px; }
+.hero-copy { min-width: 0; }
+.hero h1 { color: var(--paper); font-size: clamp(6.3rem, 10vw, 9rem); margin: 20px 0 22px; }
+.album-chips { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-bottom: 30px; }
+.album-chips span { padding: 0; border: 0; background: transparent; color: #a6a4a2; font-size: .72rem; }
+.album-chips span + span { border-left: 1px solid #494949; padding-left: 22px; }
+.hero-lead { font-size: 1.4rem; letter-spacing: -.025em; line-height: 1.35; margin-bottom: 13px; }
+.hero-description { font-size: .85rem; max-width: 40ch; }
+.hero-actions { margin-top: 27px; }
+.button { border-radius: 1px; }
+.hero-actions .primary { color: #101010; background: var(--paper); border-color: var(--paper); }
+.hero-actions .primary:hover { background: #fff; border-color: #fff; outline: 0; }
+.game-teaser { max-width: 330px; margin-top: 34px; padding-top: 21px; }
+.game-teaser .crosshair { font-size: 24px; }
+.game-teaser:hover { color: var(--paper); }
+.cover-button { border: 1px solid #494949; box-shadow: 7px 9px 0 #050505; }
+.cover-button:hover, .cover-button:focus-visible { border-color: #adaba8; box-shadow: 7px 9px 0 #050505; }
+.hero-art figcaption { margin-top: 20px; font-size: .67rem; color: #949390; }
+.album-strip { border-block: 1px solid #242424; background: transparent; }
+.album-strip > div { padding: 18px 0; color: #969491; font-size: .69rem; }
+.album-strip span + span::before { content: none; }
+.album-tabs { display: flex; gap: 34px; margin-block: 12px 24px; border-bottom: 1px solid var(--line); }
+.album-tabs a { display: inline-flex; align-items: center; min-height: 52px; border-bottom: 1px solid transparent; margin-bottom: -1px; font-size: .78rem; color: var(--muted); font-weight: 400; }
+.album-tabs a:hover, .album-tabs a[aria-current='location'] { color: var(--paper); border-color: var(--paper); }
+
+/* The visual experiment stays bounded and changes only through its controls. */
+.spectrum-section { background: #0c0c0c; border: 1px solid var(--line); padding: 30px 32px 20px; }
+.spectrum-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.spectrum-heading .section-label { font-size: .69rem; margin-bottom: 10px; color: #a6a4a2; }
+.spectrum-heading h2 { font: 700 2.2rem/1.15 UnifrakturCook, Georgia, serif; margin: 0; }
+.visual-badge { display: inline-flex; align-items: center; gap: 9px; color: #aaa8a5; font-size: .68rem; }
+.visual-badge > span { width: 4px; height: 4px; background: #bcbab7; }
+.spectrum-stage { width: 100%; background: #090909; }
+#spectrum-art { display: block; width: 100%; height: 300px; overflow: hidden; }
+.spectrum-ridge { stroke-linejoin: round; }
+.spectrum-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 25px; border-top: 1px solid #303030; padding-top: 16px; }
+.spectrum-modes { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.spectrum-control { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 1px solid #494949; background: transparent; color: #bcbab7; padding: 10px 15px; min-height: 44px; border-radius: 1px; font-size: .74rem; }
+.spectrum-control svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.spectrum-control:hover { color: #fff; border-color: #a6a4a2; }
+.spectrum-control[aria-pressed='true'] { background: #e0deda; color: #111; border-color: #e0deda; }
+.perspective-control { display: flex; align-items: center; gap: 14px; min-height: 44px; font-size: .72rem; color: #bcbab7; }
+.perspective-control input { width: 115px; min-height: 44px; accent-color: #bcbab7; cursor: pointer; }
+.spectrum-note { margin: 14px 0 0; max-width: none; font-size: .67rem; line-height: 1.6; color: #a6a4a2; }
+
+/* Sections share the page surface; borders separate content rather than frame it. */
+.section-heading { margin-bottom: 26px; }
+.section-heading .section-label { margin-bottom: 13px; }
+.album-section { border-top: 0; gap: 85px; }
+.album-section .paper-art { max-width: 370px; transform: none; }
+.paper-art img { border: 1px solid #c9c6c1; box-shadow: none; }
+.album-section h2, .artist-section h2, .collection-section h2 { font: 700 3.2rem/1.08 UnifrakturCook, Georgia, serif; letter-spacing: 0; }
+.artist-section { background: transparent; padding-inline: 0; gap: 64px; border-block: 1px solid var(--line); }
+.artist-name { font-size: 1.05rem; }
+.artist-copy > p:not(.artist-name) { font-size: .85rem; }
+.pending-copy { border-left: 1px solid #525252; }
+.collection-status { padding: 0 0 20px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; color: #bcbab7; font-size: .82rem; }
+.collection-layout { gap: 56px; margin-top: 28px; }
+.collection-toolbar h3 { font-weight: 400; font-size: .95rem; }
+.reward { min-height: 64px; border-color: #252525; }
+.reward-action { border: 0; border-radius: 0; padding: 0; white-space: nowrap; color: #949390; }
+.nfc-panel { border: 0; border-left: 1px solid #3c3c3c; padding: 12px 0 12px 36px; border-radius: 0; background: transparent; }
+.disc { border-color: #6e6b68; background: repeating-radial-gradient(circle at center, #30302f 0 1px, #111 2px 4px); }
+.disc span { color: var(--paper); }
+dialog:not(.game-dialog) { border: 1px solid #686663; border-radius: 2px; background: #101010; box-shadow: 0 0 0 5px #090909; }
+.service-link { border: 0; border-bottom: 1px solid #393939; border-radius: 0; background: transparent; padding-inline: 0; }
+.icon-button { border: 1px solid #5b5956; border-radius: 1px; background: transparent; }
+.site-footer { margin-top: 0; }
+
+/* Keep the shell available before the optional game chunk loads. */
+body.game-open { overflow: hidden; }
+dialog.game-dialog { position: fixed; inset: 0; width: 100vw; max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 0; border: 0; border-radius: 0; background: #090909; }
+.game-loading { min-height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px; gap: 15px; text-align: center; }
+.game-loading h2 { margin: 0; }
+.game-launch-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 24px; }
+
+@media (min-width: 1600px) { .hero { min-height: 660px; } }
+@media (max-width: 1100px) {
+  .wrap { width: calc(100% - 56px); }
+  .site-header nav { gap: 24px; }
+  .header-note { display: none; }
+  .hero { gap: 45px; min-height: 530px; }
+  .hero h1 { font-size: 7rem; }
+  .hero-art figcaption { display: block; }
+  .hero-art figcaption > span { display: block; margin-top: 5px; }
+}
+@media (max-width: 760px) {
+  .wrap { width: calc(100% - 32px); }
+  .section-space { padding-block: 54px; }
+  .site-header { margin-block: 8px 0; padding: 12px 0 4px; min-height: 102px; gap: 5px; }
+  .site-header .wordmark { font-size: 2rem; }
+  .site-header nav { gap: 10px; }
+  .site-header nav a { font-size: .73rem; }
+  .hero { grid-template-columns: 1fr; padding: 32px 0 42px; gap: 35px; min-height: 0; }
+  .release-line { font-size: .65rem; gap: 6px; }
+  .hero h1 { font-size: clamp(5.2rem, 24vw, 7rem); margin-block: 20px; }
+  .album-chips { gap: 14px; margin-bottom: 25px; }
+  .album-chips span { font-size: .64rem; }
+  .album-chips span + span { padding-left: 14px; }
+  .hero-lead { font-size: 1.25rem; }
+  .hero-description { font-size: .78rem; }
+  .hero-actions { gap: 20px; margin-top: 22px; }
+  .hero-actions .button { font-size: .75rem; min-height: 46px; padding: 12px 16px; gap: 17px; }
+  .hero-actions .text-link { font-size: .72rem; gap: 9px; }
+  .game-teaser { font-size: .73rem; margin-top: 26px; }
+  .hero-art { width: calc(100% - 8px); }
+  .hero-art figcaption { font-size: .63rem; display: flex; gap: 20px; margin-top: 19px; }
+  .hero-art figcaption > span { margin: 0; }
+  .album-strip > div { padding: 18px 0; font-size: .65rem; gap: 14px 8px; }
+  .album-tabs { gap: 0; justify-content: space-between; margin-block: 7px 18px; }
+  .album-tabs a { font-size: .64rem; min-height: 48px; text-align: center; padding-inline: 3px; }
+  .spectrum-section { padding: 22px 16px 18px; }
+  .spectrum-heading { display: block; }
+  .spectrum-heading h2 { font-size: 2rem; }
+  .spectrum-heading .section-label { font-size: .66rem; }
+  .visual-badge { margin-top: 14px; font-size: .63rem; }
+  #spectrum-art { height: 235px; width: calc(100% + 20px); margin-inline: -10px; }
+  .spectrum-toolbar { flex-direction: column; align-items: stretch; gap: 12px; }
+  .spectrum-modes { justify-content: center; gap: 6px; flex-wrap: nowrap; }
+  .spectrum-control { padding: 10px 11px; font-size: .65rem; gap: 5px; }
+  .spectrum-control svg { width: 17px; height: 17px; }
+  .spectrum-control[data-spectrum-palette] span { max-width: 60px; }
+  .perspective-control { justify-content: space-between; padding-inline: 7px; }
+  .perspective-control input { width: 53%; }
+  .spectrum-note { font-size: .64rem; }
+  .album-section { gap: 42px; }
+  .album-section h2, .artist-section h2, .collection-section h2 { font-size: 2.8rem; }
+  .artist-section { padding-inline: 0; gap: 24px; }
+  .reward-action { font-size: .64rem; }
+  .nfc-panel { padding: 24px 0 0; border-left: 0; border-top: 1px solid #3c3c3c; }
+  .collection-status { padding: 0 0 20px; }
+}
+@media (max-width: 360px) {
+  .hero-actions { gap: 12px; }
+  .spectrum-control { padding-inline: 8px; }
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "game": "maze",
+    "repository": "https://github.com/wrksp8/TheLostPath",
+    "commit": "767e15d8a1cdb689e0ac56d703ccbe7fde977605",
+    "entrypoint": "src/script.js",
+    "license": "MIT",
+    "original": "docs/vendor-games/wrksp8/TheLostPath/src/script.js",
+    "adapted": "public/games/maze/game.js",
+    "sourceSha256": "7546d7d37a946986af422f421739e992abc3ff36751963b9552e72c1175d4348",
+    "changes": [
+      "Copied DFS maze generation, BFS reachability, movement/collision and loop.",
+      "13×13 board; choose farthest reachable exit, keep one DFS carve, disable debug shortcut, clamp first delta, stop original automatic restarts and duplicate loops. Parent owns the five-minute limit.",
+      "Renderer reveals walls with paper/red hatching; native pointer direction and touch/keyboard controls; win/loss reports at original finish/timeout checks."
+    ]
+  },
+  {
+    "game": "flappy",
+    "repository": "https://github.com/pyforgedev/flappy-bird",
+    "commit": "29369e112225c35cd1da77e43cf02aa5ed1408a1",
+    "entrypoint": "flappyBird.js",
+    "license": "MIT",
+    "original": "docs/vendor-games/pyforgedev/flappy-bird/flappyBird.js",
+    "adapted": "public/games/flappy/game.js",
+    "sourceSha256": "f6ffbce7d7b59cbdab34fe014bde0765521e4aac853eb191852cc551802b2055",
+    "changes": [
+      "Copied flap, scrolling pipes, bounded gap generation, collision and score loop.",
+      "Original bitmaps/audio excluded; local canvas sprites are original psicoZ geometry. No external assets or original storage keys.",
+      "Parent starts playing; eight legitimately passed pipes win; original collision loses."
+    ]
+  },
+  {
+    "game": "asteroids",
+    "repository": "https://github.com/dmcinnes/HTML5-Asteroids",
+    "commit": "930301cbda83ed3b120f64b801d937d077ee2da0",
+    "entrypoint": "game.js",
+    "license": "MIT",
+    "original": "docs/vendor-games/dmcinnes/HTML5-Asteroids/game.js",
+    "adapted": "public/games/asteroids/game.js",
+    "sourceSha256": "e43597fb5325f1b043429b978bc2828b15ae2427d4e1176f24d54fc4395a370f",
+    "changes": [
+      "Copied Matrix, Sprite, Ship, Bullet, Asteroid, grid collision, wraparound and FSM game code.",
+      "Removed jQuery startup glue, external typeface renderer, audio files and local pause binding. Native input/bootstrap and system text replace only integration dependencies.",
+      "One complete original wave wins; original depleted lives loses. Original vector geometry recolored red/paper; mouse aim/fire plus touch rotation/thrust/fire."
+    ]
+  },
+  {
+    "game": "invaders",
+    "repository": "https://github.com/dwmkerr/spaceinvaders",
+    "commit": "5f79c6ae4f3cb1fbda0be5cc5212a3a407fa27ee",
+    "entrypoint": "js/spaceinvaders.js",
+    "license": "MIT",
+    "original": "docs/vendor-games/dwmkerr/spaceinvaders/js/spaceinvaders.js",
+    "adapted": "public/games/invaders/game.js",
+    "sourceSha256": "58a1e4f681d7dd5b7097f4db8ba2d4dcfe0b78b41121ff842800af6d45eb71c5",
+    "changes": [
+      "Copied Game, PlayState, alien formations, projectiles, collision and state loop.",
+      "18 invaders per wave and local canvas geometry; tracking HTML, external audio and starfield omitted.",
+      "First original cleared formation wins; original GameOverState loses. Fixed original global gameCanvas lookup; pointer steering and native touch buttons."
+    ]
+  },
+  {
+    "game": "simon",
+    "repository": "https://github.com/d4vucat/Simon-Game",
+    "commit": "a6313ab5614d0a542bda36c88e6121d17cb70dd6",
+    "entrypoint": "game.js",
+    "license": "MIT",
+    "original": "docs/vendor-games/d4vucat/Simon-Game/game.js",
+    "adapted": "public/games/simon/game.js",
+    "sourceSha256": "44da8aed1aa9836697e98f74a3e79807095430b876ee74f7675b5ae05ab85d76",
+    "changes": [
+      "Copied SimonGame class, sequence playback, comparison, timer, mistakes and round progression.",
+      "Four rounds with one new symbol per round, four active controls and a 20-second response window. Native button markup and psicoZ typography/hatching.",
+      "Prevent inputs during success/error transition; fourth original levelComplete wins and original gameOver loses. No external assets."
+    ]
+  }
+]

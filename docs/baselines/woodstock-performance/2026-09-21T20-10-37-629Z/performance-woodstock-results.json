@@ -1,0 +1,191 @@
+{
+  "date": "2026-09-21T19:53:08.309Z",
+  "browser": "153.0.8010.52",
+  "node": "v20.20.0",
+  "conditions": "Local production preview, isolated Chrome, cold cache, no network/CPU throttling. Mobile is emulated. Frame intervals are a stationary laboratory sample, not physical-device FPS.",
+  "profiles": [
+    {
+      "name": "desktop",
+      "readyMs": 859,
+      "opening": [
+        {
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "bytes": 17580,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-D-_uRul1.css",
+          "bytes": 6722,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-BnF4JmDT.js",
+          "bytes": 8466,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "bytes": 294280,
+          "type": "img"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "bytes": 17580,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-D-_uRul1.css",
+          "bytes": 6722,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-BnF4JmDT.js",
+          "bytes": 8466,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "bytes": 294280,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "bytes": 110584,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-light-900.webp",
+          "bytes": 222018,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/runtime-DVm0Jy0z.js",
+          "bytes": 146731,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/runtime--vzynOZp.css",
+          "bytes": 2847,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-640.webp",
+          "bytes": 107932,
+          "type": "img"
+        }
+      ],
+      "gameChunkAndCssBytes": 149578,
+      "allResourcesAtPlayBytes": 917160,
+      "sample": {
+        "milliseconds": 3504.800000011921,
+        "frames": 351,
+        "estimatedFps": 100,
+        "medianIntervalMs": 10,
+        "p95IntervalMs": 10.100000000000364,
+        "maxDrawCallsPerFrame": 83,
+        "internalResolution": [
+          1440,
+          1000
+        ],
+        "renderer": "WebKit WebGL"
+      },
+      "audioStatus": 206,
+      "canvasCountAfterExit": 0,
+      "errors": []
+    },
+    {
+      "name": "mobile-emulated",
+      "readyMs": 317,
+      "opening": [
+        {
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "bytes": 17580,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "bytes": 294280,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-D-_uRul1.css",
+          "bytes": 6722,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-BnF4JmDT.js",
+          "bytes": 8466,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "bytes": 110584,
+          "type": "img"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4173/fonts/unifrakturcook-latin-700.woff2",
+          "bytes": 17580,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-1200.webp",
+          "bytes": 294280,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-D-_uRul1.css",
+          "bytes": 6722,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-BnF4JmDT.js",
+          "bytes": 8466,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/back-dark-900.webp",
+          "bytes": 110584,
+          "type": "img"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/runtime-DVm0Jy0z.js",
+          "bytes": 146731,
+          "type": "script"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/runtime--vzynOZp.css",
+          "bytes": 2847,
+          "type": "link"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/cover-dark-640.webp",
+          "bytes": 107932,
+          "type": "img"
+        }
+      ],
+      "gameChunkAndCssBytes": 149578,
+      "allResourcesAtPlayBytes": 695142,
+      "sample": {
+        "milliseconds": 3500.899999988079,
+        "frames": 351,
+        "estimatedFps": 99.9914293060595,
+        "medianIntervalMs": 10,
+        "p95IntervalMs": 10.199999999999818,
+        "maxDrawCallsPerFrame": 65,
+        "internalResolution": [
+          491,
+          1063
+        ],
+        "renderer": "WebKit WebGL"
+      },
+      "audioStatus": 206,
+      "canvasCountAfterExit": 0,
+      "errors": []
+    }
+  ],
+  "htmlSha256": "e5a2f49e61efe25ce9657a2af56c039f1fdc11426f3b7aaa06c398270ea96657"
+}

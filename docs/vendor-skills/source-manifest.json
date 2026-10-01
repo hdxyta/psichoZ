@@ -1,0 +1,266 @@
+[
+  {
+    "repository": "anthropics/skills",
+    "commit": "34040c9c568585f6929bedeaad110ad08f079624",
+    "sourcePath": "skills/frontend-design/LICENSE.txt",
+    "gitBlob": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+    "localPath": "docs/vendor-skills/anthropics/skills/skills/frontend-design/LICENSE.txt",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+  },
+  {
+    "repository": "anthropics/skills",
+    "commit": "34040c9c568585f6929bedeaad110ad08f079624",
+    "sourcePath": "skills/frontend-design/SKILL.md",
+    "gitBlob": "a5333457c414d20d625f307df945842c0952ecc3",
+    "localPath": "docs/vendor-skills/anthropics/skills/skills/frontend-design/SKILL.md",
+    "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+  },
+  {
+    "repository": "vercel-labs/agent-skills",
+    "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+    "sourcePath": "skills/web-design-guidelines/SKILL.md",
+    "gitBlob": "ceae92ab319216a68274168fba9b63b998b65997",
+    "localPath": "docs/vendor-skills/vercel-labs/agent-skills/skills/web-design-guidelines/SKILL.md",
+    "sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "LICENSE",
+    "gitBlob": "cefe596afef12e19a8e5e923f1a04c7da3188760",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/LICENSE",
+    "sha256": "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/SKILL.md",
+    "gitBlob": "b67c94028834b7ec8b4bff1feda9d950dfbf4874",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/SKILL.md",
+    "sha256": "862ddb356d81e6cc652fb3427232e4282d7fffcc554c852658fef6f15615c8d1"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/element-attributes.md",
+    "gitBlob": "4e9fa6b99103bbe4e1262c37a9c4a664dfe1dbd5",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/element-attributes.md",
+    "sha256": "bf19aa4671e0a50a0fefa9c790f39124e803060eefe395042b723c29fcb7faa2"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/playwright-tests.md",
+    "gitBlob": "bec2ec90e4adbc6ed56f06ab19c34916ce7f736b",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/playwright-tests.md",
+    "sha256": "c5b0719fef2cfdff50bd744051b2f9afc119775db4b48e9b2882c1cf3886797c"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/pr-attachments.md",
+    "gitBlob": "91663b58bccf34b1cd2790ef8ae335d45b3d99df",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/pr-attachments.md",
+    "sha256": "24b118e74598be72e73e24fe223d295b9099c85b1860a7c8f6e5690c9038fa2a"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/request-mocking.md",
+    "gitBlob": "9005fda67dfc4af13848fd9ebedee08420aeec97",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/request-mocking.md",
+    "sha256": "54e801c9663fc2b6d68ceb058cb1c360724c2499f42acc7852a68e83e5b5f37c"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/running-code.md",
+    "gitBlob": "98b541fb54cd68942795bc81519684eb2f58ecc9",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/running-code.md",
+    "sha256": "d95c539a5990b71d02d8bdf1d9414df16191eb6cff95b0063820518b7a13dcb2"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/session-management.md",
+    "gitBlob": "eb1bde35d9ce619d5cd939384d656e5c91310ebd",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/session-management.md",
+    "sha256": "a4f16271f95d3eec7bc56e659d8adbb8f6ad7d603a6fa15efdcdd071a50c6ce3"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/storage-state.md",
+    "gitBlob": "bb5021a09097127c051eaad83a262ff755e62971",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/storage-state.md",
+    "sha256": "9ac47f9ae4a1aedcd2077f8ac9ab1ba6bee1962cb83ff51adcd36fb6d83b5ec6"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/test-generation.md",
+    "gitBlob": "35a8d57d0433797c2cba6615f6e9dc1fc9b8f06a",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/test-generation.md",
+    "sha256": "12f54cfa718d9e559bad918120a4ca4f11c933167713d1b9c5f99872eddaf749"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/tracing.md",
+    "gitBlob": "51b8d30489a66c5f4d1b559cd68a41267e92831e",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/tracing.md",
+    "sha256": "ef73e71bee792e341df9cd4f60529c929ade48b538ac76e033f4f20843e8dbda"
+  },
+  {
+    "repository": "microsoft/playwright-cli",
+    "commit": "12228454ed024c9ac89abd59df3b706ed9135fd9",
+    "sourcePath": "skills/playwright-cli/references/video-recording.md",
+    "gitBlob": "aae2f9b43bba67f8352d83af1f56e22e433458e3",
+    "localPath": "docs/vendor-skills/microsoft/playwright-cli/skills/playwright-cli/references/video-recording.md",
+    "sha256": "66a1f83444f285282e590d3e0b2d9896a3394518ee7304c6d708bba6c0d9abc7"
+  },
+  {
+    "repository": "cloudflare/skills",
+    "commit": "b052c32bab7dd493513260228a36c88294f343f1",
+    "sourcePath": "LICENSE",
+    "gitBlob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+    "localPath": "docs/vendor-skills/cloudflare/skills/LICENSE",
+    "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+  },
+  {
+    "repository": "cloudflare/skills",
+    "commit": "b052c32bab7dd493513260228a36c88294f343f1",
+    "sourcePath": "skills/web-perf/SKILL.md",
+    "gitBlob": "b028d9cae41d3af2f59d6a90fcac3c241d6ff437",
+    "localPath": "docs/vendor-skills/cloudflare/skills/skills/web-perf/SKILL.md",
+    "sha256": "79c531e95ca4d96a7de920c28c127c2c09ec55cd452a92222267d2954580be23"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "LICENSE",
+    "gitBlob": "abf0390320aa14406af7a520b9b0739fdda9bf08",
+    "localPath": "docs/vendor-skills/obra/superpowers/LICENSE",
+    "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/CREATION-LOG.md",
+    "gitBlob": "9aa03092809feaf93c9bfa985252f6f1c9624692",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/CREATION-LOG.md",
+    "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/SKILL.md",
+    "gitBlob": "095d194ac041502905f15b01d22d294fb94db8b2",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/SKILL.md",
+    "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/condition-based-waiting-example.ts",
+    "gitBlob": "703a06b653160d060bbf46ab5c6e0cd7446bd592",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/condition-based-waiting-example.ts",
+    "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/condition-based-waiting.md",
+    "gitBlob": "70994f777c586f7d4c43033aac34c7cf0da6688b",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/condition-based-waiting.md",
+    "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/defense-in-depth.md",
+    "gitBlob": "e2483354dc2b62478a2624e34ca18bc0efe887b2",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/defense-in-depth.md",
+    "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/find-polluter.sh",
+    "gitBlob": "985f5d08ccf8a3f2d40739cfcaf4413bb24bf1cb",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/find-polluter.sh",
+    "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/root-cause-tracing.md",
+    "gitBlob": "12ef5222e24e19ab92172b82b69ef1b0c30d9bfa",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/root-cause-tracing.md",
+    "sha256": "6b0622269e098ca1399e123e553fd385f0b6412d88ef0e9c4f5a8ea9cf1cec7b"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/test-academic.md",
+    "gitBlob": "23a6ed7a2044e0c44d74c3101406140f4851aa41",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/test-academic.md",
+    "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/test-pressure-1.md",
+    "gitBlob": "8d13b467e4a98abfffd12161cbc3c418021d6023",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/test-pressure-1.md",
+    "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/test-pressure-2.md",
+    "gitBlob": "2d2315ec8a24ca872bc80d2f4056468ba051462a",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/test-pressure-2.md",
+    "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/systematic-debugging/test-pressure-3.md",
+    "gitBlob": "89734b86fdc756488df315d53e5c3ac2d3752cd8",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/systematic-debugging/test-pressure-3.md",
+    "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
+  },
+  {
+    "repository": "obra/superpowers",
+    "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+    "sourcePath": "skills/verification-before-completion/SKILL.md",
+    "gitBlob": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
+    "localPath": "docs/vendor-skills/obra/superpowers/skills/verification-before-completion/SKILL.md",
+    "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+  },
+  {
+    "repository": "vercel-labs/web-interface-guidelines",
+    "commit": "e3d624baaf29dc1fc645aff3e38f03e564d2d6b1",
+    "sourcePath": "LICENSE",
+    "gitBlob": "b3575a3c1358eac4b9ee36a4c851872d81417760",
+    "localPath": "docs/vendor-skills/vercel-labs/web-interface-guidelines/LICENSE",
+    "sha256": "6cd1609c9c12233507cdd2ce0d32e9a721e3c27494951be06b90090deeeb7af2"
+  },
+  {
+    "repository": "vercel-labs/web-interface-guidelines",
+    "commit": "e3d624baaf29dc1fc645aff3e38f03e564d2d6b1",
+    "sourcePath": "command.md",
+    "gitBlob": "e1e8e3460db7c1440e34642c4f7b885185ca5366",
+    "localPath": "docs/vendor-skills/vercel-labs/web-interface-guidelines/command.md",
+    "sha256": "5a775e6411f790f518dbc9c1fa7c50a89e6873502d9a3530a6eb223a590bcfe8"
+  },
+  {
+    "repository": "vercel-labs/agent-skills",
+    "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+    "sourcePath": "README.md",
+    "gitBlob": "04a1a5a46a22cfd430e2877b7c145e34fc2653ab",
+    "localPath": "docs/vendor-skills/vercel-labs/agent-skills/README.md",
+    "sha256": "7c02f64b08fc6c4eef03c01d64f3e2ed478193ccfcbd14edba379abe23304651"
+  }
+]

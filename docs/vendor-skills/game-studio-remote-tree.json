@@ -1,0 +1,322 @@
+[
+  {
+    "path": "plugins/game-studio/.codex-plugin/plugin.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5e44d10c60c6415130c5f8442e60577be257979c",
+    "size": 1419,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/5e44d10c60c6415130c5f8442e60577be257979c"
+  },
+  {
+    "path": "plugins/game-studio/assets/app-icon.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6415b68216c22c88ea1bb006e814836a6ee511c0",
+    "size": 8885,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/6415b68216c22c88ea1bb006e814836a6ee511c0"
+  },
+  {
+    "path": "plugins/game-studio/assets/game-studio.svg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bb7846b910640c1ad905126a93a428075dd3b0de",
+    "size": 1481,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/bb7846b910640c1ad905126a93a428075dd3b0de"
+  },
+  {
+    "path": "plugins/game-studio/references/alternative-3d-engines.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "14c4192d2bc2bf65443499246cd003f4e8461f64",
+    "size": 2043,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/14c4192d2bc2bf65443499246cd003f4e8461f64"
+  },
+  {
+    "path": "plugins/game-studio/references/engine-selection.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d5d7bc10850c4aa1ad8c64bf415ed7919d281a5e",
+    "size": 2503,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/d5d7bc10850c4aa1ad8c64bf415ed7919d281a5e"
+  },
+  {
+    "path": "plugins/game-studio/references/frontend-prompts.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "86d46e2de9fcbb5d85cbc7a59d09429072002449",
+    "size": 3712,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/86d46e2de9fcbb5d85cbc7a59d09429072002449"
+  },
+  {
+    "path": "plugins/game-studio/references/gltf-loading-starter.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2eb1324ca55d17fa08ac7a9cb19a41bfcd22f513",
+    "size": 980,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/2eb1324ca55d17fa08ac7a9cb19a41bfcd22f513"
+  },
+  {
+    "path": "plugins/game-studio/references/phaser-architecture.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "53fb903dc4b8fa1f74c3320c5103774879561594",
+    "size": 1200,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/53fb903dc4b8fa1f74c3320c5103774879561594"
+  },
+  {
+    "path": "plugins/game-studio/references/playtest-checklist.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3a2e81d4aad7897759e1c492a93d41ddc959b39c",
+    "size": 1599,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/3a2e81d4aad7897759e1c492a93d41ddc959b39c"
+  },
+  {
+    "path": "plugins/game-studio/references/rapier-integration-starter.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f78a5be3d7d8c1cd1d89b33dff45f9375a81d4fe",
+    "size": 1055,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/f78a5be3d7d8c1cd1d89b33dff45f9375a81d4fe"
+  },
+  {
+    "path": "plugins/game-studio/references/react-three-fiber-stack.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "947a3e0ddc51df70250d4ac95ef43f136997e97e",
+    "size": 1764,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/947a3e0ddc51df70250d4ac95ef43f136997e97e"
+  },
+  {
+    "path": "plugins/game-studio/references/react-three-fiber-starter.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c14a92e8b326eda857053445dd2df9b370f8c106",
+    "size": 1424,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/c14a92e8b326eda857053445dd2df9b370f8c106"
+  },
+  {
+    "path": "plugins/game-studio/references/sprite-pipeline.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d3804a623b7c98f43051f0d1015f33364ac8c9be",
+    "size": 1706,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/d3804a623b7c98f43051f0d1015f33364ac8c9be"
+  },
+  {
+    "path": "plugins/game-studio/references/three-hud-layout-patterns.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "af9a1345da0f97e880fdfc6e7820d3177b77c779",
+    "size": 2192,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/af9a1345da0f97e880fdfc6e7820d3177b77c779"
+  },
+  {
+    "path": "plugins/game-studio/references/three-webgl-architecture.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f6558b77d7bb3c9842ca330b6d47a67f9ee7bd0c",
+    "size": 1447,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/f6558b77d7bb3c9842ca330b6d47a67f9ee7bd0c"
+  },
+  {
+    "path": "plugins/game-studio/references/threejs-stack.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "aee34d4d9e91676727e43f9737e823c75071bcc0",
+    "size": 1630,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/aee34d4d9e91676727e43f9737e823c75071bcc0"
+  },
+  {
+    "path": "plugins/game-studio/references/threejs-vanilla-starter.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f7830f6c905478495642f703eca60ea7a57ec97",
+    "size": 1768,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/9f7830f6c905478495642f703eca60ea7a57ec97"
+  },
+  {
+    "path": "plugins/game-studio/references/web-3d-asset-pipeline.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ce5bc3da7613285e207a50065aed8055bca2dcb1",
+    "size": 1780,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/ce5bc3da7613285e207a50065aed8055bca2dcb1"
+  },
+  {
+    "path": "plugins/game-studio/references/webgl-debugging-and-performance.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5d9853f79067d0cb32ddb46ebfe4136819b00050",
+    "size": 1299,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/5d9853f79067d0cb32ddb46ebfe4136819b00050"
+  },
+  {
+    "path": "plugins/game-studio/scripts/build_sprite_edit_canvas.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fc1b2a2ef3bbb529d818fd58d722e3a180847c43",
+    "size": 2833,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/fc1b2a2ef3bbb529d818fd58d722e3a180847c43"
+  },
+  {
+    "path": "plugins/game-studio/scripts/normalize_sprite_strip.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9bb3e0485550b3a27942fe2eb634495529982254",
+    "size": 5129,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/9bb3e0485550b3a27942fe2eb634495529982254"
+  },
+  {
+    "path": "plugins/game-studio/scripts/render_sprite_preview_sheet.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8937ed83873e8766982bd52f2ca261db5527f47d",
+    "size": 3217,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/8937ed83873e8766982bd52f2ca261db5527f47d"
+  },
+  {
+    "path": "plugins/game-studio/skills/game-playtest/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d74823c9231966b8bc49924932f4b1c7d3a19e0a",
+    "size": 2912,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/d74823c9231966b8bc49924932f4b1c7d3a19e0a"
+  },
+  {
+    "path": "plugins/game-studio/skills/game-playtest/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9ef3afd845b316c47824974b6524adf4823af3ec",
+    "size": 225,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/9ef3afd845b316c47824974b6524adf4823af3ec"
+  },
+  {
+    "path": "plugins/game-studio/skills/game-studio/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ba409990d8ff8fa0e04350c18a2c1581c39bd30c",
+    "size": 5396,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/ba409990d8ff8fa0e04350c18a2c1581c39bd30c"
+  },
+  {
+    "path": "plugins/game-studio/skills/game-studio/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2179b571600266860c7d152e7cd28f1f5b19a78c",
+    "size": 213,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/2179b571600266860c7d152e7cd28f1f5b19a78c"
+  },
+  {
+    "path": "plugins/game-studio/skills/game-ui-frontend/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f2681fb955143f96cb04bfa4f1cb09d6839b162a",
+    "size": 5060,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/f2681fb955143f96cb04bfa4f1cb09d6839b162a"
+  },
+  {
+    "path": "plugins/game-studio/skills/game-ui-frontend/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "38d5e21db91a814732021fbf5f50112c70285c9d",
+    "size": 232,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/38d5e21db91a814732021fbf5f50112c70285c9d"
+  },
+  {
+    "path": "plugins/game-studio/skills/phaser-2d-game/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8bd4ed6afcb502a0c78cd8b32cbb3163b7187fff",
+    "size": 3182,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/8bd4ed6afcb502a0c78cd8b32cbb3163b7187fff"
+  },
+  {
+    "path": "plugins/game-studio/skills/phaser-2d-game/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c715eb752a9b65958ff77aa32af57f2ee43c0998",
+    "size": 213,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/c715eb752a9b65958ff77aa32af57f2ee43c0998"
+  },
+  {
+    "path": "plugins/game-studio/skills/react-three-fiber-game/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "90fb0657bce2c96ab8aa3ae52534aaf51bbe67b8",
+    "size": 4023,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/90fb0657bce2c96ab8aa3ae52534aaf51bbe67b8"
+  },
+  {
+    "path": "plugins/game-studio/skills/react-three-fiber-game/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6bb67f35c1212548d5552ab6ec48331ddbe7544c",
+    "size": 239,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/6bb67f35c1212548d5552ab6ec48331ddbe7544c"
+  },
+  {
+    "path": "plugins/game-studio/skills/sprite-pipeline/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a31ef15cf890426873a805ced1ed9b11f16a1efa",
+    "size": 3383,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/a31ef15cf890426873a805ced1ed9b11f16a1efa"
+  },
+  {
+    "path": "plugins/game-studio/skills/sprite-pipeline/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fe41692205c1ca5c973f6e8d69362bea1a5b074c",
+    "size": 234,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/fe41692205c1ca5c973f6e8d69362bea1a5b074c"
+  },
+  {
+    "path": "plugins/game-studio/skills/three-webgl-game/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "647cbcaddd28d3c3092d28e1b9de6ce56aa39999",
+    "size": 5833,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/647cbcaddd28d3c3092d28e1b9de6ce56aa39999"
+  },
+  {
+    "path": "plugins/game-studio/skills/three-webgl-game/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "898f8c7ca29b6ca74b53f9e7058f75fa97702f42",
+    "size": 234,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/898f8c7ca29b6ca74b53f9e7058f75fa97702f42"
+  },
+  {
+    "path": "plugins/game-studio/skills/web-3d-asset-pipeline/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d0fde630c0cbae52b52aa22f43c8df9eb7989212",
+    "size": 3453,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/d0fde630c0cbae52b52aa22f43c8df9eb7989212"
+  },
+  {
+    "path": "plugins/game-studio/skills/web-3d-asset-pipeline/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "308ca2b541bf438e3b177792bc25302ec90c16ac",
+    "size": 236,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/308ca2b541bf438e3b177792bc25302ec90c16ac"
+  },
+  {
+    "path": "plugins/game-studio/skills/web-game-foundations/SKILL.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1fe88e9c7c63c4f0ef9fda4ebd24fa61ae9a44a1",
+    "size": 4592,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/1fe88e9c7c63c4f0ef9fda4ebd24fa61ae9a44a1"
+  },
+  {
+    "path": "plugins/game-studio/skills/web-game-foundations/agents/openai.yaml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a59dfd1c3add47d7166e41fb4516922510ba4f88",
+    "size": 229,
+    "url": "https://api.github.com/repos/openai/plugins/git/blobs/a59dfd1c3add47d7166e41fb4516922510ba4f88"
+  }
+]

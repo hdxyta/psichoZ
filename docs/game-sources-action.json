@@ -1,0 +1,114 @@
+[
+  {
+    "game": "snake",
+    "license": "MIT",
+    "excludedAssets": [],
+    "target": 6,
+    "repository": "https://github.com/varshney-himanshu/snake-game-js",
+    "condition": "Six real food pickups through upstream snake collisions",
+    "commit": "f07a620bf203b9a62837cc154226e72bb324d4e3",
+    "entry": "public/games/snake/index.html",
+    "changes": [
+      "Reuse original entity/game/input/renderer modules",
+      "psicoZ palette and16x16court",
+      "Parent-owned progression; score storage removed",
+      "Swipe and on-screen directions; bridge reports actual score",
+      "Draw snake head after its body so the original grow overlap cannot hide it"
+    ],
+    "trackId": "track-02",
+    "upstream": "docs/vendor-games/varshney-himanshu/snake-game-js"
+  },
+  {
+    "game": "pong",
+    "license": "MIT",
+    "excludedAssets": [
+      "Original menu images and all sound files"
+    ],
+    "target": 3,
+    "repository": "https://github.com/jakesgordon/javascript-pong",
+    "condition": "Player scores3 actual goals before opponent scores3",
+    "commit": "ca3240536e4f79ab7144388e56ed19de715b6662",
+    "entry": "public/games/pong/index.html",
+    "changes": [
+      "Reuse game.js and pong.js physics/AI",
+      "Mouse/touch paddle position and arrows/WASD",
+      "First-to3 adapter, larger paddle and psicoZ colors",
+      "Disable original demo/player-selection keys and sounds",
+      "Virtual performance timestamp for shared pause"
+    ],
+    "trackId": "track-04",
+    "upstream": "docs/vendor-games/jakesgordon/javascript-pong"
+  },
+  {
+    "game": "tetris",
+    "license": "MIT",
+    "excludedAssets": [
+      "Texture JPG",
+      "Stats external dependency"
+    ],
+    "target": 2,
+    "repository": "https://github.com/jakesgordon/javascript-tetris",
+    "condition": "Original removeLines clears2 actual complete rows",
+    "commit": "e5c0c42f7dac0f3514a55eff656c6e22e95d68ed",
+    "entry": "public/games/tetris/index.html",
+    "changes": [
+      "Extract original inline game code into tetris.js",
+      "Preserve bitmasks/random bag/rotation/collision/line clearing",
+      "ReplaceStatsdependencywithno-op",
+      "Mouse/touchbuttons and Space harddrop",
+      "Hatch piece shading and psicoZ palette",
+      "Virtual performance timestamp for shared pause"
+    ],
+    "trackId": "track-05",
+    "upstream": "docs/vendor-games/jakesgordon/javascript-tetris"
+  },
+  {
+    "game": "racer",
+    "license": "MIT code only",
+    "excludedAssets": [
+      "ALL original sprites and background images: README describes borrowed OutRun placeholders",
+      "ALL original music: README explicitly excludes reproduction",
+      "Stats external dependency"
+    ],
+    "target": 100,
+    "repository": "https://github.com/jakesgordon/javascript-racer",
+    "condition": "Drive a complete authored lap under5 real upstream collisions",
+    "commit": "3e8a060b5900755db27f899612a74a77427c853e",
+    "entry": "public/games/racer/index.html",
+    "changes": [
+      "Reuse v4.final inline code as racer.js and common.js projection/physics/traffic",
+      "Shorten road via upstream road constructors",
+      "Replace all music/art with original procedural Canvas atlas",
+      "Stats/music disabled and storage confined to attempt memory",
+      "Pointer steering and accessible controls",
+      "Reports actual net track traversal and collision speed reduction"
+    ],
+    "trackId": "track-07",
+    "upstream": "docs/vendor-games/jakesgordon/javascript-racer"
+  },
+  {
+    "game": "breakout",
+    "license": "MIT code; upstream sound exception preserved and omitted",
+    "excludedAssets": [
+      "All sound and soundmanager/Flash files: sound exception inLICENSE",
+      "All packaged ZIPs and binary assets",
+      "Original paving background/buttons"
+    ],
+    "target": 12,
+    "repository": "https://github.com/jakesgordon/javascript-breakout",
+    "condition": "Original ball collisions clear all12 bricks before3lost lives",
+    "commit": "eed59e2affa9423b93d2ac8ff93061bb88b33284",
+    "entry": "public/games/breakout/index.html",
+    "changes": [
+      "Reuse original game.js/breakout.js/levels.js",
+      "Finite12brick level through upstream layout format",
+      "Mouse/touch paddle at scaled coordinates",
+      "Original gradient replaced with hard hatch paddle",
+      "Sound manager download disabled; no sound assets",
+      "Attempt-only storage and shared virtual timestamp",
+      "Disable legacy touchmove before event binding to prevent conflicting scaled paddle input"
+    ],
+    "trackId": "track-10",
+    "upstream": "docs/vendor-games/jakesgordon/javascript-breakout"
+  }
+]
