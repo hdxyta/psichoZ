@@ -8,6 +8,13 @@
   --line: #3b3432;
   --red: #f20d1f;
   --red-deep: #93030c;
+  --album-bg-image: image-set(url('/assets/cover-dark-1200.webp') 1x);
+  --album-bg-position: center 5.5rem;
+  --album-bg-size: clamp(760px, 78vw, 1120px) auto;
+  --album-bg-edge: #030303f7 0 8%, #030303c7 36%, #030303e8 72%, #030303fa 100%;
+  --album-bg-wash: #030303c8, #030303f2 78%;
+  --album-grid-alpha: #ffffff06;
+  --album-red-grid-alpha: #f20d1f08;
   --slash: linear-gradient(118deg, transparent 0 47%, #f20d1f 47% 49%, transparent 49% 100%);
   background: var(--ink);
 }
@@ -16,8 +23,8 @@ body {
   overflow-x: clip;
   background:
     linear-gradient(90deg, #000 0 12px, transparent 12px calc(100% - 12px), #000 calc(100% - 12px)),
-    radial-gradient(circle at 80% 8%, #f20d1f22 0 12rem, transparent 26rem),
-    image-set(url('/assets/cover-dark-640.webp') 1x) center 4rem / min(1180px, 118vw) auto no-repeat fixed,
+    radial-gradient(circle at 80% 8%, #f20d1f18 0 12rem, transparent 26rem),
+    var(--album-bg-image) var(--album-bg-position) / var(--album-bg-size) no-repeat,
     var(--ink);
 }
 body::before {
@@ -27,9 +34,10 @@ body::before {
   z-index: -2;
   pointer-events: none;
   background:
-    linear-gradient(#030303de, #030303ef),
-    repeating-linear-gradient(90deg, transparent 0 31px, #ffffff08 31px 32px),
-    repeating-linear-gradient(0deg, transparent 0 41px, #f20d1f0c 41px 42px);
+    linear-gradient(90deg, var(--album-bg-edge)),
+    linear-gradient(var(--album-bg-wash)),
+    repeating-linear-gradient(90deg, transparent 0 31px, var(--album-grid-alpha) 31px 32px),
+    repeating-linear-gradient(0deg, transparent 0 41px, var(--album-red-grid-alpha) 41px 42px);
 }
 body::after {
   content: '';
@@ -61,7 +69,7 @@ body::after {
   background:
     linear-gradient(180deg, #f1eee8 0 14px, transparent 14px),
     linear-gradient(90deg, #f20d1f 0 7px, transparent 7px),
-    #050505c4;
+    #050505d6;
   transform: skew(-4deg);
   z-index: -1;
 }
@@ -120,9 +128,26 @@ body::after {
 .collection-status { padding: 16px 18px; border: 2px solid var(--paper); border-left: 9px solid var(--red); border-radius: 0; background: #030303; color: #d8d2cb; font-size: .82rem; }
 .collection-layout { gap: 56px; margin-top: 28px; }
 .collection-toolbar h3 { font-weight: 400; font-size: .95rem; }
-.reward { min-height: 64px; border-color: #3a3330; padding-inline: 12px; }
-.reward:nth-child(odd) { background: #ffffff05; }
-.reward:hover { background: #f20d1f14; }
+.reward {
+  position: relative;
+  min-height: 64px;
+  border: 1px solid #302525;
+  border-left: 0;
+  border-right: 0;
+  padding-inline: 14px;
+  background: linear-gradient(180deg, #070707f2, #030303f2);
+  box-shadow: inset 0 1px 0 #fff7, inset 0 -1px 0 #000, 5px 5px 0 #0008;
+}
+.reward::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: #f20d1f;
+  opacity: .5;
+}
+.reward:nth-child(odd) { background: linear-gradient(180deg, #0c0506f4, #030303f4); }
+.reward:hover { background: linear-gradient(180deg, #210609f4, #080203f4); border-color: #6c1b22; }
 .reward-index { color: var(--red); font-weight: 900; }
 .reward-action { border: 0; border-radius: 0; padding: 0; white-space: nowrap; color: #949390; }
 .nfc-panel { border: 2px solid var(--paper); border-left: 9px solid var(--red); padding: 26px; border-radius: 0; background: #050505; }
@@ -144,6 +169,12 @@ dialog.game-dialog { position: fixed; inset: 0; width: 100vw; max-width: none; h
 
 @media (min-width: 1600px) { .hero { min-height: 660px; } }
 @media (max-width: 1100px) {
+  :root {
+    --album-bg-position: center 6rem;
+    --album-bg-size: min(980px, 112vw) auto;
+    --album-bg-edge: #030303fb 0 10%, #030303d6 42%, #030303ef 100%;
+    --album-bg-wash: #030303d4, #030303f4 80%;
+  }
   .wrap { width: calc(100% - 56px); }
   .site-header nav { gap: 24px; }
   .hero { gap: 45px; min-height: 530px; }
@@ -152,6 +183,14 @@ dialog.game-dialog { position: fixed; inset: 0; width: 100vw; max-width: none; h
   .hero-art figcaption > span { display: block; margin-top: 5px; }
 }
 @media (max-width: 760px) {
+  :root {
+    --album-bg-position: 68% 8.75rem;
+    --album-bg-size: min(430px, 110vw) auto;
+    --album-bg-edge: #030303fc 0 10%, #030303ee 54%, #030303fb 100%;
+    --album-bg-wash: #030303f5, #030303fc 68%;
+    --album-grid-alpha: #ffffff03;
+    --album-red-grid-alpha: #f20d1f04;
+  }
   .wrap { width: calc(100% - 32px); }
   .section-space { padding-block: 54px; }
   .site-header { margin-block: 8px 0; padding: 12px 0 4px; min-height: 102px; gap: 5px; }
@@ -159,7 +198,7 @@ dialog.game-dialog { position: fixed; inset: 0; width: 100vw; max-width: none; h
   .site-header nav { gap: 10px; }
   .site-header nav a { font-size: .73rem; }
   .hero { grid-template-columns: 1fr; padding: 32px 0 42px; gap: 35px; min-height: 0; }
-  .hero::before { inset: 22px 0 auto 0; width: 100%; height: 58%; transform: skew(-2deg); }
+  .hero::before { inset: 22px 0 auto 0; width: 100%; height: 64%; background: linear-gradient(180deg, #f1eee8 0 10px, transparent 10px), linear-gradient(90deg, #f20d1f 0 6px, transparent 6px), #050505f4; transform: skew(-2deg); }
   .release-line { font-size: .65rem; gap: 6px; }
   .hero h1 { font-size: clamp(5.2rem, 24vw, 7rem); margin-block: 20px; }
   .album-chips { gap: 14px; margin-bottom: 25px; }
@@ -186,5 +225,9 @@ dialog.game-dialog { position: fixed; inset: 0; width: 100vw; max-width: none; h
   .collection-status { padding: 0 0 20px; }
 }
 @media (max-width: 360px) {
+  :root {
+    --album-bg-position: 68% 8.4rem;
+    --album-bg-size: 390px auto;
+  }
   .hero-actions { gap: 12px; }
 }
