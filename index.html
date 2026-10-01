@@ -51,15 +51,21 @@
         <div class="wrap">
           <div id="faixas" class="game-hub-heading">
             <div><p class="section-label">psicoZ / álbum interativo</p><h2 id="game-title">Faixas &amp; jogos.</h2><p class="game-hub-intro">Um jogo para cada faixa. Escolha por onde entrar.</p></div>
-            <div class="game-hub-progress"><span>Seu percurso</span><strong id="game-progress-count" aria-hidden="true">0 / 15</strong><progress id="game-progress" max="15" value="0" aria-labelledby="game-progress-caption"></progress><p id="game-progress-caption" class="visually-hidden" aria-live="polite">0 de 15 jogos conquistados</p><a href="#colecao">Ver minha coleção <span aria-hidden="true">↗</span></a></div>
+            <div class="game-hub-progress"><span>Seu percurso</span><strong id="game-progress-count" aria-hidden="true">0 / 15</strong><progress id="game-progress" max="15" value="0" aria-labelledby="game-progress-caption"></progress><p id="game-progress-caption" class="visually-hidden" aria-live="polite">0 de 15 jogos conquistados</p><button class="collection-trigger" type="button" data-open-collection>Ver minha coleção <span aria-hidden="true">↗</span></button></div>
+          </div>
+          <div class="game-hub-footer">
+            <figure class="tracklist-back-cover"><img src="/assets/back-dark-900.webp" width="900" height="900" loading="lazy" alt="Contracapa de psicoZ com os 14 títulos que dão nome aos minigames." /><figcaption>Da contracapa para o jogo.<span>As 14 faixas nomeadas seguem a arte original. O título da faixa 15 será anunciado.</span></figcaption></figure>
+            <aside class="nfc-panel" aria-labelledby="nfc-title"><div class="disc" aria-hidden="true"><span translate="no">psicoZ</span></div><div><h3 id="nfc-title">Do físico ao digital.</h3><p>Aproxime o mini CD NFC de um celular compatível para abrir a coleção e liberar acesso aos materiais publicados.</p><p class="small-note">O endereço da tag é compartilhável. Ele libera acesso, mas não conta como conquista no jogo.</p><details><summary>Como funciona o acesso?</summary><p>A tag abre uma URL como <code>/?edition=nfc#colecao</code>. O acesso fica salvo neste navegador. Se limpar os dados, abra o endereço da tag novamente.</p></details></div></aside>
           </div>
           <div class="tracklist-caption"><span>15 minigames / PC + celular</span><span>Áudios em breve</span></div>
           <div class="playlist-columns" aria-hidden="true"><span>#</span><span></span><span>Faixa</span><span>Minigame / objetivo</span><span>Jogar</span></div>
           <ol id="tracklist" class="game-grid" aria-label="As 15 faixas e seus minigames"></ol>
-          <div class="game-hub-footer">
-            <figure class="tracklist-back-cover"><img src="/assets/back-dark-900.webp" width="900" height="900" loading="lazy" alt="Contracapa de psicoZ com os 14 títulos que dão nome aos minigames." /><figcaption>Da contracapa para o jogo.<span>As 14 faixas nomeadas seguem a arte original. O título da faixa 15 será anunciado.</span></figcaption></figure>
-            <p class="small-note">Cada vitória marca sua coleção neste navegador. As músicas e os downloads ainda estão em preparação.</p>
-          </div>
+          <aside class="collection-popover" id="collection-popover" aria-labelledby="collection-title" hidden>
+            <div class="collection-popover-top"><div><p class="section-label">Para levar com você</p><h2 id="collection-title">Sua coleção.</h2><p id="collection-count" class="small-note" aria-live="polite"></p></div><button class="icon-button" type="button" data-close-collection aria-label="Fechar coleção">×</button></div>
+            <p id="collection-status" class="collection-status" role="status"></p>
+            <div class="collection-toolbar"><h3>Músicas e materiais</h3><span class="small-note">Arquivos em preparação</span></div>
+            <ul id="rewards-list" class="rewards-list"></ul>
+          </aside>
         </div>
       </section>
 
@@ -76,10 +82,8 @@
 
 
 
-      <section class="collection-section wrap section-space" id="colecao" aria-labelledby="collection-title">
-        <div class="section-heading"><div><p class="section-label">Para levar com você</p><h2 id="collection-title">Sua coleção.</h2></div><p id="collection-count" class="small-note" aria-live="polite"></p></div>
-        <p id="collection-status" class="collection-status" role="status"></p>
-        <div class="collection-layout"><div><div class="collection-toolbar"><h3>Músicas e materiais</h3><span class="small-note">Arquivos em preparação</span></div><ul id="rewards-list" class="rewards-list"></ul></div><aside class="nfc-panel" aria-labelledby="nfc-title"><div class="disc" aria-hidden="true"><span translate="no">psicoZ</span></div><h3 id="nfc-title">Do físico ao digital.</h3><p>Aproxime o mini CD NFC de um celular compatível para abrir a coleção e liberar acesso aos materiais publicados.</p><p class="small-note">O endereço da tag é compartilhável. Ele libera acesso, mas não conta como conquista no jogo.</p><details><summary>Como funciona o acesso?</summary><p>A tag abre uma URL como <code>/?edition=nfc#colecao</code>. O acesso fica salvo neste navegador. Se limpar os dados, abra o endereço da tag novamente.</p></details></aside></div>
+      <section class="collection-section wrap" id="colecao" aria-labelledby="collection-short-title">
+        <div class="collection-short"><div><p class="section-label">Coleção local</p><h2 id="collection-short-title">Progresso salvo neste aparelho.</h2><p class="small-note">A lista de músicas e materiais abre pelo botão da área de jogos.</p></div><button class="button primary" type="button" data-open-collection>Ver coleção <span aria-hidden="true">↗</span></button></div>
         <details class="progress-settings"><summary>Seu progresso neste aparelho</summary><div class="settings-content"><p id="storage-status" role="status"></p><p>Não há conta nem sincronização entre aparelhos. Limpar os dados do navegador pode apagar seu progresso.</p><label class="checkbox-label"><input type="checkbox" id="reduce-motion" name="reduce-motion" /> Reduzir movimento</label><button class="button secondary" id="reset-progress">Apagar progresso local</button></div></details>
       </section>
     </main>

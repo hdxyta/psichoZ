@@ -408,6 +408,34 @@ grid-template-columns:1.65fr 1fr;
 gap:70px;
 margin-top:40px;
 align-items:start}
+.collection-popover[hidden]{
+display:none}
+.collection-popover{
+position:absolute;
+right:0;
+top:430px;
+z-index:6;
+width:min(470px,42vw);
+max-height:min(680px,calc(100dvh - 40px));
+overflow:auto}
+.collection-popover-top{
+display:flex;
+justify-content:space-between;
+gap:18px;
+align-items:flex-start}
+.collection-trigger{
+grid-column:1/-1;
+display:inline-flex;
+align-items:center;
+justify-content:space-between;
+gap:18px;
+min-height:44px;
+padding:0;
+border:0;
+background:transparent;
+color:inherit;
+font-size:.7rem;
+text-align:left}
 .collection-toolbar{
 display:flex;
 gap:18px;
@@ -491,6 +519,11 @@ left:56px}
 font:700 2.2rem UnifrakturCook,Georgia,serif;
 color:#ef3641;
 transform:translateY(-20px)}
+.collection-short{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:28px}
 details summary{
 cursor:pointer;
 min-height:44px;

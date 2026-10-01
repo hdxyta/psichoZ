@@ -255,7 +255,22 @@ function applyMotion(): void {
 
 const presaveDialog = $<HTMLDialogElement>('#presave-dialog');
 const resetDialog = $<HTMLDialogElement>('#reset-dialog');
+const collectionPopover = $('#collection-popover');
+const collectionTriggers = [...document.querySelectorAll<HTMLButtonElement>('[data-open-collection]')];
 let previousFocus: HTMLElement | null = null;
+let previousCollectionFocus: HTMLElement | null = null;
+function closeCollection(): void {
+  if (collectionPopover.hidden) return;
+  collectionPopover.hidden = true;
+  collectionTriggers.forEach((trigger) => trigger.setAttribute('aria-expanded', 'false'));
+  previousCollectionFocus?.focus();
+}
+function openCollection(): void {
+  previousCollectionFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+  collectionPopover.hidden = false;
+  collectionTriggers.forEach((trigger) => trigger.setAttribute('aria-expanded', 'true'));
+  collectionPopover.querySelector<HTMLButtonElement>('[data-close-collection]')?.focus();
+}
 function openDialog(dialog: HTMLDialogElement): void {
   previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
   dialog.showModal();
@@ -281,6 +296,19 @@ for (const dialog of [presaveDialog, resetDialog]) {
   } });
 }
 document.querySelectorAll<HTMLButtonElement>('[data-open-presave]').forEach((button) => button.addEventListener('click', () => openDialog(presaveDialog)));
+collectionTriggers.forEach((button) => {
+  button.setAttribute('aria-controls', 'collection-popover');
+  button.setAttribute('aria-expanded', 'false');
+  button.addEventListener('click', () => collectionPopover.hidden ? openCollection() : closeCollection());
+});
+collectionPopover.querySelector<HTMLButtonElement>('[data-close-collection]')?.addEventListener('click', closeCollection);
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeCollection(); });
+document.addEventListener('click', (event) => {
+  const target = event.target;
+  if (collectionPopover.hidden || !(target instanceof Node)) return;
+  if (collectionPopover.contains(target) || collectionTriggers.some((trigger) => trigger.contains(target))) return;
+  closeCollection();
+});
 $('#reset-progress').addEventListener('click', () => openDialog(resetDialog));
 $('#confirm-reset').addEventListener('click', () => {
   store.reset();

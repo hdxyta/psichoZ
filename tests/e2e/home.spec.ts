@@ -10,6 +10,11 @@ async function openSettings(page: Page): Promise<void> {
   await expect(page.locator('#reset-progress')).toBeVisible();
 }
 
+async function openCollection(page: Page): Promise<void> {
+  await page.getByRole('button', { name: /Ver (minha )?coleção/u }).first().click();
+  await expect(page.locator('#collection-popover')).toBeVisible();
+}
+
 async function expectNoVictories(page: Page): Promise<void> {
   await expect(page.locator('#collection-count')).toHaveText('0 de 15 faixas conquistadas no jogo');
   await expect(page.locator('#game-progress-count')).toHaveText('0 / 15');
@@ -213,8 +218,7 @@ test('unknown game route returns to the 15-game hub and keeps the collection ava
   await expect(page.locator('canvas, audio')).toHaveCount(0);
   await page.reload();
   await expect(page.locator('#jogo')).toBeInViewport();
-  await page.locator('#jogo').getByRole('link', { name: 'Ver minha coleção' }).click();
-  await expect(page).toHaveURL(/#colecao$/u);
+  await openCollection(page);
   await expect(page.locator('#rewards-list > li')).toHaveCount(17);
   await expect(page.locator('#collection-count')).toContainText('0 de 15');
 });
@@ -279,7 +283,8 @@ test('captures home, pre-save panel and collection for visual review', async ({ 
   await page.getByRole('navigation', { name: 'Navegação principal' }).getByRole('link', { name: 'Coleção', exact: true }).click();
   await expect(page).toHaveURL(/#colecao$/u);
   await expect(page.locator('#colecao')).toBeInViewport();
+  await openCollection(page);
   // A viewport image avoids Chromium's offscreen fixed-element artifacts in tall locator captures.
-  // The full-page home image above includes the entire collection for layout review.
+  // The full-page home image above includes the compact collection entry for layout review.
   await page.screenshot({ path: resolve(folder, `collection-${testInfo.project.name}.png`), animations: 'disabled', scale: 'css' });
 });

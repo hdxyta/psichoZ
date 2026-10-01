@@ -241,8 +241,8 @@ test('unavailable WebGL keeps the home, collection and exit operable', async ({ 
   await expect(page.getByRole('button', { name: 'Voltar à home' })).toBeFocused();
   await page.getByRole('button', { name: 'Voltar à home' }).click();
   await expect(page.locator('#game-dialog')).toHaveCount(0);
-  await page.locator('#jogo').getByRole('link', { name: 'Ver minha coleção' }).click();
-  await expect(page).toHaveURL(/#colecao$/u);
+  await page.locator('#jogo').getByRole('button', { name: 'Ver minha coleção' }).click();
+  await expect(page.locator('#collection-popover')).toBeVisible();
   await expect(page.locator('#rewards-list > li')).toHaveCount(17);
   await expectNoReward(page);
 });
