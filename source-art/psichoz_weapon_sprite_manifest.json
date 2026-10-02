@@ -1,0 +1,53 @@
+{
+  "source": "a_clean_concept_art_game_asset_sprite_sheet_styl.png",
+  "files": {
+    "shotgun_player": {
+      "file": "psichoz_freira_shotgun_spritesheet.png",
+      "content": [
+        "idle",
+        "walk",
+        "shoot"
+      ]
+    },
+    "knife_player": {
+      "file": "psichoz_freira_faca_spritesheet.png",
+      "content": [
+        "idle",
+        "walk",
+        "attack"
+      ]
+    },
+    "magic_staff_player": {
+      "file": "psichoz_freira_bastao_magico_spritesheet.png",
+      "content": [
+        "idle",
+        "walk",
+        "cast"
+      ]
+    },
+    "shotgun_fx": {
+      "file": "psichoz_fx_shotgun.png",
+      "content": [
+        "muzzle flash",
+        "shoot FX",
+        "reload frames"
+      ]
+    },
+    "knife_fx": {
+      "file": "psichoz_fx_faca.png",
+      "content": [
+        "attack slash",
+        "hit FX"
+      ]
+    },
+    "magic_staff_fx": {
+      "file": "psichoz_fx_bastao_magico.png",
+      "content": [
+        "magic sigils",
+        "projectiles",
+        "cast start/end"
+      ]
+    }
+  },
+  "note": "PNG RGBA files with tightened transparent backgrounds, separated from the original three-weapon sheet."
+}

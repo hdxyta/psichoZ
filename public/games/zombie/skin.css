@@ -7,6 +7,10 @@
 .zombie-controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding-bottom:4px}
 .cards{position:absolute;inset:auto 24px 82px 24px;z-index:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .cards[hidden]{display:none}
+.weapon-status{margin:0;text-align:center;font:12px/1.5 monospace;color:#f2ece2}
+.zombie-page{grid-template-rows:auto minmax(0,1fr) auto auto}
+#zombie-canvas{height:auto;touch-action:none}
+.zombie-controls button{min-height:44px;touch-action:none}
 .cards button{display:block;min-height:112px;padding:14px;text-align:left;background:#050505f2;color:var(--paper);border:2px solid var(--paper);border-left:8px solid var(--red);box-shadow:6px 6px 0 #000}
 .cards strong{display:block;margin-bottom:8px;color:#fff;font:700 16px/1.2 Georgia,serif}
 .cards span{display:block;color:#d8c7cb;font:12px/1.45 Arial,sans-serif}
