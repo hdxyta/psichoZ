@@ -1,4 +1,7 @@
 :root{--red:#ff1734;--paper:#f5eee4;--ink:#050505;--muted:#cbb9bd}
+.fighter-select{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+@media(max-width:760px){.fighter-select{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:760px){.brawler-controls{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))}}
 *{box-sizing:border-box} html,body{margin:0;min-height:100%;background:#030303;color:var(--paper);font-family:Arial,Helvetica,sans-serif;overflow:hidden}
 body:before{content:"";position:fixed;inset:0;background:repeating-linear-gradient(120deg,transparent 0 13px,#24070d 14px 15px),radial-gradient(circle at 18% 12%,#2b0309 0 12%,transparent 34%);opacity:.85;pointer-events:none}
 .brawler-page{position:relative;z-index:1;width:min(1120px,100%);min-height:100dvh;margin:auto;padding:12px;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto auto;gap:10px;align-items:center}

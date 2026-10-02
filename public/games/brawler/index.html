@@ -14,8 +14,10 @@
         <span data-game-status>Escolha um personagem da capa.</span>
       </section>
       <section class="fighter-select" data-select aria-label="Escolha de personagem">
-        <button type="button" data-fighter="wing"><strong>Anjo Rasgado</strong><span>Alcance e pulo alto</span></button>
-        <button type="button" data-fighter="nun"><strong>Freira Armada</strong><span>Pesada e resistente</span></button>
+        <button type="button" data-fighter="frog"><strong>Sapo Chifrudo</strong><span>Corrente, defesa e golpe especial</span></button>
+        <button type="button" data-fighter="scorpion"><strong>Escorpião Monstruoso</strong><span>Cauda, pinças e resistência</span></button>
+        <button type="button" data-fighter="wing"><strong>Anjo Rasgado</strong><span>Magia e fogo do chão</span></button>
+        <button type="button" data-fighter="nun"><strong>Freira Armada</strong><span>Tiros à distância e granada</span></button>
         <button type="button" data-fighter="eye"><strong>Olho Febril</strong><span>Rápido e agressivo</span></button>
       </section>
       <canvas id="brawler-canvas" width="960" height="540" aria-label="Arena plataforma de luta de Silêncio"></canvas>
@@ -25,10 +27,17 @@
         <button type="button" data-tap="Space">Pulo</button>
         <button type="button" data-tap="KeyJ">Ataque</button>
         <button type="button" data-tap="KeyK">Especial</button>
+        <button type="button" data-hold="KeyL">Defesa</button>
       </div>
-      <p class="brawler-tip">PC: A/D ou setas movem, Espaço pula, J ataca, K especial. Mobile: botões e toque na arena para virar.</p>
+      <p class="brawler-tip">A/D ou setas: mover · Espaço: pular · J: atacar · K: especial · Segure L: defender. No celular, use os botões.</p>
     </main>
     <script src="../shared.js"></script>
+    <script src="frog.js"></script>
+    <script src="scorpion.js"></script>
+    <script src="nun.js"></script>
+    <script src="nun-combat.js"></script>
+    <script src="wing.js"></script>
+    <script src="wing-combat.js"></script>
     <script src="game.js"></script>
   </body>
 </html>
