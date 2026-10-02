@@ -63,11 +63,19 @@ test('Untangle is won through actual node movements, then saved and reloaded',as
   await expect(page.locator('[data-progress]')).toHaveText('REDES LIVRES 1 / 2');
   // Stage 2 is K4: the fourth vertex lies inside the triangle formed by the other three.
   await drag(84,72,300,190);
-  await expect(page.locator('.vendor-game')).toHaveAttribute('data-screen','won');
-  await expect(page.locator('[data-result]')).toContainText('Conquista salva');
+  await expect(page.locator('.vendor-game')).toHaveAttribute('data-screen','playing');
+  await expect(page.locator('[data-award]')).toBeVisible();
+  await expect(page.locator('[data-award]')).toContainText('Conquista salva');
   const state = await page.evaluate(()=>JSON.parse(localStorage.getItem('psicoz:progress')!));
   expect(state.completedLevelIds).toEqual(['level-08']); expect(state.unlockedTrackIds).toEqual(['track-08']);
-  await page.getByRole('button',{name:'Ver minha coleção'}).click();
+  await page.getByRole('button',{name:'Ver presente'}).click();
+  await expect(page.locator('[data-result]')).toContainText('Conquista salva');
+  await expect(page.getByRole('button',{name:'Continuar jogando'})).toBeVisible();
+  await page.getByRole('button',{name:'Continuar jogando'}).click();
+  await expect(page.locator('.vendor-game')).toHaveAttribute('data-screen','playing');
+  await expect(page.locator('[data-award]')).toBeHidden();
+  await expect(page.locator('iframe')).toHaveCount(1);
+  await page.goto(`${rootUrl}/#colecao`);
   await page.reload();
   await expect(page.locator('[data-game-track="track-08"]')).toHaveAttribute('data-recovered','true');
   await expect(page.locator('a[download]')).toHaveCount(0);

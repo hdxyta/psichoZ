@@ -7,7 +7,7 @@
   const W = canvas.width, H = canvas.height, gravity = 1700, floor = 486, roundsToWin = 3;
   const keys = new Set();
   const effects = [];
-  let player, enemy, round = 0, ended = false, selected = null, last = performance.now(), loopId;
+  let player, enemy, round = 0, ended = false, recovered = false, selected = null, last = performance.now(), loopId;
   const fighters = {
     wing: { name:'Anjo Rasgado', hp:112, speed:250, jump:720, power:18, reach:58, color:'#f5eee4' },
     nun: { name:'Freira Armada', hp:145, speed:205, jump:620, power:25, reach:50, color:'#ff1734' },
@@ -27,7 +27,7 @@
     return { kind, side, x: side === 1 ? 210 : 750, y: floor - 72, vx:0, vy:0, w:44, h:72, hp:base.hp, maxHp:base.hp, facing: side, grounded:false, jumps:0, attack:0, special:0, hurt:0, cooldown:0, ai:0, score:0, ...base };
   }
   function begin(kind) {
-    selected = kind; select.hidden = true; round = 0; nextRound();
+    selected = kind; select.hidden = true; round = 0; recovered = false; nextRound();
   }
   function nextRound() {
     round += 1;
@@ -36,7 +36,7 @@
     enemy.hp += round * 10; enemy.maxHp = enemy.hp; enemy.power += round * 2;
     report('playing', `Derrube ${enemy.name}.`);
   }
-  function end(won) { ended = true; report(won ? 'won' : 'lost', won ? 'Silêncio quebrado. Ringue recuperado.' : 'O silêncio engoliu o ringue.'); }
+  function end(won) { if (won) { recovered = true; report('won', 'Silêncio quebrado. Ringue recuperado. Continue lutando se quiser.'); nextRound(); return; } ended = true; report('lost', 'O silêncio engoliu o ringue.'); }
   function rects(a,b){ return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y; }
   function attackBox(f, special=false) { const reach = special ? f.reach + 42 : f.reach; return {x:f.facing > 0 ? f.x + f.w - 6 : f.x - reach + 6, y:f.y + (special ? 10 : 18), w:reach, h:special ? 42 : 34}; }
   function strike(attacker, target, special=false) {
@@ -101,7 +101,7 @@
     for (let i=effects.length-1;i>=0;i--) if (effects[i].life <= 0) effects.splice(i,1);
     if (enemy.hp <= 0) {
       effects.push({x:enemy.x+22,y:enemy.y+36,life:.55,big:true});
-      if (round >= roundsToWin) end(true); else nextRound();
+      if (round >= roundsToWin && !recovered) end(true); else nextRound();
     }
     if (player.hp <= 0) end(false);
   }
@@ -134,7 +134,7 @@
     else { ctx.fillStyle='#ff1734'; ctx.font='900 26px monospace'; ctx.fillText('ESCOLHA SEU LUTADOR',330,260); }
     for(const e of effects){ ctx.globalAlpha=Math.max(0,e.life/.55); ctx.strokeStyle=e.big?'#f5eee4':'#ff1734'; ctx.lineWidth=e.big?8:4; ctx.beginPath(); ctx.arc(e.x,e.y,(1-e.life/.55)*(e.big?78:42),0,Math.PI*2); ctx.stroke(); ctx.globalAlpha=1; }
   }
-  function tick(time){ const dt=Math.min(.05,(time-last)/1000||0); last=time; update(dt); draw(); if(!ended) loopId=requestAnimationFrame(tick); }
+  function tick(time){ const dt=Math.min(.05,(time-last)/1000||0); last=time; update(dt); draw(); loopId=requestAnimationFrame(tick); }
   select.addEventListener('click', event => { const button = event.target.closest('[data-fighter]'); if(button) begin(button.dataset.fighter); });
   document.addEventListener('keydown', event => { keys.add(event.code); if(['KeyA','KeyD','ArrowLeft','ArrowRight','Space','KeyJ','KeyK'].includes(event.code)) event.preventDefault(); if(event.code==='Space') jump(player); if(event.code==='KeyJ') startAttack(player,false); if(event.code==='KeyK') startAttack(player,true); });
   document.addEventListener('keyup', event => keys.delete(event.code));

@@ -7,7 +7,7 @@
   const W = canvas.width, H = canvas.height, roundsToWin = 4;
   const keys = new Set(), bullets = [], zombies = [], particles = [];
   const player = {x:W/2, y:H/2, hp:100, maxHp:100, speed:160, damage:18, fireRate:.24, cooldown:0, pierce:0, dash:0, dashCooldown:0};
-  let round = 0, queued = 0, spawnTimer = 0, intermission = true, ended = false, firing = false, aim = {x:W/2+1,y:H/2}, last = performance.now(), loopId;
+  let round = 0, queued = 0, spawnTimer = 0, intermission = true, ended = false, recovered = false, firing = false, aim = {x:W/2+1,y:H/2}, last = performance.now(), loopId;
   const upgrades = [
     {id:'rate', title:'Gatilho nervoso', text:'Dispara mais rapido.', apply(){ player.fireRate = Math.max(.1, player.fireRate * .72); }},
     {id:'damage', title:'Bala ritual', text:'Aumenta o dano dos tiros.', apply(){ player.damage += 10; }},
@@ -58,9 +58,15 @@
     zombies.push(z);
   }
   function end(won) {
+    if (won) {
+      recovered = true;
+      report('won', 'Quatro rounds limpos. Aditivo recuperado. Escolha outra recompensa e siga nas ondas.');
+      chooseCards();
+      return;
+    }
     ended = true;
     cards.hidden = true;
-    report(won ? 'won' : 'lost', won ? 'Quatro rounds limpos. Aditivo recuperado.' : 'A horda tomou o sinal.');
+    report('lost', 'A horda tomou o sinal.');
   }
   function point(event) {
     const rect = canvas.getBoundingClientRect();
@@ -118,7 +124,7 @@
     for (let i=bullets.length-1;i>=0;i--) if (bullets[i].life <= 0 || bullets[i].x < -20 || bullets[i].x > W+20 || bullets[i].y < -20 || bullets[i].y > H+20) bullets.splice(i,1);
     for (let i=particles.length-1;i>=0;i--) if (particles[i].life <= 0) particles.splice(i,1);
     if (player.hp <= 0) end(false);
-    if (round >= roundsToWin && !queued && zombies.length === 0) end(true);
+    if (round >= roundsToWin && !queued && zombies.length === 0 && !recovered) end(true);
     else if (round > 0 && !queued && zombies.length === 0) chooseCards();
   }
   function draw() {
@@ -152,7 +158,7 @@
   function tick(time) {
     const dt = Math.min(.05, (time-last)/1000 || 0); last = time;
     update(dt); draw();
-    if (!ended) loopId = requestAnimationFrame(tick);
+    loopId = requestAnimationFrame(tick);
   }
   chooseCards();
   loopId = requestAnimationFrame(tick);

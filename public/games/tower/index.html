@@ -10,17 +10,42 @@
   <body>
     <main class="tower-page">
       <section class="tower-hud" aria-label="Status do jogo">
-        <p class="objective">Defenda a torre: construa sentinelas nos sigilos e sobreviva a 3 ondas.</p>
-        <p data-game-status>ONDAS 0 / 5 · Toque em um sigilo para erguer uma torre.</p>
+        <p class="objective">Defenda a torre: construa sentinelas nos sigilos e sobreviva a 5 ondas.</p>
+        <p data-game-status aria-live="polite">ONDAS 0 / 5 · Toque em um sigilo para erguer uma torre.</p>
       </section>
+      <div class="tower-resources" aria-label="Recursos"><span data-money>SINAL 100</span><span data-base>TORRE 10</span><span>ENTRADA → PORTAL</span></div>
       <div class="canvas-wrap">
-        <canvas id="tower-canvas" width="960" height="540" aria-label="Tower defense de Woodstock"></canvas>
+        <div class="tower-board">
+          <img class="map-art" src="inferno-map-animated.svg" width="1536" height="1024" alt="" aria-hidden="true">
+          <canvas id="tower-canvas" width="960" height="640" aria-label="Inferno cibernético: defenda o portal à direita da estrada"></canvas>
+          <div class="tower-sites" role="group" aria-label="Sigilos para construir torres"></div>
+        </div>
       </div>
       <div class="tower-controls" aria-label="Ações">
-        <button type="button" data-build="needle">Torre agulha · 20</button>
-        <button type="button" data-build="chain">Corrente lenta · 35</button>
+        <button type="button" data-build="needle">
+          <img src="tower-needle.webp" width="90" height="90" alt="" aria-hidden="true">
+          <span>Torre agulha</span>
+          <strong>20</strong>
+        </button>
+        <button type="button" data-build="chain">
+          <img src="tower-chain.webp" width="90" height="90" alt="" aria-hidden="true">
+          <span>Corrente lenta</span>
+          <strong>35</strong>
+        </button>
+        <button type="button" data-build="orb" aria-disabled="true">
+          <img src="tower-orb.webp" width="90" height="90" alt="" aria-hidden="true">
+          <span>Olho infernal</span>
+          <strong>55 · wave 5</strong>
+        </button>
+        <button type="button" data-build="portal" aria-disabled="true">
+          <img src="tower-portal.webp" width="90" height="90" alt="" aria-hidden="true">
+          <span>Portal rúnico</span>
+          <strong>70 · wave 5</strong>
+        </button>
         <button type="button" data-action="wave">Chamar onda</button>
       </div>
+      <p class="tower-help">Escolha uma torre e toque em um sigilo numerado. Alguns sigilos cobram sinal para abrir. Teclado: Tab e Enter para construir · 1 / 2 / 3 / 4 para escolher · Espaço para chamar onda.</p>
+      <p class="map-notice" hidden>Arte indisponível. O percurso continua disponível no mapa simplificado.</p>
     </main>
     <script src="../shared.js"></script>
     <script src="game.js"></script>

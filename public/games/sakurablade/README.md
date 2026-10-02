@@ -1,6 +1,6 @@
 # Não Posso Errar sakura blade
 
-Jogo local para `track-14`, substituindo Simon.
+Protótipo local mantido para referência. Ele não está mais mapeado para `track-14`; a faixa 14 agora usa `public/games/flappy`.
 
 - Visão em primeira pessoa de um samurai em guarda com katana.
 - Parede à frente, sakuras e folhas caindo.

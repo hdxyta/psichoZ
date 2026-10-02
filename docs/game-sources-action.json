@@ -193,7 +193,8 @@
     "excludedAssets": [],
     "target": 6,
     "repository": "https://github.com/CoolDude2349/Offline-HTML-Games-Pack",
-    "condition": "Complete six real slash actions so the wall strokes reveal psicoZ",
+    "condition": "Prototype kept in the repository but no longer mapped to an album track; track 14 now uses flappy.",
+    "status": "replaced-by-flappy",
     "commit": null,
     "entry": "public/games/sakurablade/index.html",
     "changes": [
@@ -203,7 +204,7 @@
       "Six slash groups compose the album name psicoZ as the hidden final image",
       "Parent-owned progression via PsicoZ.report; no standalone storage"
     ],
-    "trackId": "track-14",
+    "trackId": null,
     "upstream": null
   }
 ]

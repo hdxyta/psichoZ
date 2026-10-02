@@ -26,7 +26,7 @@
     "changes": [
       "Copied flap, scrolling pipes, bounded gap generation, collision and score loop.",
       "Original bitmaps/audio excluded; local canvas sprites are original psicoZ geometry. No external assets or original storage keys.",
-      "Parent starts playing; eight legitimately passed pipes win; original collision loses."
+      "Parent starts playing; eight legitimately passed pipes recover track 14 without forcing game over; original collision loses before conquest."
     ]
   },
   {

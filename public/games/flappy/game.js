@@ -6,7 +6,7 @@ var ctx = cvs.getContext("2d");
 // psicoZ replacement art; no original bird sprites or audio are redistributed.
 function art(w,h,draw){var c=document.createElement('canvas');c.width=w;c.height=h;draw(c.getContext('2d'),w,h);return c;}
 var bird=art(34,24,function(c){c.fillStyle='#f51d36';c.beginPath();c.ellipse(17,12,16,10,0,0,Math.PI*2);c.fill();c.strokeStyle='#090909';c.lineWidth=3;c.stroke();c.fillStyle='#f2ece2';c.beginPath();c.arc(21,10,7,0,Math.PI*2);c.fill();c.fillStyle='#090909';c.beginPath();c.arc(22,10,3,0,Math.PI*2);c.fill();});
-var bg=art(288,512,function(c,w,h){c.fillStyle='#f2ece2';c.fillRect(0,0,w,h);c.strokeStyle='#bfb3a8';for(var i=-h;i<w;i+=16){c.beginPath();c.moveTo(i,0);c.lineTo(i+h,h);c.stroke();}});
+var bg=art(288,512,function(c,w,h){c.fillStyle='#050505';c.fillRect(0,0,w,h);c.strokeStyle='#22080d';for(var i=-h;i<w;i+=16){c.beginPath();c.moveTo(i,0);c.lineTo(i+h,h);c.stroke();}c.strokeStyle='#f51d36';c.globalAlpha=.32;for(var y=26;y<h;y+=58){c.beginPath();c.moveTo(0,y);c.lineTo(w,y-28);c.stroke();}c.globalAlpha=1;});
 var fg=art(288,55,function(c,w,h){c.fillStyle='#090909';c.fillRect(0,0,w,h);c.fillStyle='#f51d36';c.fillRect(0,0,w,7);});
 function gate(c,w,h){c.fillStyle='#090909';c.fillRect(0,0,w,h);c.strokeStyle='#f51d36';c.lineWidth=3;for(var i=-w;i<h;i+=14){c.beginPath();c.moveTo(0,i);c.lineTo(w,i+w);c.stroke();}c.fillStyle='#f51d36';c.fillRect(0,h-8,w,8);}
 var pipeNorth=art(52,260,gate),pipeSouth=art(52,260,gate);
@@ -147,12 +147,12 @@ function drawScorePill(){
     var text = String(score);
     var w = ctx.measureText(text).width + 30;
     var x = (cvs.width - w) / 2;
-    ctx.fillStyle = "rgba(8, 14, 12, 0.55)";
+    ctx.fillStyle = "rgba(5, 5, 5, 0.72)";
     roundRect(x, 14, w, 36, 18);
     ctx.textAlign = "center";
     ctx.fillStyle = "rgba(0, 0, 0, 0.55)";
     ctx.fillText(text, cvs.width / 2 + 1, 41);
-    ctx.fillStyle = "#ffffff";
+    ctx.fillStyle = "#f2ece2";
     ctx.fillText(text, cvs.width / 2, 40);
     ctx.textAlign = "left";
 }
@@ -166,7 +166,7 @@ function drawStartHint(){
 }
 
 function drawWelcome(){
-    ctx.fillStyle = "rgba(8, 12, 16, 0.6)";
+    ctx.fillStyle = "rgba(5, 5, 5, 0.68)";
     ctx.fillRect(0, 0, cvs.width, cvs.height);
 
     var cw = 240;
@@ -174,25 +174,26 @@ function drawWelcome(){
     var cx = (cvs.width - cw) / 2;
     var cy = 146;
 
-    ctx.fillStyle = "rgba(248, 201, 72, 0.85)";
+    ctx.fillStyle = "#f51d36";
     roundRect(cx - 4, cy - 4, cw + 8, ch + 8, 20);
-    ctx.fillStyle = "rgba(22, 30, 28, 0.97)";
+    ctx.fillStyle = "rgba(10, 5, 7, 0.97)";
     roundRect(cx, cy, cw, ch, 16);
 
     ctx.textAlign = "center";
     ctx.font = "18px " + FONT;
-    ctx.fillStyle = "#f8c948";
-    ctx.fillText("FLAPPY BIRD", cvs.width / 2, cy + 52);
+    ctx.fillStyle = "#f51d36";
+    ctx.fillText("NAO POSSO", cvs.width / 2, cy + 44);
+    ctx.fillText("ERRAR", cvs.width / 2, cy + 68);
 
     ctx.font = "10px " + FONT;
-    ctx.fillStyle = "#ffffff";
-    ctx.fillText("PRESS SPACE / ↑", cvs.width / 2, cy + 100);
-    ctx.fillStyle = "#93a89d";
-    ctx.fillText("OR TAP TO START", cvs.width / 2, cy + 124);
+    ctx.fillStyle = "#f2ece2";
+    ctx.fillText("ESPAÇO / ↑", cvs.width / 2, cy + 104);
+    ctx.fillStyle = "#bfb3a8";
+    ctx.fillText("OU TOQUE PARA SUBIR", cvs.width / 2, cy + 126);
 
     ctx.font = "8px " + FONT;
     ctx.fillStyle = "rgba(255, 255, 255, 0.55)";
-    ctx.fillText("DODGE THE PIPES", cvs.width / 2, cy + ch - 22);
+    ctx.fillText("ATRAVESSE AS GRADES", cvs.width / 2, cy + ch - 22);
 
     ctx.textAlign = "left";
 }
@@ -201,18 +202,18 @@ function drawCountdown(){
     ctx.font = "48px " + FONT;
     var n = Math.ceil(countdownT);
     var w = ctx.measureText(String(n)).width + 48;
-    ctx.fillStyle = "rgba(8, 14, 12, 0.55)";
+    ctx.fillStyle = "rgba(5, 5, 5, 0.72)";
     roundRect((cvs.width - w) / 2, 96, w, 64, 32);
     ctx.textAlign = "center";
     ctx.fillStyle = "rgba(0, 0, 0, 0.55)";
     ctx.fillText(String(n), cvs.width / 2 + 2, 148);
-    ctx.fillStyle = "#ffffff";
+    ctx.fillStyle = "#f2ece2";
     ctx.fillText(String(n), cvs.width / 2, 146);
     ctx.textAlign = "left";
 }
 
 function drawGameOver(){
-    ctx.fillStyle = "rgba(8, 12, 16, 0.6)";
+    ctx.fillStyle = "rgba(5, 5, 5, 0.68)";
     ctx.fillRect(0, 0, cvs.width, cvs.height);
 
     var cw = 240;
@@ -220,37 +221,37 @@ function drawGameOver(){
     var cx = (cvs.width - cw) / 2;
     var cy = 138;
 
-    ctx.fillStyle = "rgba(248, 201, 72, 0.85)";
+    ctx.fillStyle = "#f51d36";
     roundRect(cx - 4, cy - 4, cw + 8, ch + 8, 20);
-    ctx.fillStyle = "rgba(22, 30, 28, 0.97)";
+    ctx.fillStyle = "rgba(10, 5, 7, 0.97)";
     roundRect(cx, cy, cw, ch, 16);
 
     ctx.textAlign = "center";
     ctx.font = "18px " + FONT;
     ctx.fillStyle = "#ff5f52";
-    ctx.fillText("GAME OVER", cvs.width / 2, cy + 46);
+    ctx.fillText("ERROU", cvs.width / 2, cy + 46);
 
     ctx.fillStyle = "rgba(255, 255, 255, 0.16)";
     ctx.fillRect(cx + 26, cy + 64, cw - 52, 2);
 
     ctx.font = "10px " + FONT;
-    ctx.fillStyle = "#93a89d";
+    ctx.fillStyle = "#bfb3a8";
     ctx.textAlign = "left";
     ctx.fillText("SCORE", cx + 26, cy + 100);
     ctx.textAlign = "right";
-    ctx.fillStyle = "#ffffff";
+    ctx.fillStyle = "#f2ece2";
     ctx.fillText(String(score), cx + cw - 26, cy + 100);
 
-    ctx.fillStyle = "#93a89d";
+    ctx.fillStyle = "#bfb3a8";
     ctx.textAlign = "left";
     ctx.fillText("BEST", cx + 26, cy + 128);
     ctx.textAlign = "right";
-    ctx.fillStyle = "#f8c948";
+    ctx.fillStyle = "#f51d36";
     ctx.fillText(String(bestScore), cx + cw - 26, cy + 128);
 
     ctx.textAlign = "center";
     ctx.fillStyle = gameOverT >= GAME_OVER_DELAY ? "rgba(255, 255, 255, 0.75)" : "rgba(255, 255, 255, 0.25)";
-    ctx.fillText("TAP OR PRESS SPACE / ↑", cvs.width / 2, cy + ch - 22);
+    ctx.fillText("TOQUE OU ESPAÇO / ↑", cvs.width / 2, cy + ch - 22);
     ctx.textAlign = "left";
 }
 
@@ -266,11 +267,11 @@ function draw(time){
     loopPending = false;
 
     if(!imagesReady()){
-        ctx.fillStyle = "#0c1915";
+        ctx.fillStyle = "#050505";
         ctx.fillRect(0, 0, cvs.width, cvs.height);
         ctx.font = "10px " + FONT;
         ctx.textAlign = "center";
-        ctx.fillStyle = "#f8c948";
+        ctx.fillStyle = "#f51d36";
         ctx.fillText("LOADING", cvs.width / 2, cvs.height / 2);
         ctx.textAlign = "left";
         loopPending = true;

@@ -108,7 +108,7 @@ describe('catalog with one game for each of the 15 tracks', () => {
     expect(getVendorGame('track-09')?.slug).toBe('redterraria');
     expect(getVendorGame('track-11')?.slug).toBe('riskcards');
     expect(getVendorGame('track-13')?.slug).toBe('greyride');
-    expect(getVendorGame('track-14')?.slug).toBe('sakurablade');
+    expect(getVendorGame('track-14')?.slug).toBe('flappy');
     expect(getVendorGame('track-15')?.slug).toBe('2048');
     expect(getVendorGame('track-99')).toBeUndefined();
     expect(getVendorGame('../track-02')).toBeUndefined();
